@@ -1,0 +1,2049 @@
+﻿__Name = "Français"
+__DebugOnly = false
+// Les deux lignes ci-dessus *DOIVENT* être les deux premières ligne du fichier !
+
+Misc
+{
+	Okay = "Confirmer"
+	Cancel = "Annuler"
+	Yes = "Oui"
+	No = "Non"
+	MenuBack = "Retour"
+	ScreenshotSavedFmt = "Capture d'écran sauvegardée à l'emplacement<b>{0}</b>"
+	ScreenshotOpenFolder = "Ouvrir le dossier"
+	DefaultShipName = "Vaisseau sans nom"
+	SavedGameIncompatible = "Cette sauvegarde est incompatible avec cette version de Cosmoteer. Désolé!"
+	SavedShipIncompatible = "La sauvegarde de ce vaisseau est incompatible avec cette version de Cosmoteer. Désolé!"
+	SaveShipError = "Une erreur est survenue lors de la sauvegarde de ce vaisseau dans le fichier \"{0}\": {1}"
+	LoadShipError = "Ce fichier semble ne pas être une sauvegarde de vaisseau valide. Erreur: {0}"
+	SaveGameError = "Une erreur est survenue lors de la sauvegarde de cette partie dans le fichier: \"{0}\": {1}"
+	ShipClassIncompatible = "Classe de vaisseau incompatible."
+	NoBlueprints = "Le vaisseau n'a pas de plans."
+	GpuDriversOutOfDateFmt = "<bad><b>AVERTISSEMENT:</b></bad> Vos drivers graphiques datent de plus de <b>{0} mois</b>! Les drivers graphiques obsolètes sont connus pour causer des plantages en jouant à Cosmoteer. "\
+	                         "Il est <b>fortement recommandé</b> de mettre à jour vos drivers! (Cet avertissement peut être désactivé dans les réglages \"Divers\".)"
+}
+
+TitleScreen
+{
+	NewGame = "Nouvelle partie"
+	LoadGame = "Charger une partie"
+	Multiplayer = "Multijoueur"
+	Exit = "Quitter"
+	Settings = "Paramètres"
+	Mods = "Mods"
+	ShipLibrary = "Galerie de vaisseaux"
+	Credits = "Générique"
+	Community = "Communauté"
+	Forum = "Forum Officiel"
+	Discord = "Discord Officiel"
+	Wiki = "Wiki"
+	Roadmap = "Feuille de route"
+	Reddit = "Reddit"
+	Facebook = "Facebook"
+	Twitter = "Twitter"
+	Itch = "itch.io"
+	IndieDB = "Indie DB"
+	Feedback = "Evoyer un avis / Rapporter un bug"
+	OpenUrlConfirm = "Cette action va réduire Cosmoteer et ouvrir une page dans votre navigateur."
+}
+
+NewGame
+{
+	StartNewGame = "Commencer une nouvelle partie"
+}
+
+LobbyScreen
+{
+	Host = "Héberger une partie"
+	HostTip = "Créer une nouvelle partie que d'autres joueurs peuvent rejoindre. Vous pourrez modifier les réglages de la partie."
+	Join = "Rejoindre une partie"
+	JoinTip = "Rejoindre la partie sélectionnée hébergée par un autre joueur."
+	LAN = "Réseau Local"
+	DirectConnect = "Se connecter par I.P."
+	DirectConnectTip = "Se connecter à une partie hébergée par un autre joueur en saisissant son adresse I.P. publique."
+	DirectConnectMsg = "Entrez l'adresse I.P. publique de l'ordinateur hébergeant la partie."
+	Joining = "Vous rejoignez la partie..."
+	TimedOut = "La requête a expiré."
+	Searching = "Recherche de parties sur votre réseau local..."
+	Incompatible = "<bad>INCOMPATIBLE</bad>"
+	HostMods = "Mods que l'hôte utilise mais pas vous:"
+	YourMods = "Mods que vous utilisez mais pas l'hôte:"
+	PlayerName = "Pseudo: "
+	PlayersFmt = "{0}/{1}"
+	GameFullTip = "La partie est pleine."
+
+	JoinDenyReason
+	{
+		GameNotRunning = "Cet hôte n'est pas en partie."
+		GameFull = "Cette partie est pleine pour l'instant."
+		VersionIncompatible = "Votre version de Cosmoteer n'est pas la même que celle de l'hôte. Tous les joueurs doivent utiliser la même version de Cosmoteer."
+		DataIncompatible = "Les fichiers de votre jeu sont incompatibles avec ceux du jeu de l'hôte. Ceci peut être dû aux mods."
+		OSIncompatible = "Votre système d'exploitation n'est pas compatible avec celui de l'hôte. Cette erreur se produit fréquemment lorsque le système d'exploitation de l'hôte est un 32-bits mais le vôtre un 64-bits ou l'inverse."
+		ModsIncompatible = "Vous et l'hôte utilisez des mods incompatibles."
+	}
+}
+
+GameSetupScreen
+{
+	Start = "LANCER LA PARTIE"
+	StartTip = "Démarre la partie!"
+	CantStartTip = "Tous les joueurs doivent ajouter au moins un vaisseau à leur flotte puis cliquer sur \"PRÊT\" avant que la partie ne puisse commencer."
+	Ready = "PRÊT"
+	ReadyTip = "Faites savoir aux autres joueurs que vous êtes prêt pour démarrer la partie. La partie ne peut pas démarrer tant que tous les joueurs ne sont pas prêts."
+	CantReadyTip = "Vous devez garder au moins un vaisseau dans votre flotte."
+	CancelReady = "PAS PRÊT"
+	CancelReadyTip = "Empêche la partie de démarrer tant que vous ne cliquez pas de nouveau sur \"PRÊT\"."
+	CancelGame = "◀ Annuler la partie"
+	LeaveGame = "◀ Quitter la partie"
+	ChangeGameName = "Changer de pseudo"
+	ChangeGameNameMsg = "Entrez le nouveau nom de cette partie:"
+	TeamFmt = "Équipe {0}"
+	JoinTeam = "Rejoindre l'équipe"
+	PlayerJoined = "{0} a rejoint la partie."
+	PlayerLeft = "{0} a quitté la partie."
+	KickPlayer = "Expulser le joueur"
+	RenamePlayer = "Changer de pseudo"
+	RenamePlayerMsg = "Entrez votre nouveau pseudo:"
+	PlayerIsHost = "<good>HÔTE</good>"
+	PlayerIsReady = "<good>PRÊT</good>"
+	PlayerIsNotReady = "<bad>PAS PRÊT</bad>"
+	PlayerYouFmt = "{0} <color r='255' g='255' b='255' a='127'>(Vous)</color>"
+	AddShip = "+"
+	AddShipTip = "Ajouter un vaisseau à votre flotte."
+	RemoveShip = "X"
+	RemoveShipTip = "Retirer ce vaisseau de votre flotte."
+	InvalidShip = "Ce vaisseau a un design invalide ou illégal selon les réglages actuels de la partie."
+	MaxPlayers = "Joueurs max"
+	MaxPlayersTip = "Le nombre maximum de joueurs pouvant rejoindre cette partie, l'hôte y compris."
+	GameSpeed = "Vitesse du jeu"
+	GameSpeedTip = "La vitesse à laquelle la bataille se déroulera. Ne peut plus être modifié une fois la partie lancée."
+	MaxShips = "Vaisseaux par joueur"
+	MaxShipsTip = "Le nombre maximum de vaisseaux que chaque joueur peut avoir dans sa flotte."
+	TeamFunds = "Crédits par équipe"
+	TeamFundsTip = "Le nombre total de crédits (₡) que chaque équipe a à dépenser pour sa flotte entière, répartis équitablement entre tous les joueurs de l'équipe."
+	ShipPreviewMode = "Prévisualiser les vaisseaux"
+	ShipPreviewModeTip = "Détermine si les joueurs peuvent voir les vaisseaux que les autres joueurs ont choisi avant le dé but de la partie."
+	FleetDistance = "Distance entre les équipes"
+	FleetDistanceTip = "La distance entre les flottes de chaque équipe au début de la partie."
+	PerimeterDistance = "Périmètre mortel"
+	PerimeterDistanceTip = "Le rayon du cercle en dehors duquel les vaisseaux seront rapidement endommagés."
+	InitToMax = "Démarrer les vaisseaux avec énergie et munitions pleines"
+	InitToMaxTip = "Si cette case est cochée, les vaisseaux démarreront avec tous leurs systèmes pleins en énergie et en munitions, prêts à combattre. Sinon, les vaisseaux devront produire et charger des munitions et de l'énergie au début du combat."
+	FogOfWar = "Brouillard de guerre"
+	FogOfWarTip = "Si oui ou non les vaisseaux ont un champ de vision limité en dehors duquel les vaisseaux ennemis ne peuvent pas être vus."
+	LockTeams = "Verrouiller les équipes"
+	LockTeamsTip = "Si Si cette case est cochée, les joueurs ne pourront pas choisir leur équipe. L'hôte pourra toujours assigner une équipe n'importe quel joueur."
+	AllowIllegalShips = "Autoriser les vaisseaux illégaux"
+	AllowIllegalShipsTip = "Si Si cette case est cochée, les joueurs pourront utiliser des designs de vaisseaux qui autrement seraient illégaux."
+	FundsRemainingFmt = "<money>{0:n0}₡</money>"
+	InsFundsRemainingFmt = "<ins_money>{0:n0}₡</ins_money>"
+	FundsRemainingTip = "Montant de crédits (₡) restants que ce joueur peut dépenser."
+	PlayersFmt = "{0}/{1} joueurs"
+	TimeLimit = "Limite de temps"
+	TimeLimitTip = "Durée maximum de la partie avant que l'équipe ayant le plus de forces restantes soit déclarée vainqueur."
+	TimeLimitFmt = "{0} minutes"
+	TimeLimitNone = "Aucune"
+	VictoryCondition = "Condition de victoire"
+	VictoryConditionTip = "Détermine à quelle condition l'une des équipes est déclarée vainqueure."
+	DestructionGoalFmt = "{0}% Destruction"
+	DestructionGoalNone = "Aucune"
+	PortForwardingSuccessFmt = "Redirection de port configurée avec succès pour le port UDP {0}. Les joueurs en dehors de votre réseau local devraient pouvoir rejoindre votre partie "\
+	                           "en utilisant votre adresse I.P. publique."
+	PortForwardingFailureFmt = "Impossible de configurer automatiquement la redirection de port pour le port UDP {0}. Vous devrez peut-être configurer manuellement la redirection de port "\
+	                           "pour que les joueurs hors de votre réseau local puissent rejoindre votre partie."
+	PublicIPFmt = "Votre adresse I.P. publique est {0}. Elle a été copiée automatiquement dans votre presse-papier. (Attention: partager votre adresse I.P. publique avec des inconnus peut potentiellement vous exposer à des hacks, des attaques de \"déni de service\", et d'autres risques.)"
+
+	ServerDisconnectReason
+	{
+		Canceled = "L'hôte a annulé la partie."
+		Kicked = "L'hôte vous a expulsé de la partie."
+		ConnectionLost = "Connexion avec l'hôte perdue."
+	}
+
+	FleetDistances
+	{
+		ShortFmt = "Courte ({0} mètres)"
+		NormalFmt = "Normale ({0} mètres)"
+		LongFmt = "Longue ({0} mètres)"
+	}
+
+	PerimeterDistances
+	{
+		NearFmt = "Proche ({0} mètres)"
+		NormalFmt = "Normal ({0} mètres)"
+		FarFmt = "Distante ({0} mètres)"
+		None = "Aucune"
+	}
+
+	ShipPreviewModes
+	{
+		Off = "Désactivé"
+		Team = "Même équipe seulement"
+		All = "Tous"
+	}
+}
+
+GameLaunchFlow
+{
+	ServerInitializing = "Lancement de la partie...\n(Initializing)"
+	ServerSending = "Lancement de la partie...\n(Sending data)"
+	ServerWaiting = "Lancement de la partie...\n(Waiting for other players)"
+	ServerStarting = "Démarrage de la partie!"
+	ClientReceiving = "Lancement de la partie...\n(Receiving data)"
+	ClientInitializing = &ServerInitializing
+	ClientWaiting = &ServerWaiting
+	ClientStarting = &ServerStarting
+}
+
+ChatBox
+{
+	Send = "Envoyer"
+}
+
+Multiplayer
+{
+	DefaultPlayerName = "Joueur sans nom"
+	DefaultGameName = "Partie  sans nom"
+	DefaultGameNameFmt = "Partie de {0}"
+	ShuttingDown = "Veuillez patienter..."
+	TieGame = "ENNUYANT!"
+	Victory = "VICTOIRE!"
+	Defeat = "DÉFAITE!"
+	ExitGame = "Quitter la partie"
+	TimeRemainingTip = "Temps restant avant que la partie se termine et que l'équipe avec le plus de force restantes soit déclarée vainqueur."
+	TeamStrengthTipFmt = "Force restante de l'équipe {0}. Ils seront vaincus une fois cette barre vide."
+	TeamFmt = "Équipe {0}"
+	PlayerLeft = "{0} a quitté la partie."
+	NextGameCountdownFmt = "La prochaine partie commence dans {0} secondes..."
+	AddressAlreadyInUseFmt = "Un autre programme utilise déjà le port UDP {0} et doit être fermé avant que vous puissiez jouer en multijoueur."
+
+	GameEndReason
+	{
+		Deliberate = "L'hôte a mis fin à la partie."
+		ConnectionLost = "Connexion perdue"
+		OutOfSync = "Partie désynchronisée!"
+	}
+}
+
+LoadSaveGame
+{
+	TitleLoad = "Charger partie"
+	TitleSave = "Sauvegarder partie"
+	OkayLoad = "Charger"
+	OkaySave = "Sauvegarder"
+	OpenFolder = "Ouvrir dossier"
+	Delete = "Supprimer"
+	ConfirmDeleteFmt = "Êtes-vous sûr de vouloir supprimer '{0}'?"
+	ConfirmOverwrite = "Écraser la sauvegarde existante?"
+	
+	Manual = "Sauvegardes Manuelles"
+	Auto = "Sauvegardes Automatiques"
+	Quick = "Sauvegardes Rapides"
+}
+
+ShipLibrary
+{
+	TitleLoad = "Charger vaisseau"
+	TitleSave = "Sauvegarder vaisseau"
+	TitleBuy = "Acheter vaisseau"
+	TitlePlaytest = "Galerie de vaisseaux"
+	TitleOrganize = "Galerie de vaisseaux"
+
+	SmallIcons = "Petites icônes"
+	LargeIcons = "Grandes icônes"
+
+	OkayLoad = "Charger vaisseau"
+	OkaySave = "Sauvegarder vaisseau"
+	OkayBuy = "Acheter"
+	OkayPlaytest = "Tester"
+	CrewCountFmt = "{0} membres d'équipage"
+	ConfirmOverwrite = "Écraser le vaisseau existant?"
+
+	RenameShip = "Renommer"
+	RenameShipMsg = "Entrez un nouveau nom pour ce vaisseau:"
+	DeleteShip = "Supprimer"
+	ConfirmDeleteShipFmt = "Êtes-vous sûr de vouloir supprimer '{0}'?"
+
+	NewFolder = "Nouveau dossier"
+	NewFolderMsg = "Entrez un nom pour le dossier:"
+	RenameFolder = "Renommer dossier"
+	RenameFolderMsg = "Entrez un nouveau nom pour le dossier:"
+	DeleteFolder = "Supprimer dossier"
+	DeleteFolderFmt = "Êtes-vous sûr de vouloir supprimer: <b>{0}</b>?"
+	OpenFolder = "Ouvrir le dossier"
+
+	Organize = "Trier"
+
+	ImportError = "Il y a eu une erreur lors du chargement de ce vaisseau: {0}"
+	ImportCustomName = "Veuillez entrez un nom pour ce vaisseau:"
+
+	SortTip = "Détermine l'ordre dans lequel les vaisseaux sont triés."
+	SearchTip = "Filtrez les vaisseaux ci-dessous pour montrer seulement ceux dont le nom correspond au texte que vous tapez ici."
+
+	SortMode
+	{
+		Name = "Trier par: Nom"
+		NameTip = "Trie les vaisseaux dans l'ordre alphabétique par nom."
+		CostLow = "Trier par: Prix (Ascendant)"
+		CostLowTip = "Trie les vaisseaux du moins cher au plus cher."
+		CostHigh = "Trier par: Prix (Descendant)"
+		CostHighTip = "Trie les vaisseaux du plus cher au moins cher."
+		CrewLeast = "Trier par: Membres d'équipage (Ascendant)"
+		CrewLeastTip = "Trie les vaisseaux du moins peuplé au plus peuplé."
+		CrewMost = "Trier par: Membres d'équipage (Descendant)"
+		CrewMostTip = "Trie les vaisseaux du plus peuplé au moins peuplé."
+		Newest = "Trier par: Nouveauté"
+		NewestTip = "Trie les vaisseaux du plus récemment modifié au plus anciennement modifié."
+		Oldest = "Trier par: Ancienneté"
+		OldestTip = "Trie les vaisseaux du plus anciennement modifié au plus récemment modifié."
+	}
+}
+
+Inputs
+{
+	PressKeyOrClick = "Appuyez sur la touche que vous souhaitez utiliser ou cliquez ici:"
+	Clear = "Effacer"
+	Default = "Par Défaut"
+	Defaults = "Par Défaut"
+	None = "Aucun"
+
+	General
+	{
+		Name = "Général"
+		UIClick = "U.I. Clic"
+		UIAltClick = "U.I. Clic alternatif"
+		UIFocusClick = "U.I. Clic focalisé"
+		Confirm = "Ok / Accepter / Confirmer"
+		Cancel = "Annuler / Retour / Menu"
+		SuppressConfirmation = "Confirmer la suppression"
+		ToggleFullscreen = "Plein écran"
+		TakeScreenshot = "Prendre une capture d'écran"
+		SubmitFeedback = "Envoyer un avis / Rapporter un bug"
+		EmulateRightClick = "Simuler un clic droit"
+		RestartApp = "Redémarrer l'application"
+	}
+
+	Game
+	{
+		Name = "Jeu"
+		Selection = "Sélectionner un vaisseau/une partie"
+		SelectParts = "Sélectionner une partie"
+		AppendSelection = "Ajouter une sélection"
+		ShowCommandWidgets = "Afficher les commandes"
+		WorldRelativeAttackAngle = "Utiliser des angles d'attaque et de poursuite relatifs à la grille d'arrière-plan"
+		Command = "Contrôler vaisseau/module"
+		UseTool = "Utiliser l'outil"
+		CancelTool = "Annuler l'outil"
+		CancelWeaponTargets = "Annuler le ciblage des canons"
+		ToggleMap = "Afficher/cacher la carte de la galaxie"
+		DoFtlJump = "Enclencher l'hyperpropulsion"
+		CancelFtlJump = "Annuler l'hyperpropulsion"
+		ToggleUI = "Afficher ou cacher l'I.U."
+		Save = "Sauvegarder partie"
+		Load = "Charger partie"
+		QuickSave = "Sauvegarde rapide"
+		QuickLoad = "Chargement rapide"
+		PauseToggle = "Pause"
+		IncreaseSpeed = "Augmenter la vitesse"
+		DecreaseSpeed = "Diminuer la vitesse"
+		SelectAllShips = "Sélectionner tous les vaisseaux"
+		SelectAllParts = "Sélectionner tous les modules"
+		Chat = "Discussion"
+	}
+
+	PartToggles
+	{
+		on_off = "Allumer/Éteindre ce module"
+		fire_mode = "Mode de tir"
+	}
+
+	View
+	{
+		Name = "Voir les contrôles"
+		PanLeft = "Déplacement vers la gauche"
+		PanRight = "Déplacement vers la droite"
+		PanUp = "Déplacement vers le haut"
+		PanDown = "Déplacement vers le bas"
+		DragFocus = "Déplacer/Centrer la vue"
+		ZoomIn = "Zoom avant"
+		ZoomOut = "Zoom arrière"
+		RotateRight = "Rotation vers la droite"
+		RotateLeft = "Rotation vers la gauche"
+		ResetRotation = "Réinitialiser la rotation"
+		FocusCursorMode = "Mode vue centrée sur curseur"
+		FocusSelected = "Centrer sur le vaisseau/la partie sélectionné"
+		RotationFocusSelected = "Centrer et verrouiller la rotation"
+		FocusTargets = "Centrer l'ennemi ciblé"
+		RotationFocusTargets = "Centrer l'ennemi et verrouiller la rotation"
+		ToggleInteriors = "Afficher/cacher l'intérieur des vaisseaux"
+		ViewMinimap = "Voir la mini-carte"
+	}
+
+	Design
+	{
+		Name = "Designer de vaisseaux"
+		BuildOpen = "Ouvrir le menu de construction"
+		BuildClose = "Fermer le menu de construction"
+		ToggleBlueprints = "Outil plans"
+		PaintOpenClose = "Ouvrir/fermer le panneau de peinture"
+		Construct = "Appliquer les modifications"
+		EraseTool = "Outil de suppression"
+		GrabTool = "Outil de déplacement"
+		SelectionTool = "Outil de sélection"
+		ToggleMirrorMode = "Activer/Désactiver le mode miroir"
+		SelectAll = "Sélectionner tous les modules/vignettes"
+		Delete = "Supprimer tous les modules/vignettes"
+		DeleteDoors = "Supprimer les portes"
+		NoAutoDoors = "Ne pas ajouter de portes automatiquement"
+		CopySelected = "Copier la sélection"
+		CutSelected = "Couper la sélection"
+		Paste = "Coller la sélection"
+		EraseCursorMode = "Mode de suppression"
+		FillPartsMode = "Mode de remplissage"
+		ImportPng = "Importer un .PNG"
+		RotateLeft = "Pivoter vers la gauche"
+		RotateRight = "Pivoter vers la droite"
+		FlipX = "Retourner horizontalement."
+		FlipY = "Retourner verticalement."
+		Undo = "Annuler"
+		Redo = "Rétablir"
+	}
+
+	Parts
+	{
+		Name = "Designer de vaisseau (Modules)"
+	}
+
+	Repair
+	{
+		Name = "Réparations"
+		OpenClose = "Ouvrir/fermer le menu des réparations"
+		RepairAll = "Tout réparer"
+		SuppressRepair = "Ne pas réparer (construire à la place)"
+	}
+
+	Crew
+	{
+		Name = "Équipage"
+		OpenClose = "Ouvrir/fermer le menu d'équipage"
+		FiveAtATime = "Recruter/Virer 5 à la fois"
+	}
+
+	CreativeMode
+	{
+		Name = "Mode créatif"
+		DeleteShip = "Supprimer les vaisseaux sélectionnés"
+		RandomizeAsteroid = "Astéroïdes aléatoires"
+		PlayAsAllPlayers = "Incarner: tous les joueurs"
+		PlayAsFmt = "Incarner: joueur {0}"
+		ShipLibrary = "Galerie de vaisseaux"
+		SpawnNotReady = "Créer sans Munitions/Énergie"
+		AutoBattleCamera = "Activer/Désactiver la caméra de bataille automatique"
+	}
+	
+    Formations
+	{
+		Name = "Formations"
+		MakeFormationFmt = "Utiliser la formation {0}"
+	}
+	
+	ControlGroups
+	{
+		Name = "Contrôle des groupes"
+		SelectShipGroupFmt = "Sélectionner le groupe de vaisseaux {0}"
+		CreateShipGroupFmt = "Créer le groupe de vaisseaux {0}"
+		SelectPartGroupFmt = "Sélectionner le groupe de modules {0}"
+		CreatePartGroupFmt = "Créer le groupe de modules {0}"
+	}
+
+	MouseButtonNames
+	{
+		Left = "Clic gauche"
+		Middle = "Clic central"
+		Right = "Clic droit"
+		Button4 = "Touche 4"
+		Button5 = "Touche 5"
+	}
+
+	KeyNames
+	{
+		D0 = "0"
+		D1 = "1"
+		D2 = "2"
+		D3 = "3"
+		D4 = "4"
+		D5 = "5"
+		D6 = "6"
+		D7 = "7"
+		D8 = "8"
+		D9 = "9"
+		A = "A"
+		B = "B"
+		C = "C"
+		D = "D"
+		E = "E"
+		F = "F"
+		G = "G"
+		H = "H"
+		I = "I"
+		J = "J"
+		K = "K"
+		L = "L"
+		M = "M"
+		N = "N"
+		O = "O"
+		P = "P"
+		Q = "Q"
+		R = "R"
+		S = "S"
+		T = "T"
+		U = "U"
+		V = "V"
+		W = "W"
+		X = "X"
+		Y = "Y"
+		Z = "Z"
+		Quote = "Guillemet"
+		Backspace = "Retour"
+		BackslashPipe = "Barre oblique"
+		CapsLock = "Verr.Maj"
+		Colon = "Colon"
+		CommaLesser = "Comma"
+		Delete = "Effacer";
+		DownArrow = "Flèche du bas"
+		End = "Fin"
+		PlusEquals = "Plus"
+		Escape = "Escape"
+		F1 = "F1"
+		F2 = "F2"
+		F3 = "F3"
+		F4 = "F4"
+		F5 = "F5"
+		F6 = "F6"
+		F7 = "F7"
+		F8 = "F8"
+		F9 = "F9"
+		F10 = "F10"
+		F11 = "F11"
+		F12 = "F12"
+		F13 = "F13"
+		F14 = "F14"
+		F15 = "F15"
+		TildeBacktick = "Tilde"
+		Home = "Home"
+		Insert = "Insert"
+		LeftBracket = "Left Bracket"
+		Control = "Ctrl"
+		LeftArrow = "Flèche de gauche"
+		Alt = "Alt"
+		Shift = "Shift"
+		MinusUnderscore = "Minus"
+		NumLock = "Num Lock"
+		NumPad0 = "Num Pad 0"
+		NumPad1 = "Num Pad 1"
+		NumPad2 = "Num Pad 2"
+		NumPad3 = "Num Pad 3"
+		NumPad4 = "Num Pad 4"
+		NumPad5 = "Num Pad 5"
+		NumPad6 = "Num Pad 6"
+		NumPad7 = "Num Pad 7"
+		NumPad8 = "Num Pad 8"
+		NumPad9 = "Num Pad 9"
+		NumPadMinus = "Num Pad Minus"
+		NumPadPeriod = "Num Pad Dot"
+		NumPadPlus = "Num Pad Plus"
+		NumPadSlash = "Num Pad Slash"
+		NumPadStar = "Num Pad Star"
+		PageDown = "Page Down"
+		PageUp = "Page Up"
+		Pause = "Pause"
+		PeriodGreater = "Period"
+		RightBracket = "Right Bracket"
+		Enter = "Entrer"
+		RightArrow = "Flèche de droite"
+		ScrollLock = "Scroll Lock"
+		SlashQuestion = "Slash"
+		Space = "Espace"
+		PrintScreen = "Print Screen"
+		Tab = "Tab"
+		UpArrow = "Flèche du haut"
+		Command = "Commande"
+		Apps = "Apps"
+		PlatformCmdCtrl = "<PlatformCmdCtrl/>"
+	}
+}
+
+Settings
+{
+    Graphics
+	{
+		TabName = "Graphismes"
+		
+	    WindowMode = "Type de fenêtre"
+	    WindowModeTip = "Le style de la fenêtre utilisée pour afficher le jeu."
+	    ExclusiveFullScreen = "Plein écran exclusif"
+	    ExclusiveFullScreenTip = "Le jeu utilisera tout l'écran et vous permettra de choisir la résolution d'affichage. "\
+	                             "Ce mode peut être nécessaire pour utiliser des fonctionnalités avancées du GPU comme G-SYNC et FreeSync."
+	    ResizableWindow = "Fenêtre réajustable"
+	    ResizableWindowTip = "Le jeu tournera dans une fenêtre sur votre bureau. Vous pourrez bouger et redimensionner la fenêtre librement."
+	    BorderlessFullScreen = "Plein écran sans bordures"
+	    BorderlessFullScreenTip = "Le jeu va utiliser tout votre écran et s'adapter à la résolution de votre bureau. "\
+	                              "Utilisez ce mode si le plein écran cause des problèmes ou si vous voulez être capable de changer d'application rapidement."
+
+	    Monitor = "Écran"
+	    MonitorTip = "Le moniteur sur lequel le jeu sera affiché en mode Plein écran ou Plein écran sans bordures."
+
+	    Resolution = "Résolution"
+	    ResolutionTip = "Résolution du jeu en mode Plein écran."
+	    ResolutionFmt = "{0} x {1}"
+
+	    RefreshRate = "Fréquence de rafraîchissement"
+	    RefreshRateTip = "Le nombre d'images que le moniteur affichera chaque seconde."
+	    RefreshRateFmt = "{0} hz"
+
+	    VSync = "Synchronisation verticale"
+	    VSyncTip = "Synchronise le jeu avec la fréquence de rafraîchissement de votre écran, ce qui élimine l'effet de déchirure mais augmente la latence d'entrée."
+	    VSyncOff = "Désactivée"
+	    VSyncOffTip = "Le jeu ne va pas être synchronisé avec la fréquence de rafraîchissement de votre écran. Il va tourner avec le maximum de fps possible et le minimum de latence d'entrée."
+	    VSyncOn = "Activée"
+	    VSyncOnTip = "Le jeu sera synchronisé avec la fréquence de rafraichissement de votre écran. "\
+	                 "Ceci va éliminer l'effet de déchirure mais va limiter votre fréquence d'affichage à celle de votre écran et peut augmenter la latence d'entrée."
+	    VSyncTriBuf = "Activée (Triple-Buffered)"
+	    VSyncTriBufTip = "Cette variante de la synchronisation verticale peut améliorer votre fréquence d'affichage mais peut aussi augmenter la latence d'entrée."
+
+	    HighDpi = "Affichage haute résolution"
+	    HighDpiTip = "Si cette option est cochée, l'interface utilisateur et le jeu seront affichés au double de l'échelle normale. Cela peut être utile lorsque vous jouez sur des écrans haute résolution."
+		HighDpiDisabledTip = "La taille actuelle de la fenêtre ou la résolution de l'écran n'est pas assez grande pour supporter High D.P.I. Mode."
+		
+	    LimitFps = "Limiter le taux rafraîchissement"
+	    LimitFpsTip = "Si cette option est cochée, le jeu ne fonctionnera pas plus rapidement qu'un taux de rafraîchissement particulier."
+	    LimitFpsNumber = "Images par seconde"
+	    LimitFpsNumberTip = "Indique le nombre maximum d'images à afficher par seconde."
+		
+		AnimateBackgrounds = "Arrière-plan animé"
+		AnimateBackgroundsTip = "Si activé, les arrière-plans du jeu seront animés. Désactiver cette option peut améliorer considérablement les performances."
+		
+		FancyParticles = "Particules Fantaisie"
+		FancyParticlesTip = "Si activé, des effets de particules supplémentaires seront affichés. Désactiver cette option peut améliorer les performances."
+		
+		ScreenShake = "Tremblement d'écran"
+		ScreenShakeTip = "Si cette case est cochée, certains événements dans le jeu tels que des explosions provoqueront un tremblement de l'écran."
+	}
+	
+	Audio
+	{
+		TabName = "Audio"
+
+	    MasterVol = "Vol. Maître"
+	    MasterVolTip = "Contrôle le volume général de tous les sons du jeu et de la musique."
+
+	    EffectsVol = "Vol. Effets"
+	    EffectsVolTip = "Contrôle le volume de tous les effets sonores."
+
+		InterfaceVol = "Vol. Interface"
+	    InterfaceVolTip = "Contrôle le volume des sons de l'interface."
+	}
+	
+	Gameplay
+	{
+		TabName = "Gameplay"
+
+	    AutoFtlJump = "Enclencher automatiquement l'hyperpropulsion"
+	    AutoFtlJumpTip = "Si cette option est cochée, l'hyperpropulsion sera enclenchée automatiquement dès que tous les vaisseaux sont prêts à sauter."
+
+		OnShipIndicators = "Afficher les indicateurs d'état du vaisseau"
+	    OnShipIndicatorsTip = "Si cette option est cochée, affiche des indicateurs lorsqu'il n'y a plus de membres d'équipage, de munitions ou d'énergie."
+
+		PartToolTips = "Afficher les bulles d'aide des modules"
+	    PartToolTipsTip = "Si cette option est cochée, les informations s'affichent après avoir laissé brièvement le curseur de la souris sur un module d'un navire."
+
+		AllowShipDeselection = "Autoriser la désélection de vaisseau"
+	    AllowShipDeselectionTip = "Si cette option est cochée, un clic gauche sur un endroit vide désélectionnera tout vaisseau actuellement sélectionné."
+
+	    CtrlSelectsParts = "Forcer <btn id='Game.SelectParts' xml='false'/> pour sélectionner des modules"
+		CtrlSelectsPartsTip = "Si cette option est cochée, la touche <btn id='Game.SelectParts'/> doit être maintenue en cliquant sur des modules pour pouvoir les sélectionner."
+
+	    AlwaysShowCommandWidgets = "Toujours afficher les outils de repositionnement"
+	    AlwaysShowCommandWidgetsTip = "Si cette option est cochée, vous ne devrez pas maintenir la touche <btn id='Game.AppendSelection'/> pour afficher les outils de repositionnement."
+
+	    PreferWorldRelativeAttackAngle = "Préférer les angles d'attaque relatifs à la grille"
+	    PreferWorldRelativeAttackAngleTip = "Si cette option est cochée, cliquer droit et glisser sur un vaisseau ennemi utilisera un angle d'attaque relatif à la grille en arrière-plan plutôt qu'au vaisseau ennemi. Maintenez <btn id='Game.WorldRelativeAttackAngle'/> pour utiliser l'autre mode."
+
+		PreferWorldRelativeFollowAngle = "Préférer les angles de suivi relatifs à la grille"
+		PreferWorldRelativeFollowAngleTip = "Si cette option est cochée, cliquer droit et glisser sur un vaisseau allié utilisera un angle de suivi relatid à la grille en arrière-plan plutôt qu'au vaisseau allié. Maintenez <btn id = 'Game.WorldRelativeAttackAngle' /> pour utiliser l'autre mode."
+
+		AdHocFormations = "Formations automatiques de vaisseaux"
+		AdHocFormationsTip = "Si cette option est cochée, les vaisseaux seront automatiquement regroupés dans une formation ad hoc lorsque vous donnez un ordre à plusieurs vaisseaux à la fois."
+	}
+	
+	Camera
+		{
+		TabName = "Caméra"
+
+	    EdgePan = "Déplacement latéral"
+	    EdgePanTip = "Définit si la caméra peut être déplacée en positionnant le curseur de la souris sur le bord de l'écran."
+	    EdgePanNone = "Désactivé"
+	    EdgePanNoneTip = "La caméra ne se déplace pas lorsque le curseur de la souris est sur le bord de l'écran. Il est toujours possible d'utiliser les touches fléchées ou le bouton central de la souris."
+	    EdgePanAnalog = "Analogique"
+	    EdgePanAnalogTip = "Lorsque vous déplacez le curseur de la souris sur le bord de l'écran, la vue se déplacera dans la direction exacte tirée du centre de l'écran vers le curseur de la souris."
+	    EdgePanEightWay = "Huit directions"
+	    EdgePanEightWayTip = "Quand vous bougez le curseur au bord de l'écran, la caméra va se déplacer uniquement dans une des 8 directions possibles. "\
+	                         "La direction dépend de quel bord ou coin votre curseur touche."
+
+	    EdgePanSpeed = "Vitesse de déplacement latéral"
+	    EdgePanSpeedTip = "Contrôle la vitesse de déplacement lorsque le curseur de la souris est sur le bord de l'écran."
+
+	    KeyPanSpeed = "Vitesse de déplacement clavier"
+	    KeyPanSpeedTip = "Contrôle la vitesse de déplacement lorsque les touches flèchées sont utilisées."
+
+	    KeyZoomSpeed = "Vitesse du zoom clavier"
+	    KeyZoomSpeedTip = "Contrôle la vitesse à laquelle la vue va zoomer en avant et en arrière lorsque vous utilisez les touches +/-."
+
+	    KeyRotSpeed = "Vitesse de rotation clavier"
+	    KeyRotSpeedTip = "Contrôle la vitesse de rotation lorsque vous utilisez les touches [ et ]."
+
+	    EnableMouseWheelZoom = "Zoom Molette"
+		EnableMouseWheelZoomTip = "Si cette option est cochée, vous pourrez zoomer en avant et en arrière en utilisant la molette de la souris."
+
+	    WheelZoomSpeed = "Vitesse du zoom molette"
+	    WheelZoomSpeedTip = "Contrôle la vitesse à laquelle la vue va zoomer en avant et en arrière en utilisant la molette de la souris."
+
+	    InvertWheelZoom = "Inverser zoom molette"
+	    InvertWheelZoomTip = "Si cette option est cochée, la direction du zoom à l'aide de la molette de la souris sera inversée."
+
+	    WheelZoomAtCursor = "Zoom sur le curseur (molette)"
+	    WheelZoomAtCursorTip = "Si cette option est cochée, lorsque vous effectuez un zoom à l'aide de la molette, l'écran zoomera sur le curseur. "\
+	                           "Si cette option n'est pas cochée, lorsque vous effectuez un zoom à l'aide de la molette, l'écran zoomera en son centre."
+
+	    StickyFocus = "Centrage permanent des vaisseaux"
+	    StickyFocusTip = "Lorsque vous mettez votre vue sur un vaisseau, la vue va se \"coller\" au vaisseau. "\
+	                     "La vue se \"décollera\" une fois que le centre de la vue aura bougé en dehors du cercle du vaisseau."
+
+		MiniviewLbl = "Incrustation d'image"
+
+		MiniviewCombatModeLbl = "En Combat"
+		MiniviewCombatModeLblTip = "Choisissez si et quand l'incrustation d'image s'affiche pendant le combat."
+		MiniviewNonCombatModeLbl = "Hors Combat"
+		MiniviewNonCombatModeLblTip = "Choisissez si et quand l'incrustation d'image s'affiche hors combat."
+		MiniviewLockRotation = "Verrouiller la rotation du vaisseau"
+		MiniviewLockRotationTip = "Si cette option est cochée, l'incrustation d'image pivote pour s'aligner au vaisseau affiché."
+		MiniviewCombatMode
+        {
+			DontShow = "Ne pas montrer"
+			DontShowTip = "Durant un combat, l'incrustation d'image ne sera pas affichée."
+		    ShowPlayer = "Voir le vaisseau du joueur"
+		    ShowPlayerTip = "Durant un combat, affiche toujours le vaisseaux du joueur."
+		    ShowEnemy = "Voir le vaisseau ennemi"
+		    ShowEnemyTip = "En cas de combat, affiche toujours les vaisseaux ennemis."
+		    Auto = "Auto"
+		    AutoTip = "Durant un combat, affiche le vaisseau qui n'est pas visible à l'écran."
+	    }
+	    MiniviewNonCombatMode
+	    {
+		    DontShow = "Ne pas montrer"
+		    DontShowTip = "Hors combat, l'incrustation d'image ne sera pas affichée."
+		    ShowPlayer = "Montrer le vaisseau du joueur"
+		    ShowPlayerTip = "Hors combat, affiche toujours le vaisseau du joueur."
+		    Auto = "Auto"
+		    AutoTip = "Hors combat, affiche le vaisseau du joueur s'il n'est pas visible à l'écran."
+	    }
+	}
+	
+	Designer
+	{
+		TabName = "Designer de vaisseaux"
+
+	    BuildAutoFocus = "Centrer automatiquement la vue sur le vaisseau"
+	    BuildAutoFocusTip = "Si cette option est cochée, l'ouverture du panneau de construction centrera automatiquement la vue sur le vaisseau sélectionné."
+
+	    BuildAutoRotate = "Aligner automatiquement au vaisseau"
+	    BuildAutoRotateTip = "Si cette option est cochée, l'ouverture du panneau de construction fera pivoter automatiquement la vue pour l'aligner au vaisseau sélectionné."
+
+	    BuildAutoInterior = "Vue intérieur automatique"
+	    BuildAutoInteriorTip = "Si cette option est cochée, l'ouverture du panneau de construction fera automatiquement apparaître l'intérieur du vaisseau."
+
+	    BuildAllowOverwrite = "Écraser les modules existantes"
+	    BuildAllowOverwriteTip = "Si cette option est cochée, essayer d'ajouter un module à un vaisseau remplacera les modules existants."
+
+	    GrabLeavesCorridors = "Déplacer laisse des couloirs"
+	    GrabLeavesCorridorsTip = "Lorsqu'un module est \"déplacé\" à l'aide de l'Outil Déplacement, des cases de couloir seront laissées à sa place."
+
+		BuildAutoDoors = "Ajouter des portes automatiquement"
+	    BuildAutoDoorsTip = "Si cette option est cochée, des portes seront automatiquelent créées lorsque vous ajoutez un module à un vaisseau."
+	 
+		BuildEnforceCrewAccess = "Forcer l'accès de l'équipage"
+		BuildEnforceCrewAccessTip = "Si cette option est cochée, vous ne pourrez pas ajouter de modules à un endroit auquel votre équipage n'a pas accès. "\
+		                            "Ce réglage est sans effet si <b>Ajout automatique de portes</b> est désactivé ou lorsque vous modifiez les plans d'un vaisseau."
+
+	    AutoHireCrew = "Recrutement automatique"
+	    AutoHireCrewTip = "Si cette option est cochée, construire ou réparer un module qui pourvoit des lits pour l'équipage recrutera automatiquement ces membres d'équipage."
+
+	    BlueprintAutoPause = "Pause automatique lors du mode plan"
+	    BlueprintAutoPauseTip = "Si cette option est cochée, l'ouverture du menu des plans mettra le jeu en pause automatiquement."
+
+	    DefaultBuildTool = "Outil par défaut"
+	    DefaultBuildToolTip = "L'outil à sélectionner par défaut lors de l'ouverture du panneau de construction."
+	    BuildGrabTool = "Outil de déplacement"
+	    BuildGrabToolTip = "\"L'Outil de déplacement\" sera l'outil par défaut lors de l'ouverture du panneau de construction."
+	    BuildSelectTool = "Outil de sélection"
+	    BuildSelectToolTip = "\"L'Outil de sélection\" sera l'outil par défaut lors de l'ouverture du panneau de construction."
+	} 
+	
+	Painter
+	{
+		TabName = "Éditeur de peintures"
+
+	    PaintAutoFocus = "Centrer le vaisseau automatiquement"
+	    PaintAutoFocusTip = "Si cette option est cochée, l'ouverture du panneau de peinture centrera automatiquement la vue sur le vaisseau sélectionné."
+
+	    PaintAutoRotate = "Aligner la rotation au vaisseau automatiquement."
+	    PaintAutoRotateTip = "Si cette option est cochée, l'ouverture du panneau de peinture alignera automatiquement la vue au vaisseau sélectionné."
+
+	    PaintAllowOverwrite = "Écraser les vignettes existantes"
+	    PaintAllowOverwriteTip = "Si cette option est cochée, essayer d'ajouter une vignette à un vaisseau à un endroit où une autre vignette est déjà placée écradera la vignette existante."
+
+		DefaultPaintTool = "Outil par défaut"
+		DefaultPaintToolTip = "L'outil à sélectionner par défaut lorsque l'un des onglets 'Vignettes' du panneau de peinture est ouvert."
+		PaintGrabTool = "Outil de déplacement"
+		PaintGrabToolTip = "L' \"Outil de déplacement\" sera sélectionné par défaut à l'ouverture du panneau de peintures."
+		PaintSelectTool = "Outil de sélection"
+		PaintSelectToolTip = "L' \"Outil de sélection\" sera sélectionné par défaut à l'ouverture du panneau de peintures."
+	}
+	
+	Repairs
+	{
+		TabName = "Réparations de vaisseau"
+
+	    RepairAutoFocus = "Centrer le vaisseau automatiquement"
+	    RepairAutoFocusTip = "Si cette option est cochée, l'ouverture du panneau de réparations centrera automatiquement la vue sur le vaisseau sélectionné."
+
+	    RepairAutoRotate = "Aligner la rotation au vaisseau automatiquement."
+	    RepairAutoRotateTip = "Si cette option est cochée, l'ouverture du panneau de réparations alignera automatiquement la vue au vaisseau sélectionné."
+
+	    RepairAutoDoors = "Reconstruction automatique des portes."
+	    RepairAutoDoorsTip = "Si cette option est cochée, reconstruire un module détruit reconstruira automatiquement les portes connectées."
+	}
+	
+	Saves
+	{
+		TabName = "Parties Sauvegardées"
+
+	    AutoSave = "Sauvegarde automatique"
+	    AutoSaveTip = "Si cette option est cochée, le jeu sauvegardera automatiquement la progression à une certaine fréquence."
+	    AutoSaveEvery = "Toutes les "
+	    AutoSaveEveryMinutes = " minutes"
+	    AutoSaveEveryMinutesTip = "Intervalle en minutes entre deux sauvegardes automatiques."
+
+	    FtlAutoSave = "Sauvegarde automatique avant le saut hyperpropulsé"
+	    FtlAutoSaveTip = "Si cette option est cochée, la progression sera sauvegardée automatiquement avant chaque saut hyperpropulsé."
+
+		AutoSavesToKeep1 = "Conserve les "
+		AutoSavesToKeep2 = " sauvegardes auto les plus récentes."
+		AutoSavesToKeepTip = "Les sauvegardes auto les plus anciennes seront effacées automatiquement afin qu'il n'y en ait pas plus que ce nombre."
+
+		QuickSavesToKeep1 = "Conserve les "
+		QuickSavesToKeep2 = " sauvegardes rapides les plus récentes."
+		QuickSavesToKeepTip = "Les sauvegardes rapides les plus anciennes seront effacées automatiquement afin qu'il n'y en ait pas plus que ce nombre."
+	}
+	
+	Multiplayer
+	{
+		TabName = "Multijoueur"
+
+		ColorMode = "Couleurs des vaisseaux"
+		ColorModeTip = "Couleurs dans lesquelles les vaisseaux apparaîtront dans les parties multijoueur. Ce réglage n'affecte aucun autre joueur dans la partie."
+		RandomPerPlayer = "Aléatoire par joueur"
+		RandomPerPlayerTip = "Les vaisseaux auront des couleurs aléatoires désignant le joueur qui les contrôle."
+		FriendAndFoe = "Amis et ennemis"
+		FriendAndFoeTip = "Les vaisseaux que vous contrôlez seront verts, les vaisseaux des autre joueurs de votre équipe seront jaunes, et les vaisseaux de l'équipe ennemie seront rouges."
+		Original = "Original"
+		OriginalTip = "Les vaisseaux seront colorés tels qu'ils ont été designés."
+
+		AutoPortForwarding = "Redirection de port automatique avec UPnP"
+		AutoPortForwardingTip = "Si cette case est cochée, lorsque vous hébergez une partie multijoueur, Cosmoteer tentera d'utiliser la fonctionnalité \"Universal Plug and Play\" (UPnP) de votre routeur pour rediriger les ports"\
+		                        " nécessaires pour que les joueurs hors de votre réseau local puissent rejoindre votre partie."
+		DisplayPublicIP = "Donnez-moi mon adresse I.P. publique"
+		DisplayPublicIPTip = "Si cette case est cochée, héberger une partie multijoueur fera apparaître l'adresse I.P. publique de votre ordinateur et la copiera dans votre presse-papier."
+	}
+
+	Colors
+	{
+		TabName = "Mode Daltonien"
+
+		Description = "Si vous rencontrez des difficultés pour différencier certaines couleurs, essayez de les changer ici pour les rendre plus faciles à distinguer."
+		Friendly = "Allié"
+		Enemy = "Ennemi"
+		Neutral = "Neutre"
+		Reset = "Par défaut"
+	}
+	
+	Controls
+	{
+		TabName = "Raccourcis clavier"
+		Defaults = "Restaurer les raccourcis par défaut"
+		ConfirmDefaults = "Êtes-vous sûr de vouloir réinitialiser tous les raccourcis à leurs réglages par défaut?"
+	}
+	
+	Misc
+	{
+		TabName = "Divers"
+
+	    Language = "Langue"
+	    LanguageTip = "La langue utilisée pour l'interface. D'autres traductions peuvent être trouvées ici: http://forum.cosmoteer.net/"
+
+	    LockCursor = "Verrouillage du curseur"
+	    LockCursorTip = "Si cette case est cochée, le curseur ne pourra pas sortir de la fenêtre en jeu. "\
+	                    "Si vous jouez en Plein écran exclusif le curseur ne quittera pas la fenêtre que cette case soit cochée ou non."
+
+	    LostFocusPause = "Mettre en pause quand inactif"
+	    LostFocusPauseTip = "Si cette option est cochée, le jeu se mettra automatiquement en pause lorsque vous changez de fenêtre active ou cliquez en dehors du jeu. "\
+	    					"Cette option n'a pas d'effet en multijoueur."
+
+		VersionCheckModeLbl = "Vérifier les mises-à-jour"
+		VersionCheckModeLblTip = "Choisissez si vous souhaitez ou non rechercher des mises-à-jour au démarrage et de quel type de mises-à-jour vous souhaitez vérifier la disponibilité."
+		VersionCheckMode
+		{
+			Off = "Désactivé"
+			OffTip = "Le jeu ne cherchera pas de mises à jour."
+			Stable = "Activé (Stable)"
+			StableTip = "Le jeu recherchera des mises à jour, mais seulement celles qui sont relativement stables et susceptibles de comporter le moins de bugs."
+			Unstable = "Activé (Instable)"
+			UnstableTip = "Le jeu recherchera des mises-à-jour, y compris les plus récentes, qui n'ont pas été autant testées et sont donc susceptibles de contenir plus de bugs."
+		}
+
+		ShowFps = "Montrer les I.P.S."
+		ShowFpsTip = "Choisissez si les Images Par Secondes doivent être affichées."
+		FpsNone = "Désactivé"
+		FpsNoneTip = "Ne pas montrer les I.P.S."
+		FpsInCorner = "Activé (Dans le coin)"
+		FpsInCornerTip = "Affiche les I.P.S. dans le coin supérieur gauche de l'écran."
+		FpsFollowsCursor = "Activé (Près du curseur)"
+		FpsFollowsCursorTip = "Affiche les I.P.S. près du curseur de la souris."
+
+		SendMetrics = "Envoyer les statistiques de jeu et les erreurs"
+		SendMetricsTip = "Si cette option est cochée, les statistiques de vos parties et les rapports d'erreurs seront envoyés au développeur et utilisées pour améliorer Cosmoteer."
+
+		WarnOutOfDateGpuDrivers = "Avertir à propos des drivers graphiques obsolètes"
+		WarnOutOfDateGpuDriversTip = "Si cette option est cochée, un avertissement sera affiché au lancement du jeu si vos drivers sont vieux de plus de 12 mois."
+
+		ShowTutorials = "Montrer les Tutoriels"
+		ShowTutorialsTip = "Si cette case est cochée, les tutoriels \"Comment Jouer\" seront affichés pendant la partie."
+		ResetTutorials = "Réinitialiser les tutoriels"
+		ConfirmResetTutorials = "Cette action fera s'afficher de nouveau tous les tutoriels."
+	}
+
+	SettingsChanged = "Les réglages graphiques ont été changés, voulez-vous conserver les nouveaux réglages ?"
+	KeepSettings = "Conserver"
+	RevertSettings = "Restaurer"
+}
+
+Mods
+{
+	DialogName = "Gestionnaires de Mods"
+	ModOnFmt = "{0} <good>(ACTIF)</good>"
+	ModOffFmt = "{0} <bad>(INACTIF)</bad>"
+	VersionFmt = "Version {0}"
+	AuthorFmt = "Par {0}"
+	ModLoadError = "Une erreur s'est produite durant le chargement du mod {0}: {1}"
+	RestartInfo = "Vous devez redémarrer Cosmoteer pour que les changements de mods prennent effet."
+	RestartNow = "Redémarrer Maintenant"
+	RestartLater = "Redémarrer Plus Tard"
+	InstallMod = "Installer le Mod..."
+	OverwriteConfirm = "Un mod portant ce nom est déja installé. Voulez-vous l'écraser ?"
+	ModInstalled = "Mod installé avec succès! Vous devez l'activer pour qu'il prenne effet."
+	ShowFolder = "Afficher le dossier"
+	FindMods = "Trouver des Mods"
+	FindTranslations = "Trouver des Traductions"
+	UninstallMod = "Désinstaller le Mod"
+	UninstallConfirm = "Êtes-vous sûr de vouloir désinstaller ce mod ?"
+	UninstallComplete = "Mod désinstallé avec succès."
+	CreatePackage = "Créer un pack de Mods";
+	CreatePackageSuccessful = "Pack de Mods sauvegardé!";
+	IncompatibleWarning = "Ce mod pourrait être incompatible avec cette version de Cosmoteer et causer des erreurs. Êtes-vous sûr de vouloir l'activer ?"
+	AutoDisabled = "Certains mods pourraient être incompatibles avec cette version de Cosmoteer et ont été désactivés automatiquement."
+	BuiltInFolder = "Mods Fournis"
+	UserFolder = "Mods d'utilisateurs"
+}
+
+LoadPaintScheme
+{
+	Title = "Charger schéma de peinture"
+	Okay = "Charger"
+	Delete = "Supprimer"
+	ConfirmDelete = "Êtes-vous sûr de vouloir supprimer ce schéma de peinture ?"
+}
+
+Feedback
+{
+	Title = "Envoyer un avis / Rapporter un bug"
+	Desc = "Veuillez décrire votre appréciation ou votre bug avec autant de détails que possible."
+	Submit = "Soumettre votre avis/rapport"
+	Email = "Votre adresse mail (facultatif):"
+	EmailTip = "Indiquer votre adresse mail nous permettra de vous répondre afin d'obtenir plus de détails sur votre avis ou votre rapport de bug."
+	AttachScreenshot = "Joindre une capture d'écran"
+	AttachScreenshotTip = "Prend une capture d'écran du jeu et la joint à votre message. " \
+	                      " La capture d'écran incluera tout ce que vous voyez actuellement sauf la fenêtre \"Envoyer un avis / Rapporter un bug\". " \
+	                      "Cela nous facilitera la tâche pour résoudre les bugs."
+	AttachSavedGame = "Joindre la sauvegarde de la partie en cours"
+	AttachSavedGameTip = "Crée une sauvegarde de la partie en cours et la joint à votre message. " \
+	                     "Cela nous facilitera la tâche pour résoudre les bugs."
+	AttachErrorLog = "Joindre le rapport d'erreurs";
+	AttachErrorLogTip = "Joint le rapport d'erreurs du programme. Cela nous facilitera la tâche pour résoudre les bugs."
+	Hint = "Astuce: Vous pouvez nous envoyer un rapport à tout moment en cliquant sur le bouton <btn id='General.SubmitFeedback'/>."
+	Sending = "Envoi en cours..."
+	Error = "Une erreur s'est produite durant l'envoi du message."
+}
+
+VersionCheck
+{
+	NewVersionMsg = "Une nouvelle version de Cosmoteer est disponible!"
+	DownloadInstall = "Télécharger &amp; Installer"
+	ReleaseNotes = "Voir les notes de mise à jour"
+	ProgressFmt = "Téléchargement de la mise à jour en cours... {0}%"
+	ErrorFmt = "Une erreur s'est produite durant le téléchargement de la mise à jour: {0}"
+	ConfirmInstall = "Le téléchargement est terminé. Fermer Cosmoteer et installer la mise à jour ?"
+}
+
+ShipLibraries
+{
+	Saved = "Mes Vaisseaux"
+	Bounty = "Vaisseaux fournis"
+	Starter = "Vaisseaux débutant"
+	Misc = "Vaisseaux divers"
+}
+
+ShipClasses
+{
+	Terran = "Terrien"
+	Asteroid = "Astéroïde"
+}
+
+StarterShips
+{
+	ModelL = "Le Model-L est très manoeuvrable et comprend trois blasters laser efficaces pour détruire les sous-systèmes ennemis. "\
+	         "Il manque cependant de véritables défenses."
+	ModelC = "Le Model-C est lent, bien renforcé et équipé d'une paire de puissants canons qui sont peu précis mais peuvent pénétrer "\
+	         "à l'intérieur des vaisseaux ennemis."
+	ModelS = "Le Model-S troque puissance de feu et armure pour un générateur de bouclier et un électro-rayon capable de désactiver "\
+	         "les armes énergétiques et boucliers ennemis."
+}
+
+BountyModeConfig
+{
+	Name = "Chasseur de prime"
+	Description = "<b><good>Apprenez comment jouer:</good></b> Traquez les vaisseaux ennemis pour obtenir des primes et améliorer votre propre vaisseau."
+	Difficulty = "Difficulté"
+	MapSize = "Taille de la Galaxie"
+	ShipInfoFmt = "<s24>{0}</s24>\n\n{1}\n\nFonds restants: {2}"
+	CustomShipInfoFmt = "<s24>{0}</s24>\n\nFonds restants: {1}"
+	LoadShip = "Charger un vaisseau personnalisé"
+
+	Easy = "Cadet (Facile)"
+	EasyTip = "La difficulté idéale pour les nouveaux joueurs:\n\n"\
+	          "● Crédits &amp; carburant de départ augmentés.\n"\
+	          "● Récompenses de primes augmentées.\n"\
+	          "● Vaisseaux ennemis moins intelligents.\n"\
+	          "● Les ennemis n'apparaîtront jamais en flottes.\n"\
+
+	Moderate = "Capitaine (Normal)"
+	ModerateTip = "Le niveau de difficulté classique pour joueurs vétérans:\n\n"\
+	              "● Crédits &amp; carburant de départ normaux.\n"\
+	              "● Récompenses de primes normales.\n"\
+	              "● Vaisseaux ennemis normaux.\n"\
+	              "● Les ennemis apparaîtront parfois en flottes.\n"\
+	              "● Impossible de construire ou réparer en combat."
+
+	Hard = "Amiral (Difficile)"
+	HardTip = "Un niveau de difficulté plus élevé pour les joueurs désirant un plus grand défi:\n\n"\
+	          "● Crédits &amp; carburant de départ normaux.\n"\
+	          "● Récompenses de primes diminuées.\n"\
+	          "● Vaisseaux ennemis plus imposants.\n"\
+	          "● Les ennemis apparaîtront souvent en flottes.\n"\
+	          "● Impossible de construire ou réparer en combat."
+}
+
+BountyMode
+{
+	BountyCompleted = "CIBLE DÉTRUITE"
+	BuyShipTip = "Acheter un autre vaisseau."
+	SellShip = "Vendre"
+	SellShipTip = "Vend ce vaisseau, vous donnant <money>₡ crédits</money> en retour."
+	NoSellCombat = "Impossible de de vendre un vaisseau durant un combat."
+	SellConfirmFmt = "Êtes-vous sûr de vouloir vendre le <u>{0}</u>?"
+	Sell = "VENDRE"
+	NotInSight = "<bad>Doit être en vue de vos vaisseaux!</bad>"
+	EnemyTooClose = "<bad>Trop près de l'ennemi!</bad>"
+	BuyFuel = "Acheter"
+	BuyFuelDialogFmt = "Acheter <b>{0}</b> pour {1}?"
+	FuelDebtFmt = "Ravitailler vous coûterait <ins_money>{0}</ins_money> mais vous n'avez que {1}. "\
+	              "Vous pouvez vous endetter pour ravitailler, mais tant que vous serez endetté vous ne pourrez acheter aucun module pour votre vaisseau."
+	BuyShipIllegalClass = "Cette classe de vaisseau ne peut pas être achetée."
+	BuyShipIllegalDesign = "Ce design de vaisseau est illégal et ne peut pas être acheté."
+
+	MapNodeFlyOut
+	{
+		FriendliesFmt = "<good>Alliés présents: <b>{0}x</b></good>"
+		EnemiesFmt = "Ennemis: <b>{0}x</b>"
+		EnemiesNone = "Ennemis: <b>Aucun</b>"
+	}
+
+	ThreatLevels
+	[
+		"<color r=\"255\" g=\"255\" b=\"0\">Amateur</color>"
+		"<color r=\"255\" g=\"191\" b=\"0\">Professionnel</color>"
+		"<color r=\"255\" g=\"127\" b=\"0\">Vétéran</color>"
+		"<color r=\"255\" g=\"63\" b=\"0\">Élite</color>"
+		"<color r=\"255\" g=\"0\" b=\"0\">Avant-Garde</color>"
+	]
+}
+
+CreativeModeConfig
+{
+	Name = "Mode Créatif"
+	Description = "Concevez des vaisseaux et des flottes avec des crédits illimités. Faites-les combattre les uns contre les autres pour tester leur efficacité."
+	MapSize = "Taille de la Galaxie"
+}
+
+CreativeMode
+{
+	NewShip = "Nouveau vaisseau"
+	ShipLibrary = "Galerie de vaisseaux"
+
+	RemoveShip = "Retirer"
+	RemoveShipTip = "Retire le(s) vaisseau(s) sélectionné(s) de la partie.\n\nRaccourci: <btn id='CreativeMode.DeleteShip'/>\nMaintenez <btn id='General.SuppressConfirmation'/> pour supprimer la confirmation."
+	ConfirmRemoveShip = "Retirer le(s) vaisseau(s) sélectionné(s) de la partie? Cette action ne peut pas être annulée."
+	RemoveShipOkay = "Retirer"
+	IllegalShipWarning = "Ce design de vaisseau est illégal. Êtes-vous sûr de vouloir l'utliser?"
+	ClearEverything = "Tout effacer"
+	ClearEverythingConfirm = "Êtes-vous sûr de vouloir retirer tous les vaisseaux de la partie? Cette action ne peut pas être annulée."
+	ClearDebris = "Effacer les débris"
+	ClearDebrisConfirm = "Cette action retirera tous les vaisseaux qui n'ont pas de Salle de Contrôle ou d'équipage. Cette action ne peut pas être annulée."
+
+	SavedShips
+	{
+		CrewCountFmt = "{0} membres d'équipage"
+	}
+
+	RandomShips
+	{
+		Title = "Vaisseaux Procéduraux"
+	}
+
+	Doodads
+	{
+		Title = "Bidules"
+		AsteroidsGroup = "Astéroïdes"
+		CategoryTip = "Une catégorie. Cliquez pour développer ou réduire."
+	}
+
+	PlayAs
+	{
+		Title = "Jouer en tant que..."
+		Tip = "Changez quel joueur vous contrôlez."
+		PlayerIndexFmt = "Joueur {0}"
+		PlayerIndexTipFmt = "Vous permet de contrôler les vaisseaux du Joueur  {0}.\n\nLes vaisseaux nouvellement placés seront donnés au joueur {0}."
+		AllPlayers = "Tous les Joueurs"
+		AllPlayersTipFmt = "Vous permet de contrôler les vaisseaux de tous les joueurs.\n\nLes vaisseaux nouvellement placés seront donnés au Joueur 1."
+	}
+
+	Ai
+	{
+		Title = "I.A."
+		None = "Aucune"
+		TipFmt = "Assigne l'I.A. '{0}' au(x) vaisseau(x) sélectionné(s)."
+	}
+
+	Allegiance
+	{
+		Title = "Allégeance"
+		PlayerIndexFmt = "Joueur {0}"
+		PlayerIndexTipFmt = "Donne l'allégeance de(s) vaisseau(x) sélectionné(s) au Joueur {0}."
+		Neutral = "Neutre"
+		NeutralTip = "Les vaisseaux neutres sont amicaux envers tous les autres vaisseaux, sauf les barbares."
+		Barbarian = "Barbares"
+		BarbarianTip = "Les vaisseaux \"Barbares\" sont hostiles envers tous les autres vaisseaux, y compris les autres barbares, à l'exception des vaisseaux débris."
+		Junk = "Débris"
+		JunkTip = "Les vaisseaux débris ne sont hostiles envers aucun autre vaisseau mais sont considérés comme sacrifiables sur la ligne de front."
+	}
+
+	BattleHelper
+	{
+		Title = "Assistant de Bataille"
+		Player1 = "JOUEUR 1"
+		Player2 = "JOUEUR 2"
+		ShipFmt = " {0} ({1} {2} membres d'équipage)"
+		AddShip = "Ajouter un vaisseau"
+		Go = "C'EST PARTI!"
+		Reset = "Redémarrer la Bataille"
+		ResetSwap = "Redémarrer\n+ Inverser"
+		Clear = "Effacer Joueurs"
+		AI = "I.A."
+		InitToMax = "Démarrer avec munitions/énergie pleines."
+		AutoCamera = "Caméra Automatique"
+		AutoCameraLbl = "(<btn id='CreativeMode.AutoBattleCamera'/> pour activer/désactiver la caméra automatique)"
+		PlayerDistance = "Distance entre joueurs: "
+		ShipDistance = "Distance entre vaisseaux d'une même flotte: "
+	}
+}
+
+MapSizes
+{
+	None = "Pas de Galaxie"
+	NoneTip = "Il n'y aura pas de carte de la galaxie."
+	Tiny = "Minuscule"
+	TinyTip = "1 système stellaire."
+	Small = "Petite"
+	SmallTip = "3 systèmes stellaires."
+	Standard = "Standard"
+	StandardTip = "6 systèmes stellaires."
+	Large = "Grande" 
+	LargeTip = "12 systèmes stellaires."
+	Huge = "Énorme"
+	HugeTip = "24 systèmes stellaires."
+}
+
+GameMenu
+{
+	NewGame = "Nouvelle Partie"
+	NewGameTip = "Démarrer une nouvelle partie depuis le début."
+	SaveGame = "Sauvegarder la Partie"
+	SaveGameTip = "Sauvegarder la progression de la partie en cours dans un fichier."
+	CantSaveGameTip = "La partie ne peut pas être sauvegardée pour le moment."
+	LoadGame = "Charger la Partie"
+	LoadgameTip = "Charger une partie en cours depuis un fichier."
+	Tutorials = "Comment Jouer"
+	TutorialsTip = "Affiche le manuel du jeu."
+	Settings = "Réglages"
+	SettingsTip = "Ajuster divers réglages du jeu."
+	Feedback = "Envoyer un retour"
+	FeedbackTip = "Envoyer un retour écrit au développeur du jeu."
+	Quit = "Quitter la partie"
+	QuitTip = "Quitter la partie en cours."
+	Resume = "Reprendre"
+	ResumeTip = "Ferme ce menu."
+	ConfirmNewGame = "Démarrer une nouvelle partie? Toute progression non sauvegardée dans la partie en cours sera perdue."
+	ConfirmLoadGame = "Charger une partie sauvegardée? Toute progression non sauvegardée dans la partie en cours sera perdue."
+	ConfirmQuit = "Quitter la partie? Toute progression sera perdue."
+	QuitToMenu = "Quitter vers le Menu"
+	QuitToDesktop = "Quitter vers le Bureau"
+}
+
+Hud
+{
+	Menu = "Menu"
+	MenuTip = "Mettre la partie en Pause et afficher le menu.\n\nRaccourci: <btn id='General.Cancel'/>"
+
+	MapTip = "Afficher/cacher la carte de la galaxie."
+
+	Paused = "EN PAUSE"
+	PauseTip = "Pause\n\nRaccourci: <btn id='Game.PauseToggle'/>"
+	DecreaseSpeedTip = "Ralentir la vitesse du jeu\n\nRaccourci: <btn id='Game.DecreaseSpeed'/>"
+	IncreaseSpeedTip = "Augmenter la vitesse du jeu\n\nRaccourci: <btn id='Game.IncreaseSpeed'/>"
+	SpeedPaused = "--"
+	SpeedQuarter = "¼"
+	SpeedQuarterLong = "Très Lent (¼)"
+	SpeedHalf = "½"
+	SpeedHalfLong = "Lent (½)"
+	Speed1 = "1x"
+	Speed1Long = "Normal (1x)"
+	Speed2 = "2x"
+	Speed2Long = "Rapide (2x)"
+	Speed4 = "4x"
+	Speed4Long = "Très Rapide (4x)"
+
+	ClickToFocus = "Cliquez pour centrer la vue.\n\nRaccourci: <btn id='View.FocusSelected'/>"
+	ClickToSelect = "Cliquez pour sélectionner."
+	ClickToRename = "Cliquez pour renommer ce vaisseau."
+
+	SelfDestruct = "Auto-Détruire"
+	SelfDestructTip = "Démarre la séquence d'auto-destruction."
+	ConfirmSelfDestruct = "Détruire le(s) vaisseau(x) sélectionné(s)? Cette action est irréversible!"
+	SelfDestructOkay = "DÉTRUIRE!!"
+
+	PartDestruct = "Auto-Détruire"
+	PartDestructTip = "Détruis le(s) module(s) sélectionné(s)."
+	ConfirmPartDestruct = "Détruire le(s) module(s) sélectionné(s)? Cette action est irréversible et pourrait causer des dommages collatéraux additionnels!"
+	PartDestructOkay = "DÉTRUIRE!!"
+
+	PartAutoFire = "Feu à volonté"
+	PartAutoFireTip = "Si cette option est cochée, l'arme sélectionnée fera feu continuellement même si elle n'a pas de cible."
+
+	BuildTip = "<b>Construire</b>\n\nModifier le design de vos vaisseaux.\n\nRaccourci: <btn id='Design.BuildOpen'/>"
+	PaintTip = "<b>Peindre</b>\n\nPeindre l'extérieur de votre vaisseau et appliquer des vignettes.\n\nRaccourci: <btn id='Design.PaintOpenClose'/>"
+	RepairTip = "<b>Réparations</b>\n\nRéparer les dégâts de vos vaisseaux.\n\nRaccourci: <btn id='Repair.OpenClose'/>  (Maintenez <btn id='Repair.SuppressRepair'/> pour accéder au menu Construire.)"
+	CrewTip = "<b>Équipage</b>\n\nGérer les effectifs de l'équipage de vos vaisseaux.\n\nRaccourci: <btn id='Crew.OpenClose'/>"
+	InteriorTip = "Afficher/cacher les intérieurs de vaisseau.\n\nRaccourci: <btn id='View.ToggleInteriors'/>"
+	CancelPartSelectTip = "Annuler le contrôle du module et retourner au contrôle du vaisseau.\n\nRaccourci: <btn id='General.Cancel'/>"
+	CancelTargetTip = "Annuler le(s) cible(s) de l'armement.\n\nRaccourci: <btn id='Game.CancelWeaponTargets'/>"
+	FormationTip = "<b>Formations</b>"
+
+	MoneyTip = "Crédits Intergalactiques "
+	FtlFuelTip = "Carburant hyperpropulsion"
+
+	FtlGuiTitle = "Activation de l'hyperpropulsion..."
+	FtlStatusPercentFmt = "{0:0}%"
+	FtlStatusReady = "<good>PRÊT</good>"
+	FtlStatusCanceled = "<bad><s12>RESTANT</s12></bad>"
+	FtlStatusNoFtl = "<bad>PAS D'HYPERPROPULSION</bad>"
+	FtlDoJumpFmt = "SAUTER<s6>\n\n</s6>{0}"
+	FtlDoJumpTip = "Tous les vaisseaux qui sont <good>PRÊTS</good> vont sauter vers le secteur choisi comme destination.\n\nRaccourci: <btn id='Game.DoFtlJump'/>"
+	FtlCancelJump = "Annuler"
+	FtlCancelJumpTip = "Tous les vaisseaux vont éteindre leur hyperpropulsion et le saut sera annulé.\n\nRaccourci: <btn id='Game.CancelFtlJump'/>"
+	FtlShipsNotReady = "Tous les vaisseaux ne sont pas prêts pour l'hyperpropulsion. Sauter quand même et laisser ces vaisseaux sur place?"
+
+	SelectSingleShip = "Sélectionnez un seul vaisseau."
+	NoTargetsToCancel = "Aucune cible à annuler pour l'armement."
+	NoControlRoom = "Commandement impossible sans salle de contrôle."
+	CantBuildNeedsRepair = "Impossible de construire lorsque votre vaisseau a besoin de réparations majeures."
+	CantBuildInCombat = "Impossible de construire durant un combat."
+	NoRepairsNeeded = "Aucune réparation nécessaire."
+	CantRepairInCombat = "Impossible de répare durant un combat."
+
+	ShipWeightFmt = "Masse: <b>{0:.0} Tonnes</b>"
+	ShipWeightTip = "Masse totale du vaisseau, indiquant sa taille approximative."
+	ShipCrewFmt = "Équipage: <b>{0} Âmes</b>"
+	ShipCrewTip = "Nombre de membres d'équipage vivants à bord de ce vaisseau."
+	ShipValueFmt = "Valeur: <money><b>{0}</b></money>"
+	ShipValueTip = "Valeur monétaire totale de ce vaisseau, telle que calculée selon son prix de construction et le recrutement de son équipage moins les réparations nécessaires."
+	NoControlRoomAlert = "<bad>PAS DE SALLE DE CONTRÔLE</bad>"
+	ControlRoomNotOperationalAlert = "<bad>SALLE DE CONTRÔLE\nNON OPÉRATIONNELLE</bad>"
+
+	RenameShip = "Renommer le Vaisseau"
+	RenameShipTip = "Changez le nom de votre vaisseau!"
+	RenameShipPrompt = "\"Comment devrions-nous le baptiser, capitaine?\""
+
+	SaveShip = "Sauvegarder le design du vaisseau"
+	SaveShipTip = "Sauvegarder les plans et les peintures du vaisseau dans un fichier pour pouvoir les charger plus tard."
+
+	Screenshot = "Capture d'écran"
+	ScreenshotExterior = "Extérieure"
+	ScreenshotExteriorTip = "Prendre une capture d'écran de l'extérieur du vaisseau et la sauvegarder dans un fichier."
+	ScreenshotExteriorFilenameFmt = "{0} (Exterior).png"
+	ScreenshotInterior = "Intérieure"
+	ScreenshotInteriorTip = "Prendre une capture d'écran du pont intérieur du vaisseau et la sauvegarder dans un fichier."
+	ScreenshotInteriorFilenameFmt = "{0} (Interior).png"
+	ScreenshotBlueprints = "Plans"
+	ScreenshotBlueprintsTip = "Prendre une capture d'écran des plans du vaisseau et la sauvegarder dans un fichier."
+	ScreenshotBlueprintsFilenameFmt = "{0} (Blueprints).png"
+
+	DistFmt = "{0:0.00}km"
+
+	DebtOkay = "S'endetter"
+
+	MiniviewResizerTip = "Glisser pour redimensionner."
+
+	UnknownContact = "Contact Inconnu"
+
+	FlightDirection = "Direction de vol"
+
+	ResetDefaults = "Restaurer les valeurs d'attaque par défaut"
+	ResetDefaultsTip = "Lorsque vous définissez manuellement la distance ou l'angle d'attaque, ils seront mémorisés la prochaine fois que vous donnerez un ordre d'attaque. "\
+	                   "Cette option réinitialisera la distance et l'angle d'attaque à leurs valeurs par défaut."
+
+	PartHealthFmt = "{0} / {1}"
+}
+
+Formations
+{
+	Line = "Formation Ligne"
+	Wedge = "Formation Chevron"
+	Claw = "Formation Pince"
+
+	A = "A"
+	Alpha = "Formation Alpha"
+	B = "B"
+	Bravo = "Formation Bravo"
+	C = "C"
+	Charlie = "Formation Charlie"
+	D = "D"
+	Delta = "Formation Delta"
+	E = "E"
+	Echo = "Formation Echo"
+	F = "F"
+	Foxtrot = "Formation Foxtrot"
+	G = "G"
+	Gamma = "Formation Gamma"
+
+	NameFmt = "<b>{0}</b>"
+	NameHotkeyTipFmt = "<b>{0}</b>\n\nRaccourci: <b>{1}</b>"
+	Save = "SAUVEGARDER"
+	SaveTip = "Sauvegarder une formation personnalisée dans ce slot."
+	Delete = "SUPPR"
+	DeleteTip = "Supprime la formation personnalisée sauvegardée dans ce slot."
+	CustomFormationsTip = "Formations Personnalisées"
+	CancelTip = "Annuler la formation actuelle."
+}
+
+BuildBox
+{
+	Undo = " Annuler "
+	UndoTip = "Annule le dernier changement apporté au vaisseau sélectionné.\n\nRaccourci: <btn id='Design.Undo'/>"
+	Redo = " Rétablir "
+	RedoTip = "Rétablit le dernier changement apporté au vaisseau sélectionné.\n\nRaccourci: <btn id='Design.Redo'/>"
+	EditBlueprintsTip = "<b>Mode Plans</b>\n\nVous permet d'apporter des changements temporairement invalides ou inabordables au design de votre vaisseau.\n\n"\
+	                    "Raccourci: <btn id='Design.ToggleBlueprints'/>"
+	InsufficientFunds = "FONDS INSUFFISANTS"
+	Power = "Énergie"
+	Crew = "Équipage"
+	FtlEfficiency = "Efficacité de l'hyperpropulsion"
+	StatBarTipFmtMinIdeal = "<s20><b>{0}</b></s20>\n<bad>Minimum: <b>{1}</b></bad>\n<good>Recommandé: <b>{2}</b></good>"
+	StatBarTipFmt = "<s20><b>{0}</b></s20>"
+	Construct = "FAIRE COMME ÇA"
+	Discard = "Abandonner les modifications"
+	DiscardTip = "Abandonne toutes les modifications faites aux plans du vaisseau qui n'ont pas encore été appliquées."
+	CantDiscardTip = "Rien à abandonner."
+	Clear = "Effacer les plans"
+	ClearTip = "Efface tous les plans existants pour que vous puissiez les redessiner depuis le début."
+	Recenter = "Recentrer les plans"
+	RecenterTip = "Déplace les plans du vaisseau au milieu de la grille de construction."
+	CantRecenterTip = "Les plans sont déjà centrés."
+	CantClearTip = "Rien à effacer."
+	SaveShip = "Sauvegarder le design du vaisseau"
+	SaveShipTip = "Sauvegarder les plans et les peintures du vaisseau dans un fichier pour pouvoir les charger plus tard."
+	LoadShip = "Charger le design du vaisseau"
+	LoadShipTip = "Remplace les plans actuels par ceux chargés depuis un fichier précédemment sauvegardé."
+	ImportPng = "Charger la forme depuis un PNG"
+	ImportPngTip = "Charge la forme basique du vaisseau en cases de couloirs depuis un fichier PNG personnalisé."
+	ImportPngInstructions = "Ceci remplacera les plans actuels (si il y en a) par une forme basique chargée depuis un fichier PNG personnalisé.\n\n"\
+	                        "● <b>Intensité</b>: Les pixels intenses (rouge, vert, ou bleu supérieur à 50%) seront interprétés comme des cases Couloir.\n\n"\
+	                        "● <b>Opacité</b>: Les pixels avec une opacité supérieure à 50% seront interprétés comme des cases Couloir."
+	ImportPngBrightness = "Utiliser l'<b>Intensité</b>"
+	ImportPngOpacity = "Utiliser l'<b>Opacité</b>"
+	ImportPngFileType = "Fichiers Image PNG(*.png)"
+	ImportPngSizeWarningFmt = "Ce fichier image est plus grand que la taille de vaisseau maximum de {0}x{1} et va être rogné."
+	GrabTip = "<b>Outil déplacement</b>\n\nLorsque sélectionné, cliquer sur un module d'un vaisseau la saisira et la gardera en main pour que vous puissiez la replacer ailleurs.\n\nRaccourci: <btn id='Design.GrabTool'/>"
+	RemoveTip = "<b>Outil Suppression</b>\n\nLorsque sélectionné, cliquer sur un module d'un vaisseau supprimera ce module et vous donnera un remboursement partiel.\n\nRaccourci: <btn id='Design.EraseTool'/>\n\nMaintenez <btn id='Design.E raseCursorMode'/> pour changer temporairement pour cet outil."
+	SelectTip = "<b>Outil Sélection</b>\n\nLorsque sélectionné, tracez une zone autour de tout module que vous voulez copier, couper, coller, doubler, pivoter ou enlever.\n\nRaccourci: <btn id='Design.SelectionTool'/>"
+	MirrorToggleTip = "<b>Mode Miroir</b>\n\nLorsque ce mode est activé, les changements au design du vaisseau seront projetés à l'opposé de la ligne centrale du vaisseau.\n\nRaccourci: <btn id='Design.ToggleMirrorMode'/>"
+	HireCrewTip = "Recruter des membres d'équipage pour remplir les lits vides. Si vous avez plus de membres d'équipage que de lits, les membres d'équipage en trop seront toujours virés."
+	NumCrewTip = "Nombre de membres d'équipage à recruter."
+	UncomittedModifications = "Les plans de ce vaisseau comportent des modifications non appliquées. Êtes-vous sûr de vouloir les abandonner?"
+	DiscardModifications = "Abandonner les Modifications"
+	MustRepair = "Ce vaisseau a subi des dégâts et certains modules doivent être réparés avant de pouvoir le modifier."
+	MustRepairContinue = "Ce vaisseau a subi des dégâts certains modules doivent être réparés avant de pouvoir continuer."
+	Repair = "RÉPARER"
+	CantModifyInCombat = "Impossible de modifier ce vaisseau durant un combat."
+	CantUndoInCombat = "Impossible d'annuler durant un combat."
+	CantRedoInCombat = "Impossible de rétablir durant un combat."
+	NothingToUndo = "Rien à annuler."
+	NothingToRedo = "Rien à rétablir."
+	NoWorkNeeded = "AUCUNE MODIFICATION NÉCESSAIRE"
+	NoWorkNeededTip = "Il n'y a aucune modification à faire!"
+	BlueprintsInvalidTip = "Les plans de ce vaisseau sont invalides!"
+	CantBuildInCombatTip = "Impossible de construire durant un combat!"
+	FireCrewFmt = " Virer {0} Équipage: {1}"
+	HireCrewFmt = " Recruter {0} Équipage: {1}"
+	ConfirmClose = "Fermer l'interface de construction avant que votre vaisseau ne soit construit vous fera perdre vos plans Êtes-vous sûr de vouloir fermer l'interface de construction ? "\
+	               "(Cliquez sur le bouton <b>Faire Comme Ça</b> pour construire un vaisseau d'après votre plan.)"
+	FlightDirectionTip = "<b>Direction de vol</b>\n\nLa direction dans laquelle le vaisseau volera lorsqu'il voyagera sur de longues distances."
+
+	RotateLeftTip = "Pivoter dans le sens anti-horaire.\n\nRaccourci: <btn id='Design.RotateLeft'/>"
+	RotateRightTip = "Pivoter dans le sens horaire.\n\nRaccourci: <btn id='Design.RotateRight'/>"
+	FlipXTip = "Retourner horizontalement.\n\nRaccourci: <btn id='Design.FlipX'/>"
+	FlipYTip = "Retourner verticalement.\n\nRaccourci: <btn id='Design.FlipY'/>"
+	CantRotateTip = "Le module sélectionné ne peut pas être pivoté."
+	DeletePartTip = "Supprime le module saisi.\n\nRaccourci: <btn id='Design.Delete'/>"
+
+	CopyTip = "Copier les modules sélectionnés.\n\nRaccourci: <btn id='Design.CopySelected'/>"
+	CutTip = "Couper (copier et retirer) les modules sélectionnés.\n\nRaccourci: <btn id='Design.CutSelected'/>"
+	DeleteTip = "Supprimer les modules sélectionnés.\n\nRaccourci: <btn id='Design.Delete'/> (ou <btn id='Design.DeleteDoors'/> pour supprimer seulement les portes)"
+	PasteTip = "Coller les modules sélectionnés.\n\nRaccourci: <btn id='Design.Paste'/>"
+	CancelPasteTip = "Annuler et retourner au mode de sélection.\n\nRaccourci: <btn id='General.Cancel'/>"
+	NoPartsSelected = "Aucun module sélectionné."
+	NoPartsCopied = "Aucun module copié pour l'instant."
+	CantRemoveSelected = "Les modules sélectionnés ne peuvent pas être retirés."
+
+	PartCrewFmt = "{0} membres d'équipage"
+	PartToHireCrewFmt = " + <money>{0}</money> pour recruter {1} membres d'équipage"
+	PartHotkeyFmt = "Raccourci: <b>{0}</b>"
+
+	InvalidReasons
+	{
+		NotContiguous = "<bad>Non connecté</bad>"
+		ProhibitedZones = "<bad>Zone interdite</bad>"
+		MaxBordersExceeded = "<bad>En dehors de la grille</bad>"
+		CategorySlotsExceeded = "<bad>Trop de modules de ce type</bad>"
+		ExistingPart = "<bad>Module existant</bad>"
+		NoCrewAccess = "<bad>Aucun accès pour l'équipage</bad>"
+	}
+}
+
+PaintBox
+{
+	PaintTab = "PEINDRE"
+	Decals1Tab = "VIGNETTES BAS"
+	Decals2Tab = "VIGNETTES HAUT"
+	CrewTab = "ÉQUIPAGE"
+
+	Undo = " Annuler "
+	UndoTip = "Annule le dernier changement fait à la peinture du vaisseau sélectionné.\n\nRaccourci: <btn id='Design.Undo'/>"
+	Redo = " Rétablir "
+	RedoTip = "Rétablis le dernier changement fait à la peinture du vaisseau sélectionné.\n\nRaccourci: <btn id='Design.Redo'/>"
+	NothingToUndo = "Rien à annuler."
+	NothingToRedo = "Rien à rétablir."
+
+	Clear = "Effacer"
+	ClearAll = "Toutes les vignettes"
+	ClearAllTip = "Efface toutes les vignettes pour que vous puissiez recommencer à peindre depuis le début."
+	Clear1 = "Vignettes Bas"
+	Clear1Tip = "Efface toutes les vignettes dans "Vignettes Bas" pour que vous puissiez recommencer à peindre depuis le début."
+	Clear2 = "Vignettes Haut"
+	Clear2Tip = "Efface toutes les vignettes dans "Vignettes Haut" pour que vous puissiez recommencer à peindre depuis le début."
+	NothingToClear = "Rien à effacer."
+
+	Swap = "Inverser"
+	SwapDecals = "Vignettes Seulement"
+	SwapDecalsTip = "Inverse les vignettes dans "Vignettes Bas" et "Vignettes Haut" mais pas les couleurs."
+	SwapColors = "Couleurs Seulement"
+	SwapColorsTip = "Inverse les couleurs dans "Vignettes Bas" et "Vignettes Haut" mais pas les vignettes."
+	SwapBoth = "Vignettes & Couleurs"
+	SwapBothTip = "Inverse les couleurs et les vignettes dans "Vignettes Bas" et "Vignettes Haut"."
+	NothingToSwap = "Rien à inverser."
+
+	SaveShip = "Sauvegarder le design du vaisseau"
+	SaveShipTip = "Sauvegarde les plans et les couleurs du vaisseau dans un fichier pour pouvoir les charger plus tard."
+	LoadPaint = "Charger le design du vaisseau"
+	LoadPaintTip = "Remplace les peintures actuelles du vaisseau par celles chargées depuis un fichier sauvegardé précédemment."
+	SavePaintScheme = "Sauvegarder le schéma de peinture"
+	SavePaintSchemeTip = "Sauvegarde les motifs et les couleurs de la peinture du vaisseau pour pouvoir les réutiliser sur d'autres vaisseaux."
+	LoadPaintScheme = "Charger le schéma de peinture"
+	LoadPaintSchemeTip = "Remplace le schéma de peinture actuel avec un schéma de peinture sauvegardé précédement."
+	PaintSchemeSaved = "Schéma de peinture sauvegardé."
+
+	GrabTip = "<b>Outil déplacement</b>\n\nLorsque sélectionné, cliquer sur une vignette la saisira et la gardera en main pour que vous puissiez la placer ailleurs.\n\nRaccourci: <btn id='Design.GrabTool'/>"
+	RemoveTip = "<b>Outil suppression</b>\n\nLorsque sélectionné, cliquer sur une vignette la supprimera.\n\nRaccourci: <btn id='Design.EraseTool'/>\n\nMaintenez <btn id='Design.EraseCursorMode'/> pour passer temporairement à cet outil."
+	SelectTip = "<b>Outil sélection</b>\n\nLorsque sélectionné, sélectionnez une zone autour de toutes les vignettes que vous voulez copier, couper, coller, projeter, pivoter ou supprimer.\n\nRaccourci: <btn id='Design.SelectionTool'/>"
+	MirrorToggleTip = "<b>Mode Miroir</b>\n\nLorsque cette option est activée, les changements aux vignettes du vaisseau seront projetés à l'oppposé de la ligne centrale du vaisseau.\n\nRaccourci: <btn id='Design.ToggleMirrorMode'/>"
+
+	RotateLeftTip = "Pivoter dans le sens anti-horaire.\n\nRaccourci: <btn id='Design.RotateLeft'/>"
+	RotateRightTip = "Pivoter dans le sens horaire.\n\nRaccourci: <btn id='Design.RotateRight'/>"
+	FlipXTip = "Retourner horizontalement.\n\nRaccourci: <btn id='Design.FlipX'/>"
+	FlipYTip = "Retourner verticalement.\n\nRaccourci: <btn id='Design.FlipY'/>"
+	DeleteDecalTip = "Supprime la vignette tenue.\n\nRaccourci: <btn id='Design.Delete'/>"
+
+	CopyTip = "Copier les vignettes sélectionnées.\n\nRaccourci: <btn id='Design.CopySelected'/>"
+	CutTip = "Couper (copier et retirer) les vignettes sélectionnées.\n\nRaccourci: <btn id='Design.CutSelected'/>"
+	DeleteTip = "Effacer les vignettes sélectionnées.\n\nRaccourci: <btn id='Design.Delete'/>"
+	PasteTip = "Coller les vignettes sélectionnées.\n\nRaccourci: <btn id='Design.Paste'/>"
+	CancelPasteTip = "Annuler et retourner au mode sélection.\n\nRaccourci: <btn id='General.Cancel'/>"
+	NoDecalsSelected = "Aucune vignette sélectionnée."
+	NoDecalsCopied = "Aucune vignette copiée pour l'instant."
+}
+
+RepairBox
+{
+	Title = "Réparations"
+
+	RepairAll = "TOUT RÉPARER"
+	NoRepairsNeeded = "AUCUNE RÉPARATION\nNÉCESSAIRE"
+	NoRepairsNeededTip = "Il n'y a aucune réparation nécessaire!"
+	CantRepairInCombatTip = "Impossible de réparer durant un combat!"
+	CantRepairInCombatCursor = "<bad>IMPOSSIBLE DE RÉPARER\nDURANT UN COMBAT</bad>"
+
+	HireCrewFmt = "Recruter {0} Équipage: {1}"
+	HireCrewTip = "Recruter des membres d'équipage pour remplacer ceux qui sont morts au combat."
+	NumCrewTip = "Nombre de membres d'équipage à recruter."
+
+	ForgetDestroyed = "Oublier les modules détruits"
+	ForgetDestroyedTip = "Oublie tous les modules qui ont été détruits mais pas encore reconstruits."
+	NothingToForget = "Rien à oublier."
+	ConfirmForgetDestroyed = "Êtes-vous sûr de vouloir oublier tous les modules détruits? "\
+	                         "Cette action est irréversible et effacera également votre historique d'annulation!"
+
+	PartsDestroyedFmt = "Modules détruits: {0}"
+	PartsDamagedFmt = "Modules endommagés: {0}"
+	CrewKilledFmt = "Équipage mort au combat: {0}"
+
+	RepairDebtFmt = "Réparer votre vaisseau coûterait <ins_money>{0}</ins_money> mais vous n'avez que {1}. "\
+	                "Vous pouvez vous endetter pour réparer, mais tant que vous serez endetté vous ne pourrez acheter aucun nouveau module pour votre vaisseau."
+}
+
+CrewBox
+{
+	Title = "Équipage"
+	Crew = "ÉQUIPAGE"
+	Beds = "LITS"
+	NumCrewTip = "Nombre actuel de membres d'équipage du vaisseau."
+	MaxCrewTip = "Nombre maximum de membres d'équipage que ce vaisseau peut transporter."
+	AddOne = "+1"
+	AddFmt = "+{0}"
+	AddOneTip = "Recruter 1 membre d'équipage.\n\nMaintenez <btn id='Crew.FiveAtATime'/> pour en recruter 5."
+	AddMax = "+MAX"
+	AddMaxTip = "Recruter autant de membres d'équipage que possible."
+	RemoveOne = "-1"
+	RemoveFmt = "-{0}"
+	RemoveOneTip = "Virer 1 membre d'équipage.\n\nMaintenez <btn id='Crew.FiveAtATime'/> pour en virer 5."
+	CantHireInCombat = "Impossible de recruter ou virer des membres d'équipage durant un combat!"
+	Full = "PLEIN"
+}
+
+ColorPicker
+{
+	Copy = "Copier Couleur"
+	Paste = "Coller Couleur"
+}
+
+BillOfSale
+{
+	RepairsFmt = "Réparations mineures: {0}"
+	ConstructionExpenses = "<u>Dépenses de construction:</u>"
+	DeconstructionRefunds = "<u>Remboursement de déconstructions:</u>"
+	ItemCostFmt = "  {0}x <b>{1}</b> @ {2} = <money>{3}</money>"
+	ItemRefundFmt = "  {0}x <b>{1}</b> @ {2} = <refund>{3}</refund>"
+	HireCrewFmt = "Recruter {0}x <b>Membres d'équipage</b> @ {1} = <money>{2}</money>"
+	FireCrewFmt = "Virer {0}x <b>Membres d'équipage</b> @ {1} = <refund>{2} REMBOURSEMENT</refund>"
+	ExpensesSubtotalFmt = "Sous-total des dépenses: <money>{0}</money>"
+	RefundsSubtotalFmt = "Sous-total des remboursements: <refund>{0}</refund>"
+	TotalCostFmt = "<b>COÜT TOTAL: <money>{0}</money></b>"
+	TotalRefundFmt = "<b>REMBOURSEMENT TOTAL: <refund>{0}</refund></b>"
+}
+
+FuelCostBreakdown
+{
+	FuelForShipFmt = "{0} ({1:0}%) = {2}"
+	TotalFuelUsedFmt = "<b>TOTAL DE CARBURANT UTILISÉ: {0}</b>"
+}
+
+EditorGroups
+{
+	Weapons = "Armes"
+	Munitions = "Munitions"
+	Defenses = "Défenses"
+	Flight = "Navigation"
+	Crew = "Équipage"
+	Power = "Énergie"
+	Misc = "Divers"
+}
+
+CategoryNouns
+{
+	ThrusterSingular = "Propulseur"
+	ThrusterPlural = "Propulseurs"
+}
+
+Parts
+{
+	AmmoFactory = "Usine de munitions pour canon"
+	AmmoFactoryIcon = "Usine de Munitions"
+	AmmoFactoryDesc = "Fabrique des projectiles servant de munition pour canon."
+
+	AmmoStorage = "Dépôt de munitions pour canon"
+	AmmoStorageIcon = "Dépôt de munitions"
+	AmmoStorageDesc = "Stocke une quantité limitée de munitions pour canon, fabriquées séparément par une Usine de munitions pour canon."
+
+	Armor = "Armure"
+	ArmorIcon = &Armor
+	ArmorDesc = "Absorbe une grande partie des tirs ennemis, protégeant l'intérieur de votre vaisseau."
+
+	Armor2 = "Armure 2x1"
+	Armor2Icon = &Armor2
+	Armor2Desc = &ArmorDesc
+
+	ArmorWedge = "Armure Coin"
+	ArmorWedgeIcon = &ArmorWedge
+	ArmorWedgeDesc = &ArmorDesc
+
+	ArmorTri = "Armure Triangle"
+	ArmorTriIcon = &ArmorTri
+	ArmorTriDesc = &ArmorDesc
+
+	Armor2WedgeL = "Armure 1x2 Coin (Gauche)"
+	Armor2WedgeLIcon = "Armure 1x2 Coin (G)"
+	Armor2WedgeLDesc = &ArmorDesc
+
+	Armor2WedgeR = "Armure 1x2 Coin (Droite)"
+	Armor2WedgeRIcon = "Armure 1x2 Coin (D)"
+	Armor2WedgeRDesc = &ArmorDesc
+
+	BigCannon = "Grand Canon"
+	BigCannonIcon = &BigCannon
+	BigCannonDesc = "Fusionne quatre cartouches de munitions projectiles pour augmenter grandement les dégâts et la profondeur de pénétration par rapport au Canon Standard"
+
+	BigThruster = "Grand Propulseur"
+	BigThrusterIcon = &BigThruster
+	BigThrusterDesc = "Un moteur à propulsion deux fois plus gros capable de propulser le vaisseau avec deux fois plus de force que le Propulseur Standard."
+
+	Bunk = "Couchettes d'équipage"
+	BunkIcon = "Couchettes"
+	BunkDesc = "Pourvoit des lits pour 2 membres d'équipage."
+
+	Cockpit = "Salle de Contrôle"
+	CockpitIcon = &Cockpit
+	CockpitDesc = "Un vaisseau sans Salle de Contrôle ne peut ni voler ni utiliser ses armes."
+
+	Corridor = "Couloir"
+	CorridorIcon = "Couloir"
+	CorridorDesc = "Un couloir dans lequel l'équipage peut se déplacer rapidement."
+
+	Conveyor = "Tapis roulant"
+	ConveyorIcon = &Conveyor
+	ConveyorDesc = "Permet à l'équipage de se déplacer plus vite, mais dans une seule direction."
+
+	Door = "Porte"
+	DoorIcon = &Door
+	DoorDesc = "Permet à l'équipage (et au feu!) de se déplacer d'une pièce à l'autre."
+
+	IonBeam = "Émetteur à Faisceau Ionique"
+	IonBeamIcon = "Faisceau Ionique"
+	IonBeamDesc = "Tire un puissant rayon d'énergie dans une direction fixe."
+
+	MedCannon = "Canon Standard"
+	MedCannonIcon = &MedCannon
+	MedCannonDesc = "Tire une seule cartouche de munition projectile pouvant pénétrer dans les vaisseau ennemi, causant parfois un incendie."
+
+	MedThruster = "Propulseur Standard"
+	MedThrusterIcon = &MedThruster
+	MedThrusterDesc = "Un moteur à propulsion de taille standard capable de propulser votre vaisseau avec une force modeste."
+
+	PowerStorage = "Dépôt d'énergie"
+	PowerStorageIcon = "Dépôt"
+	PowerStorageDesc = "Stocke une quantité limitée de piles à plasma qui peuvent être utilisées par les systèmes environnants du vaisseau."
+
+	Quarters = "Quartiers d'équipage"
+	QuartersIcon = "Quartiers"
+	QuartersDesc = "Pourvoit des lits pour 6 membres d'équipage."
+
+	Reactor = "Coeur de réacteur"
+	ReactorIcon = "Réacteur"
+	ReactorDesc = "Produit continuellement les piles à plasma utilisées pour alimenter la plupart des systèmes du vaisseau."
+
+	FtlDrive = "Hyperpropulsion"
+	FtlDriveIcon = &FtlDrive
+	FtlDriveDesc = "Permet au vaisseau de sauter vers d'autres endroits de la galaxie en utilisant l'hyperpropulsion."
+
+	ShieldGen = "Générateur de bouclier"
+	ShieldGenIcon = &ShieldGen
+	ShieldGenDesc = "Projette un bouclier d'énergie défensif en arc-de-cercle autour du vaisseau, bloquant la plupart des tirs entrants."
+
+	PointDefense = "Système d'Auto-Défense"
+	PointDefenseIcon = "Auto-Défense"
+	PointDefenseDesc = "Un système défensif automatisé qui abat les missiles ennemis en utilisant des cartouches de plasma surchauffé. Inefficace contre les vaisseaux."
+
+	SmallLaser = "Petit Blaster Laser"
+	SmallLaserIcon = "Petit Laser"
+	SmallLaserDesc = "Une arme très précise et versatile qui tire des décharges d'énergie, causant des dégâts modérés aux vaisseaux ennemis."
+
+	ElectroBolt = "Électro-Rayon"
+	ElectroBoltIcon = &ElectroBolt
+	ElectroBoltDesc = "Tire des rayons d'énergie électrique qui font peu de dégâts mais peuvent court-circuiter les systèmes ennemis, les privant d'énergie. Peut pénétrer les boucliers dont il aspire l'énergie."
+
+	SmallThruster = "Petit Propulseur"
+	SmallThrusterIcon = &SmallThruster
+	SmallThrusterDesc = "Un petit moteur à propulsion capable de propulser le vaisseau avec une force minime. Principalement utile pour manoeuvrer."
+
+	Structure = "Armature"
+	StructureIcon = &Structure
+	StructureDesc = "L'armature sous-jacente qui maintient le vaisseau. L'armature est inclue automatiquement avec toutes les pièces et couloirs."
+
+	StructureWedge = "Armature Coin"
+	StructureWedgeIcon = &StructureWedge
+	StructureWedgeDesc = &StructureDesc
+
+	Structure2WedgeL = "Armature 1x2 Coin (Gauche)"
+	Structure2WedgeLIcon = "Armature\n1x2 Coin (G)"
+	Structure2WedgeLDesc = &StructureDesc
+
+	Structure2WedgeR = "Armature 1x2 Coin (Droite)"
+	Structure2WedgeRIcon = "Armature\n1x2 Coin (D)"
+	Structure2WedgeRDesc = &StructureDesc
+
+	SensorArray = "Réseau de capteurs"
+	SensorArrayIcon = "Capteurs"
+	SensorArrayDesc = "Augmente la portée des capteurs de votre vaisseau."
+
+	FireExtinguisher = "Extincteur"
+	FireExtinguisherIcon = &FireExtinguisher
+	FireExtinguisherDesc = "Stocke un extincteur que l'équipage peut utiliser pour éteindre les incendies."
+
+	MissileLauncher = "Lance-Missile"
+	MissileLauncherIcon = &MissileLauncher
+	MissileLauncherDesc = "Lance des missiles guidés à longue portée infligeant des dégâts sur une large zone."
+
+	MissileFactory = "Usine à Missiles"
+	MissileFactoryIcon = &MissileFactory
+	MissileFactoryDesc = "Fabrique des missiles utilisés par les Lance-Missiles."
+
+	MissileStorage = "Dépôt à Missiles"
+	MissileStorageIcon = &MissileStorage
+	MissileStorageDesc = "Stocke une quantité limitée de missiles, qui sont fabriqués séparément par une Usine à Missiles."
+
+	WallHole = "Trou"
+	WallHoleDesc = "Un Trou infligé à un mur"
+
+	Rubble1 = "Décombres 1"
+	Rubble2 = "Décombres 2"
+}
+
+PartToggles
+{
+	OnOff_Off = "<b>Alimentation: <bad>Éteint</bad></b>\n\nRaccourci: <btn id='PartToggles.on_off'/>"
+	OnOff_On = "<b>Alimentation: <good>Allumé</good></b>\n\nRaccourci: <btn id='PartToggles.on_off'/>"
+	FireMode_Hold = "<b>Mode de Tir: Retenu</b>\nNe tire pas avant d'avoir reçu une cible.\n\nRaccourci: <btn id='PartToggles.fire_mode'/>"
+	FireMode_AtWill = "<b>Mode de Tir: À Volonté</b>\nTire sur toutes les cibles ennemies à portée.\n\nRaccourci: <btn id='PartToggles.fire_mode'/>"
+}
+
+GalaxyMap
+{
+	PlanetInfoFmt = "Classe: <b>{0}</b>\nMasse: <b>{1}</b>\nDistance: <b><ftl>{2}</ftl></b>"
+	CurPlanetInfoFmt = "Classe: <b>{0}</b>\nMasse: <b>{1}</b>"
+	ViewSector = "Voir le secteur"
+	PlotCourseFmt = "Enclencher l'hyperpropulsion\n{0}"
+	PlotCourseNoFtl = "Hyperpropulsion Non Disponible"
+	PlotCourseNoFtlTip = "Aucun de vos vaisseaux ne dispose de l'hyperpropulsion et d'une salle de contrôle. Ajoutez un moteur à hyperpropulsion ET une Salle de Contrôle à vos vaisseaux pour pouvoir activer le saut hyperpropulsé."
+	PlotCourseNoFuel = "Il vous faut plus de carburant à hyperpropulsion pour pouvoir faire un saut de cette distance."
+	PlotCourseOnlySelectedMsg = "Voulez enclencher l'hyperpropulsion sur <b>tous</b> vos vaisseaux ou seulement ceux <b>sélectionnés</b>?"
+	PlotCourseAllShipsFmt = "Tous les vaisseaux\n{0}"
+	PlotCourseSelectedShipsFmt = "Sélectionnés Uniquement\n{0}"
+	PlotCourseNoneSelected = "Aucun vaisseau n'a été sélectionné!"
+	CancelCourseFmt = "Annuler le saut hyperpropulsé\n{0}"
+	CurrentLocation = "POSITION ACTUELLE"
+}
+
+Planets
+{
+	Alien = "Exotique"
+	Barren = "Aride"
+	Gas = "Géante Gazeuse"
+	Lava = "Volcanique"
+	Rocky = "Rocheuse"
+	Sun = "Étoile"
+	Terra = "Terrienne"
+}
+
+AI
+{
+	Easy = "Facile"
+	Normal = "Normal"
+}
+
+Tutorials
+{
+	Okay = "J'ai compris!"
+	HowToPlay = "Comment jouer:"
+	HowToPlayDialog = "Comment jouer"
+
+	Ammo1
+	{
+		Title = "Vaisseaux: Canons & Missiles"
+		Cannon = "Les <yellow>Canons</yellow> et les <yellow>Lance-Missile</yellow> sont des armes à projectiles utilisant des <yellow>munitions</yellow> et des <yellow>missiles</yellow> au lieu d'énergie."
+		Factory = "Les munitions sont fabriquées par une <yellow>Usine à Munitions</yellow>, et les missiles sont fabriqués par une <yellow>Usine à Missiles</yellow>."
+		Crew = "Votre <yellow>équipage</yellow> transportera les munitions et les missiles de vos usines à vos canons et lance-missiles."
+		Tip = "<green><b>ASTUCE:</b></green> La fréquence à laquelle un canon ou un lance-missile peut tirer dépend de la vitesse à laquelle votre équipage peut lui apporter des munitions ou des missiles."
+	}
+
+	Blueprints1
+	{
+		Title = "Design de vaisseau avancé"
+		MirrorMode = "Activer le <yellow>mode miroir</yellow> pour créer rapidement des designs de vaisseau symétriques."
+		SelectCopyPaste = "Utilisez l'<yellow>outil sélection</yellow> pour copier, coller, projeter, pivoter ou effacer des sections entières de votre vaisseau."
+		Button = "Pour modifier les <blue>plans</blue> de votre vaisseau, cliquez sur le bouton <b>Activer le Mode Plans</b>."
+		Ship = "Utilisez les plans pour apporter temporairement des changemnts à votre vaisseau qui seraient autrement illégaux, et pour expérimenter avant de dépenser des crédits <green>₡</green>."
+		Commit = "Lorsque vous êtes satisfait de votre design, cliquez sur le bouton <b>FAIRE COMME ÇA</b>. Votre vaisseau sera modifié et le prix sera déduit de vos crédits <green>₡</green>."
+	}
+
+	Build1
+	{
+		Title = "Améliorer votre vaisseau"
+		Button = "Pour <yellow>améliorer votre vaisseau</yellow>, cliquez sur le bouton <b>Construire</b> en bas à gauche."
+		Parts = "Pour <yellow>ajouter un module</yellow> à votre vaisseau, <b>sélectionnez-le</b> dans le menu ci-dessous. Puis <b>cliquez</b> là où vous voulez l'ajouter sur votre vaisseau."
+		Rotate = "Pour <yellow>pivoter un module</yellow> avant de l'ajouter, utilisez les boutons de rotation ou <b>le clic droit</b>."
+		Tip = "<green><b>ASTUCE:</b></green> Vous ne pouvez pas améliorer votre vaisseau lorsque vous êtes sous le feu ennemi!"
+	}
+
+	Build2
+	{
+		Title = "Améliorer votre vaisseau (Suite)"
+		Grab = "Pour <yellow>saisir un module</yellow> et le déplacer ailleurs, utilisez l'outil <b>Déplacement</b>."
+		Delete = "Pour <yellow>retirer un module</yellow> de votre vaisseau, utlisez l'outil <b>Suppression</b>. Vous serez remboursé à 75%."
+		Tip = "<green><b>ASTUCE:</b></green> Vous avez fait une erreur ? Cliquez simplement sur le bouton <b>Annuler</b> ou appuyez sur <btn id='Design.Undo'/>."
+		Close = "Lorsque vous avez <yellow>terminé</yellow> d'améliorer votre vaisseau, appuyez de nouveau sur <b>Construire</b> ou <btn id='General.Cancel'/> pour sortir du mode Construction."
+	}
+
+	CameraControls1
+	{
+		Title = "Contrôler la Caméra"
+		EdgePan = "Pour <yellow>déplacer la caméra</yellow>, déplacez le <b>curseur de la souris</b> vers le bord de l'écran ou appuyez sur les <b>flèches directionnelles ou les touches WASD</b>."
+		Zoom = "Pour <yellow>zoomer en avant ou en arrière</yellow>, utilisez la <b>molette</b> de votre souris ou les touches <btn id='View.ZoomIn'/> et <btn id='View.ZoomOut'/>."
+		Tip = "<green><b>ASTUCE:</b></green> Vous ne trouvez pas votre vaisseau? Cliquez sur son icône dans le coin supérieur gauche ou appuyez sur la touche <btn id='View.FocusSelected'/> (Centrer)."
+	}
+
+	CameraControls2
+	{
+		Title = "Contrôler la Caméra (Avancé)"
+		Drag = "Pour <yellow>glisser la caméra</yellow>, cliquez, maintenez, puis glissez le <b>bouton central de la souris</b>."
+		FocusClick = "Pour <yellow>centrer la caméra</yellow> sur un vaisseau, cliquez dessus avec le <b>bouton central de la souris</b>.\n\nVous pouvez aussi utiliser le <b>bouton central de la souris</b> à un endroit vide pour centrer la caméra dessus."
+		AltDrag = "Pour <yellow>centrer sur plusieurs</yellow>, maintenez la touche <btn id='View.FocusCursorMode'/>, puis <b>avec le clic gauche</b> sélectionnez une zone autour de ces vaisseaux."
+		Tip = "<green><b>ASTUCE:</b></green> Appuyez sur la touche <btn id='View.FocusSelected'/> pour centrer la caméra sur votre vaisseau."
+	}
+
+	Minimap1
+	{
+		Title = "La Mini-Carte"
+		BasicInfo = "La <yellow>mini-carte</yellow> dans le coin inférieur droit affivhe l'emplacement des vaisseaux dans la zone."
+		ShipDots = "L'emplacement de votre vaisseau est indiqué par le <green>point vert</green>.\n\nL'emplacement des vaisseaux ennemis est indiqué par les <red>points rouges</red>."
+		LeftClick = "<b>Cliquez</b> sur la mini-carte pour déplacer la caméra à cet endroit."
+	}
+
+	Combat1
+	{
+		Title = "Attaquer l'Ennemi"
+		Blips = "Les vaisseaux ennemis qui sont trop loin pour que vous puissiez les voir directement sont indiqués par des <red>échos radar</red> clignotants."
+		Attack = "Pour <yellow>attaquer un vaisseau ennemi</yellow>, <b>faites un clic droit</b> sur le vaisseau ennemi ou sur son écho radar.\n\nVotre vaisseau se dirigera automatiquement vers lui et l'attaquera."
+		Tip = "<green><b>ASTUCE:</b></green> Certains vaisseaux ennemis seront trop puissants pour que vous puissiez les vaincre! Fuyez et <yellow>améliorez</yellow> votre vaisseau avant de les attaquer."
+	}
+
+	CreativeMode1
+	{
+		Title = "Mode Créatif"
+		Unlimited = "Le mode créatif vous permet de créer et combattre des vaisseaux avec des crédits <green>₡</green> virtuellement illimités."
+		NewShip = "Pour <yellow>concevoir un nouveau vaisseau</yellow> depuis le début, cliquez sur le bouton <b>Nouveau Vaisseau</b>."
+		SaveShip = "Pour <yellow>sauvegarder</yellow> votre design de vaisseau, cliquez sur le bouton <img name='hamburger'/> sur le panneau de construction puis sélectionnez <b>Sauvegarder le Design de vaisseau</b>."
+		AddShip = "Pour <yellow>ajouter un vaisseau sauvegardé</yellow> à la partie, cliquez sur le bouton <b>Galerie de Vaisseaux</b>."
+		Allegiance = "Pour <yellow>faire combattre les vaisseaux</yellow>, cliquez qur le petit bouton <img name='hamburger'/> à côté du nom du vaisseau, sélectionnez <b>Allégeance</b>, puis choisissez un joueur différent pour chaque vaisseau. "\
+		             "Les vaisseaux assignés à des joueurs différents peuvent recevoir l'ordre de s'attaquer entre eux et feront feu automatiquement une fois à portée."
+		PlayAs = "Pour changer de quel joueur vous pouvez <yellow>contrôler</yellow> les vaisseaux, cliquez sur le bouton <img name='hamburger'/> en haut et sélectionnez <b>Jour en tant que...</b>."
+	}
+
+	Crew1
+	{
+		Title = "Vaisseaux: Équipage"
+		InteriorButton = "Pour <yellow>voir l'intérieur</yellow> de votre vaisseau, cliquez sur le bouton <b>Afficher/cacher l'intérieur</b>."
+		Crew = "<yellow>L'Équipage</yellow> fait fonctionner votre vaisseau en contrôlant les armes, en pilotant, et en transportant l'approvisionnement. Plus un vaisseau a d'équipage, plus il peut fonctionner efficacement!"
+		Indicator = "Un module qui n'a aucun membre d'équipage pour le faire fonctionner aura un <red>icône rouge</red>."
+	}
+
+	Crew2
+	{
+		Title = "Vaisseaux: Équipage (Suite)"
+		Button = "Pour faire de la place pour <yellow>plus de membres d'équipage</yellow>, cliquez de nouveau sur le bouton <b>Construire</b>."
+		Quarters = "Ajoutez des <yellow>Couchettes d'équipage</yellow> ou des <yellow>Quartiers d'équipage</yellow> pour augmenter le nombre de membres d'équipage à bord du vaisseau. Vous n'en aurez jamais trop!"
+		Door = "Ajoutez des <yellow>portes</yellow> à votre vaisseau pour que l'équipage puisse circuler entre les pièces."
+		Meter = "La <b>Jauge d'équipage</b> suggère le nombre <bad>minimum</bad> et <good>recommandé</good> de membres d'équipage pour votre vaisseau."
+	}
+
+	Micro1
+	{
+		Title = "Microgestion de votre vaisseau"
+		Select = "Avec un vaisseau sélectionné, <b>cliquez</b> sur l'un de ses modules pour le<yellow>sélectionner</yellow>.\n\nVous pouvez aussi sélectionner une zone autour de plusieurs modules ou double-cliquer pour sélectionner tous les modules du même type."
+		Power = "Appuyez sur le bouton <b>Alimentation</b> pour <yellow>l'éteindre</yellow>. Tout membre d'équipage opérant ce module le quittera et ira aider ailleurs."
+		HoldFire = "Appuyez sur le bouton <b>Mode de Tir</b> pour ordonner à une arme de <yellow>ne pas tirer</yellow> tant que vous ne lui avez pas donné une cible précise."
+		Target = "Avec une arme sélectionnée, <b>faites un clic-droit</b> sur un module ennemi pour le <yellow>cibler</yellow> uniquement avec cette arme."
+	}
+
+	Movement1
+	{
+		Title = "Piloter Votre Vaisseau"
+		Move = "Pour <yellow>piloter votre vaisseau</yellow>, <b>faites un clic-droit</b> n'importe où dans l'espace. Votre vaisseau s'y dirigera automatiquement."
+	}
+
+	Movement2
+	{
+		Title = "Piloter Votre Vaisseau (Avancé)"
+		Drag = "Pour <yellow>ajuster l'orientation</yellow> de votre vaisseau, <b>faites un clic-droit</b> puis <b>glissez</b>."
+		Queue = "Pour <yellow>ajouter des points de passage</yellow>, maintenez <btn id='Game.AppendSelection'/> en cliquant droit."
+		Handles = "Pour <yellow>déplacer ou pivoter</yellow> des points de passage existants, maintenez <btn id='Game.AppendSelection'/> puis glissez l'un des icônes qui apparaît.\n\nPour <yellow>supprimer</yellow> un point de passage, faites un <b>clic-droit</b> sur l'un de ces icônes."
+	}
+
+	Multiship1
+	{
+		Title = "Agrandir votre Flotte"
+		BuyShip = "Pour <yellow>agrandir votre flotte</yellow>, cliquez sur le bouton <b>Acheter un vaisseau</b> au-dessus de la mini-carte."
+		Selected = "Lorsque vous avez plusieurs vaisseaux, <b>cliquez</b> sur le vaisseau que vous voulez <yellow>contrôler</yellow>.\n\nLe vaisseau contrôlé a un <green>cercle vert </green> autour de lui."
+		BoxSelect = "Pour <yellow>contrôler plusieurs vaisseaux</yellow> à la fois, <b>cliquez et tracez</b> une zone autour de ces vaisseaux.\n\nOu alors, maintenez <btn id='Game.AppendSelection'/> puis <b>cliquez</b> sur chaque vaisseau."
+	}
+
+	Formations1
+	{
+		Title = "Formations"
+		BasicFormations = "Pour ordonner à vos vaisseaux de <yellow>voler en formation</yellow>, sélectionnez au moins deux vaisseaux, cliquez sur le bouton <b>Formations</b>, puis choisissez la formation à utiliser."
+		CustomFormations = "Pour créer une <yellow>formation personnalisée</yellow>, sélectionnez un vaisseau puis placez-le près d'un autre vaisseau en faisant un <b>clic-droit</b> sur un autre vaisseau, puis en maintenant le bouton droit de la souris et en <b>glissant depuis ce vaisseau</b>."
+		SavingFormations = "Pour <yellow>sauvegarder une formation personnalisée</yellow>, cliquez sur la petite flèche puis sur l'un des boutons <b>SAUVEGARDER</b> pour sauvegarder le formation dans un emplacement de formation personnalisée."
+	}
+
+	Paint1
+	{
+		Title = "Peindre votre vaisseau"
+		Button = "Pour <yellow>peindre l'extérieur de votre vaisseau</yellow>, cliquez sur le bouton <b>Peindre</b> en bas à gauche."
+		ColorWheel = "Ici vous pouvez changer la <yellow>couleur de base</yellow> ainsi que le <yellow>motif</yellow> de votre vaisseau."
+		Decals = "Vous pouvez aussi peindre des <yellow>vignettes</yellow> sur votre vaisseau.\n\nUn vaisseau peut avoir jusqu'à deux couches de vignettes. Chaque couche peut avoir une couleur différente, et toutes les vignettes de cette couche partagent cette couleur."
+		Tip = "<green><b>ASTUCE:</b></green> Peindre votre vaisseau est gratuit et n'a aucun effet sur ses capacités."
+	}
+
+	Power1
+	{
+		Title = "Vaisseaux: Énergie"
+		Reactor = "Les <yellow>Réacteurs</yellow> génèrent les batteries à plasma utilisées par vos propulseurs, vos armes énergétiques, et d'autres modules."
+		Crew = "Votre <yellow>équipage</yellow> transportera les piles à plasma depuis le <b>Réacteur</b> ou le <b>Dépôt d'énergie</b> jusqu'aux modules de votre vaisseau."
+		Meter = "La <b>Jauge d'Énergie</b> suggère les niveaux d'énergie <bad>minimum</bad> et <good>recommandés</good> pour votre vaisseau."
+		Indicator = "Un module qui n'a pas assez d'énergie pour opérer aura un <red>icône rouge</red>."
+		Tip = "<green><b>ASTUCE:</b></green> La fréquence à laquelle une arme énergétique peut tirer dépend de la vitesse à laquelle l'équipage peut l'alimenter en énergie."
+	}
+
+	Repairs1
+	{
+		Title = "Réparer votre vaisseau"
+		Button = "Lorsque votre vaisseau a besoin de réparations, un bouton <b>Réparer</b> rouge apparaîtra en haut à gauche. Cliquez dessus pour <yellow>ouvrir le mode réparation</yellow>."
+		Parts = "Pour <yellow>réparer un module</yellow> qui est endommagé ou détruit, <b>cliquez</b> dessus."
+		RepairAll = "Ou alors, pour<yellow>réparer votre vaisseau entier</yellow>, cliquez sur le bouton <b>Tout Réparer</b>."
+	}
+
+	Tactics1
+	{
+		Title = "Tactiques de Combat"
+		Target = "Après avoir attaqué un ennemi, faites un <b>clic-droit</b> de nouveau sur un module particulier du vaisseau ennemi pour le <yellow>cibler</yellow> avec vos armes."
+		Reactor = "<green><b>ASTUCE:</b></green> Détruisez le <yellow>réacteur</yellow> du vaisseau ennemi pour le transformer en coque sans vie!\n\n"
+	}
+
+	Tactics2
+	{
+		Title = "Tactiques de Combat (Avancé)"
+		Drag = "Pour choisir une <yellow>distance</yellow> et une <yellow>direction</yellow> d'attaque, faites un <b>clic-droit</b> sur le vaisseau ennemi, maintenez et <b>glissez</b> depuis votre cible."
+		Handles = "Pour ajuster la <yellow>distance</yellow>, la <yellow>direction</yellow>, ou <yellow>l'orientation</yellow> après avoir attaqué, maintenez <btn id='Game.AppendSelection'/> puis glissez l'un des icônes qui apparaissent."
+		TargetQueue = "Pour <yellow>mettre en attente des cibles additionnelles</yellow>, maintenez <btn id='Game.AppendSelection'/> puis faites un clic-droit sur les modules."
+	}
+
+	Thrusters1
+	{
+		Title = "Vaisseaux: Propulseurs"
+		Thruster = "Ajoutez des <yellow>propulseurs</yellow> pour augmenter la vitesse et la manoeuvrabilité de votre vaisseau. Un vaisseau avec trop peu de propulseurs ne peut pas voler."
+		Many = "Les propulseurs propulsent votre vaisseau dans la direction opposée.\n\nLa vitesse et la manoeuvrabilité de votre vaisseau dépendent du nombre, de la position, de l'orientation et de la taille de ses propulseurs."
+		Tip = "<green><b>ASTUCE:</b></green> Un vaisseau rapide et manoeuvrable possède plusieurs propulseurs à des endroits et des orientations différents."
+	}
+
+	Time1
+	{
+		Title = "Contrôler le Temps"
+		Buttons = "Pour <yellow>mettre la partie en pause</yellow> à tout moment, cliquez sur le bouton <b>||</b> dans le coin supérieur gauche ou appuyez sur la touche <btn id='Game.PauseToggle'/>."
+		Faster = "Pour <yellow>accélérer</yellow> ou <yellow>décélérer</yellow> le temps, cliquez sur les boutons <b>&gt;&gt;</b> ou <b>&lt;&lt;</b>."
+		Tip = "<green><b>ASTUCE:</b></green> Si jamais vous avez des difficultés à cliquer sur quelque chose parce que ça bouge trop vite, appuyez simplement sur <btn id='Game.PauseToggle'/> pour mettre la partie en pause."
+	}
+
+	Ftl1
+	{
+		Title = "Hyperpropulsion"
+		NoEnemies = "Une fois tous les vaisseaux ennemis vaincus, il est temps de <yellow>voyager</yellow> vers un autre <yellow>secteur</yellow>!\n"
+		BuildFtl = "Construisez un <yellow>Moteur à Hyperpropulsion</yellow> pour pouvoir effectuer un <yellow>Saut Hyperpropulsé</yellow>."
+		Efficiency = "Un grand vaisseau requiert plusieurs moteurs à hyperpropulsion répartis à son bord afin d'économiser du <fuel>CARBURANT</fuel>. "\
+		             "Les vaisseaux avec une jauge d'<yellow>Éfficacité de l'hyperpropulsion</yellow> consommeront moins de carburant que d'autres vaisseaux de même taille."
+		Map = "Pour enclencher un saut, ouvrez la <b>Carte de la Galaxie</b> en cliquant sur le bouton au-dessus de la mini-carte ou en appuyant sur la touche <btn id='Game.ToggleMap'/>."
+	}
+
+	Ftl2
+	{
+		Title = "Hyperpropulsion (Suite)"
+		ViewNode = "Cliquez sur un <yellow>secteur</yellow> avoisinant afficher des informations le concernant. Chaque secteur a des ennemis de difficulté différente.\n\nChoisissez une destination puis cliquez sur le bouton <b>Enclencher l'Hyperpropulsion</b>."
+		PlotCourse = "Votre équipage allumera automatiquement les moteurs à hyperpropulsion de votre vaisseau.\n\nUne fois alimentés à <ftl>100%</ftl>, cliquez sur <b>SAUTER</b> ou appuyez sur la touche <btn id='Game.DoFtlJump'/>."
+		Fuel = "<green><b>ASTUCE:</b></green> La quantité de <fuel>CARBURANT</fuel> utilisée dépend de la distance parcourue, de la taille de votre vaisseau, et de l'efficacité de ses moteurs à hyperpropulsion."
+	}
+
+	Fire1
+	{
+		Title = "Incendies"
+		Cause = "Des <red>Incendies</red> peuvent se déclarer lorsque vous êtes touché par certaines armes et lorsque des modules inflammables explosent. Si ils ne sont pas maîtrisés, "\
+		        "les incendies se répandront rapidement, causant des dommages et tuant l'équipage."
+		FireExtinguisher = "Ajoutez des <yellow>extincteurs</yellow> à votre vaisseau pour aider à combattre les incendies. Votre équipage va prendre "\
+		                   "les extincteurs et les utiliser pour éteindre les incendies."
+		Spread = "<green><b>ASTUCE:</b></green> Les incendies peuvent se répandre à travers les pièces ouvertes et les portes, mais pas à travers les murs. "\
+		         "Ajouter beaucoup de portes à votre vaisseau le rendra plus vulnérable aux incendies."
+	}
+}
