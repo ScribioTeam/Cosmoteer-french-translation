@@ -6,21 +6,40 @@ Misc
 {
 	Okay = "Confirmer"
 	Cancel = "Annuler"
+	Apply = "Appliquer"	
 	Yes = "Oui"
 	No = "Non"
 	MenuBack = "Retour"
+	Close = "Fermer"
 	ScreenshotSavedFmt = "Capture d'écran sauvegardée à l'emplacement<b>{0}</b>"
 	ScreenshotOpenFolder = "Ouvrir le dossier"
 	DefaultShipName = "Vaisseau sans nom"
 	SavedGameIncompatible = "Cette sauvegarde est incompatible avec cette version de Cosmoteer. Désolé!"
 	SavedShipIncompatible = "La sauvegarde de ce vaisseau est incompatible avec cette version de Cosmoteer. Désolé!"
 	SaveShipError = "Une erreur est survenue lors de la sauvegarde de ce vaisseau dans le fichier \"{0}\": {1}"
+	SaveShipUnauthorizedAccess = "Erreur lors de l'enregistrement du vaisseau dans le fichier \"{0}\": {1}\n\n"\
+	                             "Ceci est presque toujours causé par des programmes anti-virus, anti-malware ou anti-ransomware empêchant de manière incorrecte Cosmoteer de sauvegarder des fichiers."
 	LoadShipError = "Ce fichier semble ne pas être une sauvegarde de vaisseau valide. Erreur: {0}"
 	SaveGameError = "Une erreur est survenue lors de la sauvegarde de cette partie dans le fichier: \"{0}\": {1}"
+	SaveGameUnauthorizedAccess = "Erreur lors de l'enregistrement du jeu dans le fichier \"{0}\": {1}\n\n"\
+	                             "Ceci est presque toujours causé par des programmes anti-virus, anti-malware ou anti-ransomware empêchant de manière incorrecte Cosmoteer de sauvegarder des fichiers."
+	LoadGameError = "Erreur lors du chargement du jeu: {0}"
 	ShipClassIncompatible = "Classe de vaisseau incompatible."
 	NoBlueprints = "Le vaisseau n'a pas de plans."
-	GpuDriversOutOfDateFmt = "<bad><b>AVERTISSEMENT:</b></bad> Vos drivers graphiques datent de plus de <b>{0} mois</b>! Les drivers graphiques obsolètes sont connus pour causer des plantages en jouant à Cosmoteer. "\
-	                         "Il est <b>fortement recommandé</b> de mettre à jour vos drivers! (Cet avertissement peut être désactivé dans les réglages \"Divers\".)"
+	LoadingUncachedAssets = "Chargement des éléments de jeu pour la première fois.\nCela peut prendre plus de temps que d'habitude."
+	OpenUrlConfirm = "Cela réduira Cosmoteer et ouvrira une page dans votre navigateur Web."
+	ShortCostK = "{0:#,#,}K₡"
+	ShortCostM = "{0:#,#,,.0}M₡"
+	Unknown = "Inconnu"
+}
+
+Colorblind
+{
+	Normal = "Normal"
+	Deuteranopia = "Deuteranopia"
+	Protanopia = "Protanopia"
+	Tritanopia = "Tritanopia"
+	Achromatopsia = "Achromatopsia"
 }
 
 TitleScreen
@@ -29,6 +48,8 @@ TitleScreen
 	LoadGame = "Charger une partie"
 	Multiplayer = "Multijoueur"
 	Exit = "Quitter"
+	News = "Nouveau"
+	NewsFmt = "Nouveau <bad>({0})</bad>"
 	Settings = "Paramètres"
 	Mods = "Mods"
 	ShipLibrary = "Galerie de vaisseaux"
@@ -36,6 +57,7 @@ TitleScreen
 	Community = "Communauté"
 	Forum = "Forum Officiel"
 	Discord = "Discord Officiel"
+	Steam = "Steam"
 	Wiki = "Wiki"
 	Roadmap = "Feuille de route"
 	Reddit = "Reddit"
@@ -44,12 +66,21 @@ TitleScreen
 	Itch = "itch.io"
 	IndieDB = "Indie DB"
 	Feedback = "Evoyer un avis / Rapporter un bug"
-	OpenUrlConfirm = "Cette action va réduire Cosmoteer et ouvrir une page dans votre navigateur."
+	ConfirmHideAlert = "Êtes-vous sûr de vouloir masquer cette alerte?"
+	NextUpdateFmt = "Prochaine mise à jour dans environ {0} jours, {1} heures."
 }
 
 NewGame
 {
 	StartNewGame = "Commencer une nouvelle partie"
+	Starting = "La partie va commencer..."
+}
+
+News
+{
+	TitleFmt = "News ({0}/{1})"
+	Previous = "◀ Précédent"
+	Next = "Suivant ▶"
 }
 
 LobbyScreen
@@ -58,28 +89,104 @@ LobbyScreen
 	HostTip = "Créer une nouvelle partie que d'autres joueurs peuvent rejoindre. Vous pourrez modifier les réglages de la partie."
 	Join = "Rejoindre une partie"
 	JoinTip = "Rejoindre la partie sélectionnée hébergée par un autre joueur."
-	LAN = "Réseau Local"
+	Online = "En ligne"
+	LAN = "L.A.N."
 	DirectConnect = "Se connecter par I.P."
 	DirectConnectTip = "Se connecter à une partie hébergée par un autre joueur en saisissant son adresse I.P. publique."
 	DirectConnectMsg = "Entrez l'adresse I.P. publique de l'ordinateur hébergeant la partie."
+	ConnectingToServerFmt = "Connexion au serveur '{0}'..."
+	ServerConnectionTimedOut = "La connexion au serveur a expiré."
+	ServerConnectionDenied = "La connexion au serveur a été refusée."
+	EnterPassword = "Cette partie nécessite un mot de passe:"
 	Joining = "Vous rejoignez la partie..."
 	TimedOut = "La requête a expiré."
-	Searching = "Recherche de parties sur votre réseau local..."
+	NoGamesFound = "Pas de partie trouvés."
 	Incompatible = "<bad>INCOMPATIBLE</bad>"
-	HostMods = "Mods que l'hôte utilise mais pas vous:"
-	YourMods = "Mods que vous utilisez mais pas l'hôte:"
+	Full = "<bad>COMPLET</bad>"
+	InProgress = "<bad>EN COURS</bad>"
+	Closed = "<bad>FERMER</bad>"
 	PlayerName = "Pseudo: "
+	Server = "Server: "
+	AddCustomServer = "Ajouter un serveur personnalisé"
+	EditCustomServer = "Editer ce serveur"
+	RemoveCustomServer = "Supprimer ce serveur"
+	ConfirmRemoveCustomServerFmt = "Êtes-vous sûr de vouloir supprimer '{0}' à partir de la liste des serveurs personnalisés PlayersFmt = "{0}/{1}"
 	PlayersFmt = "{0}/{1}"
-	GameFullTip = "La partie est pleine."
+	Mute = "Muter"
+	MuteTip = "Si cette case est cochée, vous ne pourrez pas voir les messages envoyés par ce joueur."
+	Ban = "Bannir de mes parties"
+	BanTip = "Si cette case est cochée, ce joueur ne pourra pas participer aux parties que vous hébergez. "
+	LatencyFmt = "{0} ms"
+	PasswordTip = "Mot de passe requis"
+	SortStatus = "Trier par: Status"
+	SortName = "Trier par: Nom"
+	SortPing = "Trier par: Ping"
+	SortMode = "Trier par: Mode de Jeu"
+	SortRuleset = "Trier par: Règles"
+	SortCurPlayers = "Trier par: Joueurs"
+	SortMaxPlayers = "Trier par: Joueur max"
+	SortTeams = "Trier par: équipes"
+	SortFunds = "Trier par: Crédits"
+	ReverseSort = "REVERS_UNKOWN"
+	FiltersNone = "Filtres: Aucun"
+	FiltersFmt = "Filtres: <bad>{0} Active</bad>"
+	FilterJoinable = "peut rejoindre"
+	FilterNoPassword = "Sans Mot de Passe"
+	FilterMinValue = "Min ₡:"
+	FilterMaxValue = "Max ₡:"
+	FilterOfficialRuleset = "Règlement officiel"
+	FilterPing = "Ping:"
+	ClearFilters = "Effacer les filtres"
 
-	JoinDenyReason
+	GameInfo
+	{
+		InProgress = "<bad>PARTIE EN COURS</bad>"
+		Incompatible = "<bad>INCOMPATIBLE</bad>"
+		Closed = "<bad>PARTIE FERMER</bad>"
+		Full = "<bad>PARTIE PLEINE</bad>"
+		GameModeFmt = "<b>Mode de jeu:</b> <good>{0}</good>"
+		RulesetFmt = "<b>Règle:</b> <good>{0}</good>"
+		CustomRuleset = "<b>Règle:</b> Custom"
+		HostFmt = "<b>Hébergé:</b> {0}"
+		PlayersFmt = "<b>Joueurs:</b> {0}/{1}"
+		PasswordYes = "<b>Requiert un mot de passe:</b> <bad>OUI</bad>"
+		PasswordNo = "<b>Requiert un mot de passe:</b> NON"
+		HostMods = "L'hôte utilise un mod que vous n'utilisez pas:"
+		YourMods = "Vous utilisez un mod que l'Hôte n'utilise pas:"
+		SettingFmt = "<b>{0}:</b> {1}"
+		SettingYes = "OUI"
+		SettingNo = "NON"
+	}
+
+	ServerJoinDenyReason
+	{
+		ServerNotRunning = "Le serveur n'accepte pas les connexions."
+		VersionIncompatible = "Votre version de Cosmoteer n’est pas compatible avec la version du serveur.\n Vous devez exécuter une version compatible pour pouvoir vous y connecter.."
+		IncorrectPassword = "Mot de passe incorrect."
+		ServerFull = "Le serveur est actuellement plein et ne peut plus accepter de joueurs.."
+		Banned = "Tu as été banni de ce serveur."
+	}
+
+	GameJoinDenyReason
 	{
 		GameNotRunning = "Cet hôte n'est pas en partie."
+		GameClosed = "The host has closed the game so no more players may join."
 		GameFull = "Cette partie est pleine pour l'instant."
-		VersionIncompatible = "Votre version de Cosmoteer n'est pas la même que celle de l'hôte. Tous les joueurs doivent utiliser la même version de Cosmoteer."
+		VersionIncompatible = "Votre version de Cosmoteer ({0}) n'est pas identique à la version de l'hôte de Cosmoteer ({1}). Tous les joueurs doivent utiliser la même version de Cosmoteer."
 		DataIncompatible = "Les fichiers de votre jeu sont incompatibles avec ceux du jeu de l'hôte. Ceci peut être dû aux mods."
 		OSIncompatible = "Votre système d'exploitation n'est pas compatible avec celui de l'hôte. Cette erreur se produit fréquemment lorsque le système d'exploitation de l'hôte est un 32-bits mais le vôtre un 64-bits ou l'inverse."
 		ModsIncompatible = "Vous et l'hôte utilisez des mods incompatibles."
+		IncorrectPassword = "Mot de passe incorrecte."
+		Banned = "Tu as été banni par cette hote."
+		Unknown = "Impossible de rejoindre le jeu, raison inconnue."
+	}
+	
+		CustomServer
+	{
+		Nickname = "Surnom:"
+		Address = "I.P. ou Hôte:"
+		Port = "Port (Optional):"
+		Password = "Mot de passe (Optionnel):"
 	}
 }
 
@@ -87,24 +194,41 @@ GameSetupScreen
 {
 	Start = "LANCER LA PARTIE"
 	StartTip = "Démarre la partie!"
-	CantStartTip = "Tous les joueurs doivent ajouter au moins un vaisseau à leur flotte puis cliquer sur \"PRÊT\" avant que la partie ne puisse commencer."
+	CantStartTip = &CantReadyTip
+	StartCountdown = "DÉBUT DU COMPTE A REBOURS"
+	StartCountdownTip = "Démarre un compte à rebours de 15 secondes après lequel le jeu commencera, même si tous les joueurs ne sont pas prêts.. "\
+	                    "Tous les joueurs avec des flottes non valides deviendront des observateurs et ne pourront pas participer au jeu."
+	CantStartCountdownTip = &CantReadyTip
+	CancelCountdown = "ANNULER COMPTE A REBOURS"
+	CancelCountdownTip = "Arrête le compte à rebours de 15 secondes."
+	CountdownFmt = "<s12>CHARGEMENT DANS...\n</s12><s28><good>{0}</good></s28>"
 	Ready = "PRÊT"
 	ReadyTip = "Faites savoir aux autres joueurs que vous êtes prêt pour démarrer la partie. La partie ne peut pas démarrer tant que tous les joueurs ne sont pas prêts."
 	CantReadyTip = "Vous devez garder au moins un vaisseau dans votre flotte."
 	CancelReady = "PAS PRÊT"
 	CancelReadyTip = "Empêche la partie de démarrer tant que vous ne cliquez pas de nouveau sur \"PRÊT\"."
+	GameClosed = "La partie est <bad>FERMER</bad>\n<s12>Aucun autre joueur ne peut rejoindre.</s12>"
+	GameOpen = "La partie est <good>OUVERTE</good>\n<s12>D'autres joueurs peuvent s'inscrire si le jeu n'est pas complet.</s12>"
 	CancelGame = "◀ Annuler la partie"
 	LeaveGame = "◀ Quitter la partie"
 	ChangeGameName = "Changer de pseudo"
 	ChangeGameNameMsg = "Entrez le nouveau nom de cette partie:"
+	Players = "Joueurs"
+	Observers = "Observateurs"
+	JoinTeam = "Rejoindre"
+	PlayerJoinedFmt = "{0} a rejoinds la partie."
+	PlayerLeftFmt = "{0} a quitter la partie."
+	PlayerDisconnectedFmt = "{0} s'est déconnecter."
+	PlayerKickedFmt = "{0} à été kick par l'Hote."
 	TeamFmt = "Équipe {0}"
-	JoinTeam = "Rejoindre l'équipe"
-	PlayerJoined = "{0} a rejoint la partie."
-	PlayerLeft = "{0} a quitté la partie."
 	KickPlayer = "Expulser le joueur"
+	BanPlayer = "Kick & Ban"
+	RemoveAIPlayer = "Retirer le joueur I.A."
+	BanConfirm = "Voulez-vous vraiment exclure ce joueur de la partie et le bannir de toute celle à venir?"
 	RenamePlayer = "Changer de pseudo"
 	RenamePlayerMsg = "Entrez votre nouveau pseudo:"
 	PlayerIsHost = "<good>HÔTE</good>"
+	PlayerIsAI = "<good>Joueur IA</good>"
 	PlayerIsReady = "<good>PRÊT</good>"
 	PlayerIsNotReady = "<bad>PAS PRÊT</bad>"
 	PlayerYouFmt = "{0} <color r='255' g='255' b='255' a='127'>(Vous)</color>"
@@ -113,116 +237,204 @@ GameSetupScreen
 	RemoveShip = "X"
 	RemoveShipTip = "Retirer ce vaisseau de votre flotte."
 	InvalidShip = "Ce vaisseau a un design invalide ou illégal selon les réglages actuels de la partie."
-	MaxPlayers = "Joueurs max"
-	MaxPlayersTip = "Le nombre maximum de joueurs pouvant rejoindre cette partie, l'hôte y compris."
-	GameSpeed = "Vitesse du jeu"
-	GameSpeedTip = "La vitesse à laquelle la bataille se déroulera. Ne peut plus être modifié une fois la partie lancée."
-	MaxShips = "Vaisseaux par joueur"
-	MaxShipsTip = "Le nombre maximum de vaisseaux que chaque joueur peut avoir dans sa flotte."
-	TeamFunds = "Crédits par équipe"
-	TeamFundsTip = "Le nombre total de crédits (₡) que chaque équipe a à dépenser pour sa flotte entière, répartis équitablement entre tous les joueurs de l'équipe."
-	ShipPreviewMode = "Prévisualiser les vaisseaux"
-	ShipPreviewModeTip = "Détermine si les joueurs peuvent voir les vaisseaux que les autres joueurs ont choisi avant le dé but de la partie."
-	FleetDistance = "Distance entre les équipes"
-	FleetDistanceTip = "La distance entre les flottes de chaque équipe au début de la partie."
-	PerimeterDistance = "Périmètre mortel"
-	PerimeterDistanceTip = "Le rayon du cercle en dehors duquel les vaisseaux seront rapidement endommagés."
-	InitToMax = "Démarrer les vaisseaux avec énergie et munitions pleines"
-	InitToMaxTip = "Si cette case est cochée, les vaisseaux démarreront avec tous leurs systèmes pleins en énergie et en munitions, prêts à combattre. Sinon, les vaisseaux devront produire et charger des munitions et de l'énergie au début du combat."
-	FogOfWar = "Brouillard de guerre"
-	FogOfWarTip = "Si oui ou non les vaisseaux ont un champ de vision limité en dehors duquel les vaisseaux ennemis ne peuvent pas être vus."
-	LockTeams = "Verrouiller les équipes"
-	LockTeamsTip = "Si Si cette case est cochée, les joueurs ne pourront pas choisir leur équipe. L'hôte pourra toujours assigner une équipe n'importe quel joueur."
-	AllowIllegalShips = "Autoriser les vaisseaux illégaux"
-	AllowIllegalShipsTip = "Si Si cette case est cochée, les joueurs pourront utiliser des designs de vaisseaux qui autrement seraient illégaux."
+	Password = "Mot de Passe"
+	PasswordTip = "Si ce n'est pas vide, le mot de passe que les autres joueurs doivent entrer pour rejoindre cette partie."
+	GameMode = "Mode de Jeu"
+	GameModeTip = "Type de partie."
 	FundsRemainingFmt = "<money>{0:n0}₡</money>"
 	InsFundsRemainingFmt = "<ins_money>{0:n0}₡</ins_money>"
 	FundsRemainingTip = "Montant de crédits (₡) restants que ce joueur peut dépenser."
 	PlayersFmt = "{0}/{1} joueurs"
-	TimeLimit = "Limite de temps"
-	TimeLimitTip = "Durée maximum de la partie avant que l'équipe ayant le plus de forces restantes soit déclarée vainqueur."
-	TimeLimitFmt = "{0} minutes"
-	TimeLimitNone = "Aucune"
-	VictoryCondition = "Condition de victoire"
-	VictoryConditionTip = "Détermine à quelle condition l'une des équipes est déclarée vainqueure."
-	DestructionGoalFmt = "{0}% Destruction"
-	DestructionGoalNone = "Aucune"
-	PortForwardingSuccessFmt = "Redirection de port configurée avec succès pour le port UDP {0}. Les joueurs en dehors de votre réseau local devraient pouvoir rejoindre votre partie "\
-	                           "en utilisant votre adresse I.P. publique."
-	PortForwardingFailureFmt = "Impossible de configurer automatiquement la redirection de port pour le port UDP {0}. Vous devrez peut-être configurer manuellement la redirection de port "\
-	                           "pour que les joueurs hors de votre réseau local puissent rejoindre votre partie."
-	PublicIPFmt = "Votre adresse I.P. publique est {0}. Elle a été copiée automatiquement dans votre presse-papier. (Attention: partager votre adresse I.P. publique avec des inconnus peut potentiellement vous exposer à des hacks, des attaques de \"déni de service\", et d'autres risques.)"
+	GameChat = "Chat du Jeu"
+	LobbyChat = "Chat du Lobby"
+	AddAI = "Ajouter un joueur IA"
+	AdvancedRules = "Règles de jeu avancées"
+	ModsEnabledMsg = "Vous avez un ou plusieurs mods activés. Les autres joueurs ne pourront rejoindre votre jeu que s'ils ont exactement les mêmes mods activés."
+	MatchResults = "Match Results"
+	CancelConfirm = "Êtes-vous sûr de vouloir annuler ce jeu? Vous et tous les joueurs y retournerez dans le lobby."
+	LeaveConfirm = "Êtes-vous sûr de vouloir quitter ce jeu?"
+	ServerDisconnected = "Connexion perdue au serveur. Les joueurs ne pourront pas rejoindre votre jeu sans utiliser l'option \"Connect via I.P.\"."
 
-	ServerDisconnectReason
+	HostDisconnectReason
 	{
 		Canceled = "L'hôte a annulé la partie."
 		Kicked = "L'hôte vous a expulsé de la partie."
 		ConnectionLost = "Connexion avec l'hôte perdue."
 	}
-
-	FleetDistances
-	{
-		ShortFmt = "Courte ({0} mètres)"
-		NormalFmt = "Normale ({0} mètres)"
-		LongFmt = "Longue ({0} mètres)"
-	}
-
-	PerimeterDistances
-	{
-		NearFmt = "Proche ({0} mètres)"
-		NormalFmt = "Normal ({0} mètres)"
-		FarFmt = "Distante ({0} mètres)"
-		None = "Aucune"
-	}
-
-	ShipPreviewModes
-	{
-		Off = "Désactivé"
-		Team = "Même équipe seulement"
-		All = "Tous"
-	}
 }
 
 GameLaunchFlow
 {
-	ServerInitializing = "Lancement de la partie...\n(Initializing)"
-	ServerSending = "Lancement de la partie...\n(Sending data)"
-	ServerWaiting = "Lancement de la partie...\n(Waiting for other players)"
-	ServerStarting = "Démarrage de la partie!"
+	HostInitializing = "Chargement du jeu...\n(Initializing)"
+	HostSending = "Chargement du jeu...\n(Sending data)"
+	HostWaiting = "Chargement du jeu...\n(Waiting for other players)"
+	HostStarting = "Lancement de la partie..."	
 	ClientReceiving = "Lancement de la partie...\n(Receiving data)"
-	ClientInitializing = &ServerInitializing
-	ClientWaiting = &ServerWaiting
-	ClientStarting = &ServerStarting
+	ClientInitializing = &HostInitializing
+	ClientWaiting = &HostWaiting
+	ClientStarting = &HostStarting
+}
+
+GameResyncFlow
+{
+	HostSaving = "Game out of sync, resyncing...\n(Saving game state)"
+	HostSending = "Game out of sync, resyncing...\n(Sending game state)"
+	HostInitializing = "Game out of sync, resyncing...\n(Initializing)"
+	HostWaiting = "Game out of sync, resyncing...\n(Waiting for other players)"
+	HostResuming = "Resuming game!"
+	ClientReceiving = "Game out of sync, resyncing...\n(Receiving game state)"
+	ClientInitializing = &HostInitializing
+	ClientWaiting = &HostWaiting
+	ClientResuming = &HostResuming
 }
 
 ChatBox
 {
 	Send = "Envoyer"
+	+	ToggleTeam = "Equipe"
+	ToggleTeamTip = "Si coché, vos messages ne seront vus que par vos coéquipiers.\n\nTouche de raccourci: <btn id='Multiplayer.ToggleTeamChat'/>"
+	SendingTooFast = "Whoa, ralentis là-bas! Vous envoyez des messages trop vite!"
+	ChatFmt = "<good>{0}: </good>{1}"
+	TeamChatFmt = "<good>{0}: </good><bad>(TEAM)</bad> {1}"
 }
 
 Multiplayer
 {
 	DefaultPlayerName = "Joueur sans nom"
+	Host = "Hôte"
+	AI = "I.A."
+	AINameFmt = "Joueur I.A. {0}"
+	Observer = "Observateur"
+	Disconnected = "Déconnecter"
+	Waiting = "Ce joueur ralentit la partie."
 	DefaultGameName = "Partie  sans nom"
 	DefaultGameNameFmt = "Partie de {0}"
 	ShuttingDown = "Veuillez patienter..."
-	TieGame = "ENNUYANT!"
-	Victory = "VICTOIRE!"
-	Defeat = "DÉFAITE!"
-	ExitGame = "Quitter la partie"
-	TimeRemainingTip = "Temps restant avant que la partie se termine et que l'équipe avec le plus de force restantes soit déclarée vainqueur."
-	TeamStrengthTipFmt = "Force restante de l'équipe {0}. Ils seront vaincus une fois cette barre vide."
+	TieGame = "Match nul"
 	TeamFmt = "Équipe {0}"
-	PlayerLeft = "{0} a quitté la partie."
-	NextGameCountdownFmt = "La prochaine partie commence dans {0} secondes..."
+	PlayerLeftFmt = "{0} a quitté la partie."
+	NextGameCountdownFmt = "Retourner à avant-match en {0} seconds..."
 	AddressAlreadyInUseFmt = "Un autre programme utilise déjà le port UDP {0} et doit être fermé avant que vous puissiez jouer en multijoueur."
+	ErrorInitializingFmt = "Une erreur s'est produite lors de l'initialisation du mode multijoueur.: {0}"
+	LeftClickBuyShip = "Clic gauche pour acheter le vaisseau."
+	RightClickChangeShip = "Clic droit pour changer de vaisseau."
 
 	GameEndReason
 	{
 		Deliberate = "L'hôte a mis fin à la partie."
 		ConnectionLost = "Connexion perdue"
-		OutOfSync = "Partie désynchronisée!"
+		Kicked = &~/GameSetupScreen/HostDisconnectReason/Kicked
+		ReturnToGameSetup = &Deliberate
 	}
+}
+
+Pvp : Multiplayer
+{
+	WinnerFmt = "{0} Victoires!"
+	Forfeit = "Déclarer forfait"
+	ForfeitConfirm = "Êtes-vous sûr de vouloir admettre la défaite?"
+
+	Ranks
+	[
+		"1er"
+		"2ème"
+		"3ème"
+		"4ème"
+		"5ème"
+		"6ème"
+		"7ème"
+		"8ème"
+	]
+
+	Scoreboard
+	{
+		PlayerName = "JOUEUR"
+		Place = "RANG"
+	}
+}
+
+EliminationMode : Pvp
+{
+	TimeRemainingTip = "Le temps qu'il reste avant la fin de la partie et la victoire de l'équipe avec la plus grande force restante."
+	TeamStrengthTip = "La force restante de ce joueur ou de cette équipe. Ils seront vaincus une fois que cette barre sera vide."
+
+	Scoreboard : ^/0/Scoreboard
+	{
+		Health = "SANTE"
+	}
+}
+
+ArenaMode : Pvp
+{
+	TimeRemainingTip = "Le temps restant jusqu'à la fin de la partie et jusqu'à ce que l'équipe avec le plus de points soit déclarée vainqueur."
+	Points = "POINTS DE DEGATS"
+	PointsTip = "Points reçus pour avoir endommagé et détruit les navires d'autres joueurs."
+	Place = "PLACE"
+	ShipPointsFmt = "{0:n0} points"
+	EnemyDefeated = "ENNEMI DÉFAIT"
+	RespawnCountdownFmt = "Réaparition dans {0}..."
+	CanRespawnCountdownFmt = "Peut réaparaître dans {0}..."
+	Respawn = "REAPARITION"
+	ManualRespawn = "REAPARITION"
+	ManualRespawnCountdownFmt = "REAPARITION\n{0}"
+	ManualRespawnTip = "Abandonnez le navire et réapparaissez avec votre flotte entière et à pleine puissance."
+	ManualRespawnConfirm = "Abandonner le navire et réapparaître avec la flotte entière et à pleine puissance?\n\nD'autres joueurs peuvent toujours gagner des points en détruisant vos navires abandonnés."
+	BehindFirstPlaceFmt = "{0} points derrière la 1ère place ({1})"
+	AtFirstPlaceFmt = "{0} points d'avance sur la 2e place ({1})"
+	MultiplePlayers = "Plusieurs joueurs"
+
+	Scoreboard : ^/0/Scoreboard
+	{
+		Points = "DEGATS\nPOINTS"
+		DamageReceived = "DEGATS\nSUBIT"
+	}
+}
+
+DominationMode : Pvp
+{
+	TimeRemainingTip = "Temps restant jusqu'à la fin de la partie et la victoire de l'équipe avec le plus grand nombre de points."
+	CapturePointFmt = "<b>{0}</b>\n<money>+{1:n0}₡</money><gray>/{2} sec</gray>"
+	IncomeFmt = "<money>+{0:n0}₡</money><gray>/{1} sec</gray>"
+	FleetValueFmt = "<s12>VALEUR DE LA FLOTTE\n</s12><money>{0}</money>/<money><s14>{1}</s14></money>"
+
+	Scoreboard : ^/0/Scoreboard
+	{
+		CapturePoints = "Points de contrôle"
+		CurrentIncome = "Revenu actuel"
+		CurrentIncomeFmt = "+{0:n0}₡"
+		Credits = "Credits"
+		FleetValue = "Valeur de la flotte"
+		TotalIncome = "Revenu total"
+	}
+
+	CapturePointNames
+	[
+		"Alpha"
+		"Bravo"
+		"Charlie"
+		"Delta"
+		"Echo"
+		"Foxtrot"
+		"Hades"
+		"Istrolid"
+		"Juliet"
+		"Kappa"
+		"Luna"
+		"Mama"
+		"Norse"
+		"Omicron"
+		"Papa"
+		"Quasar"
+		"Romeo"
+		"Sigma"
+		"Tango"
+		"Uncle"
+		"Victor"
+		"Whiskey"
+		"Xavier"
+		"Yankee"
+		"Zeta"
+	]
 }
 
 LoadSaveGame
@@ -233,12 +445,19 @@ LoadSaveGame
 	OkaySave = "Sauvegarder"
 	OpenFolder = "Ouvrir dossier"
 	Delete = "Supprimer"
-	ConfirmDeleteFmt = "Êtes-vous sûr de vouloir supprimer '{0}'?"
+	ConfirmDeleteFmt = "Êtes-vous sûr de vouloir supprimer '{0}'?Cela mettra le fichier dans la corbeille de votre ordinateur"
 	ConfirmOverwrite = "Écraser la sauvegarde existante?"
 	
-	Manual = "Sauvegardes Manuelles"
+	Loading = "Jeu en cours de chargement..."
+	Saving = "Jeu de sauvegarde..."
+	AutoSaving = "Sauvegarde automatique..."
+	QuickSaving = "Sauvegarde rapide..."
+
+	Manual = "Sauvegards nommés"
 	Auto = "Sauvegardes Automatiques"
+	AutoSave = "Sauvegardes Automatiques"
 	Quick = "Sauvegardes Rapides"
+	QuickSave = "Sauvegardes Rapides"
 }
 
 ShipLibrary
@@ -262,7 +481,7 @@ ShipLibrary
 	RenameShip = "Renommer"
 	RenameShipMsg = "Entrez un nouveau nom pour ce vaisseau:"
 	DeleteShip = "Supprimer"
-	ConfirmDeleteShipFmt = "Êtes-vous sûr de vouloir supprimer '{0}'?"
+	ConfirmDeleteShipFmt = "Êtes-vous sûr de vouloir supprimer '{0}'?Cela mettra le fichier dans la corbeille de votre ordinateur"
 
 	NewFolder = "Nouveau dossier"
 	NewFolderMsg = "Entrez un nom pour le dossier:"
@@ -279,6 +498,10 @@ ShipLibrary
 
 	SortTip = "Détermine l'ordre dans lequel les vaisseaux sont triés."
 	SearchTip = "Filtrez les vaisseaux ci-dessous pour montrer seulement ceux dont le nom correspond au texte que vous tapez ici."
+	
+	AuthorFmt = "Conçu par: {0}"
+	DescriptionFmt = "{0}"
+
 
 	SortMode
 	{
@@ -297,6 +520,11 @@ ShipLibrary
 		Oldest = "Trier par: Ancienneté"
 		OldestTip = "Trie les vaisseaux du plus anciennement modifié au plus récemment modifié."
 	}
+}
+CloudStorage
+{
+	UsedFmt = "Steam Cloud: <good>{0:0.0}%</good> used"
+	UsedTipFmt = "Used: {0} / {1}\nAvailable: {2}"
 }
 
 Inputs
@@ -326,14 +554,34 @@ Inputs
 	Game
 	{
 		Name = "Jeu"
+		Move = "Bouge toi / Suivre"
+		Rotate = "Tourner"
+		Strafe = "Tirer"
+		Attack = "Attaque"
+		Halt = "Halt"
+		InvertCollisionAvoidance = "Inverser la prévention des collisions"
+		DirectControlToggle = "Basculer en mode de contrôle direct"
+		DirectControlToggleFaceCursor = "Contrôle direct: Basculer le curseur automatique"
+		DirectControlForward = "Contrôle direct: Vers l'avant"
+		DirectControlReverse = "Contrôle direct: Vers l'arrière"
+		DirectControlRotateLeft = "Contrôle direct: Tourne à gauche"
+		DirectControlRotateRight = "Contrôle direct: Tourner à droite"
+		DirectControlStrafeLeft = "Contrôle direct: Tirer à gauche"
+		DirectControlStrafeRight = "Contrôle direct: Tirer à droite"
+		DirectControlBrake = "Contrôle direct: Frein/Coût"
+		DirectControlLockTarget = "Contrôle direct: Verrouiller la cible"
+		DirectControlFireWeaponsFmt = "Contrôle direct: Reliure d'arme #{0}"
+		ToggleAutoThrust = "Basculer les propulseurs en automatique"
 		Selection = "Sélectionner un vaisseau/une partie"
 		SelectParts = "Sélectionner une partie"
 		AppendSelection = "Ajouter une sélection"
 		ShowCommandWidgets = "Afficher les commandes"
-		WorldRelativeAttackAngle = "Utiliser des angles d'attaque et de poursuite relatifs à la grille d'arrière-plan"
+		WorldRelativeAttackAngle = "Utiliser l'angle d'attaque relatif au navire"
+		WorldRelativeFollowAngle = "Utiliser un angle de suivi relatif à la grille"
 		Command = "Contrôler vaisseau/module"
 		UseTool = "Utiliser l'outil"
 		CancelTool = "Annuler l'outil"
+		TargetWeapon = "Arme ciblée"
 		CancelWeaponTargets = "Annuler le ciblage des canons"
 		ToggleMap = "Afficher/cacher la carte de la galaxie"
 		DoFtlJump = "Enclencher l'hyperpropulsion"
@@ -351,10 +599,48 @@ Inputs
 		Chat = "Discussion"
 	}
 
+	PartTriggers
+	{
+		detonate = "Détoner une charge explosive"
+	}
+
 	PartToggles
 	{
-		on_off = "Allumer/Éteindre ce module"
-		fire_mode = "Mode de tir"
+		on_off_off = "Pièce hors tension"
+		on_off_on = "Pièce sous tension"
+		fire_mode_hold = "Tenir le feu"
+		fire_mode_at_will = "Feu à volonté"
+		fire_mode_auto = "Tir automatique"
+		rotate_off = "Rotation: Off"
+		rotate_on = "Rotation: On"
+		fire_pref_attack = "Restriction des tir: Attaque"
+		fire_pref_defend = "Restriction des tir: Défendre"
+		fire_pref_both = "Restriction des tir: attaque + défense"
+		fire_alternating_off = "Mode de tir: Synchrone"
+		fire_alternating_on = "Mode de tir: Asynchrone"
+		thruster_boost_off = "Mode Boost Off"
+		thruster_boost_on = "Mode Boost On"
+		missile_type_he = "Type de lanceur: Explosif élevé"
+		missile_type_emp = "Type de lanceur: I.E.M."
+		missile_type_nuke = "Type de lanceur: Nuke"
+		missile_type_mine = "Type de lanceur: Mine"
+		launch_mines_off = "Annuler le lancement de la mine"
+		launch_mines_on = "Lancer des mines"
+		launch_mines = "Lancer des mines"
+		tractor_mode_pull = "Rayon tracteur: tirez"
+		tractor_mode_push = "Rayon tracteur: Poussez"
+		tractor_mode_auto = "Rayon tracteur: Auto"
+	}
+
+	PartTargetors
+	{
+		tractor_beam = "Cible du rayon tracteur"
+		prism_link = "Lier les Prismes à Ion"
+	}
+
+	PartTargetCancelers
+	{
+		tractor_beam = "Annuler le faisceau du tracteur"
 	}
 
 	View
@@ -365,6 +651,7 @@ Inputs
 		PanUp = "Déplacement vers le haut"
 		PanDown = "Déplacement vers le bas"
 		DragFocus = "Déplacer/Centrer la vue"
+		FocusMidpoint = "Focus sélectionné / Milieu cible"
 		ZoomIn = "Zoom avant"
 		ZoomOut = "Zoom arrière"
 		RotateRight = "Rotation vers la droite"
@@ -379,9 +666,17 @@ Inputs
 		ViewMinimap = "Voir la mini-carte"
 	}
 
+	Multiplayer
+	{
+		Name = "Multijoueur"
+		SendChat = "Envoyer un message"
+		ToggleTeamChat = "Basculer le chat en équipe"
+		ShowScoreboard = "Afficher le tableau de score"
+	}
+
 	Design
 	{
-		Name = "Designer de vaisseaux"
+		Name = "Editeur de vaisseaux"
 		BuildOpen = "Ouvrir le menu de construction"
 		BuildClose = "Fermer le menu de construction"
 		ToggleBlueprints = "Outil plans"
@@ -390,16 +685,19 @@ Inputs
 		EraseTool = "Outil de suppression"
 		GrabTool = "Outil de déplacement"
 		SelectionTool = "Outil de sélection"
+		ContiguousSelectionMode = "Contigu \"Magic Wand\" Mode de selection"
 		ToggleMirrorMode = "Activer/Désactiver le mode miroir"
 		SelectAll = "Sélectionner tous les modules/vignettes"
 		Delete = "Supprimer tous les modules/vignettes"
 		DeleteDoors = "Supprimer les portes"
 		NoAutoDoors = "Ne pas ajouter de portes automatiquement"
+		FillAllDoors = "Placer toutes les portes"
 		CopySelected = "Copier la sélection"
 		CutSelected = "Couper la sélection"
 		Paste = "Coller la sélection"
 		EraseCursorMode = "Mode de suppression"
-		FillPartsMode = "Mode de remplissage"
+		RestrictShapeMode = "Restreindre le mode"
+		AppendShapeMode = "Ajouter le mode forme"
 		ImportPng = "Importer un .PNG"
 		RotateLeft = "Pivoter vers la gauche"
 		RotateRight = "Pivoter vers la droite"
@@ -407,11 +705,17 @@ Inputs
 		FlipY = "Retourner verticalement."
 		Undo = "Annuler"
 		Redo = "Rétablir"
+		ShowStats = "Afficher les statistiques de la pièce"
+	}
+
+	Brushes
+	{
+		Name = "Éditeur de vaisseau (Des pinceaux)"
 	}
 
 	Parts
 	{
-		Name = "Designer de vaisseau (Modules)"
+		Name = "Éditeur de vaisseau (Modules)"
 	}
 
 	Repair
@@ -424,8 +728,10 @@ Inputs
 
 	Crew
 	{
-		Name = "Équipage"
+		Name = "Gestion d'Équipage"
 		OpenClose = "Ouvrir/fermer le menu d'équipage"
+		ClearPriorityTargets = "Effacer les objectifs prioritaires"
+		SelectAll = "Sélectionner tout"
 		FiveAtATime = "Recruter/Virer 5 à la fois"
 	}
 
@@ -433,6 +739,7 @@ Inputs
 	{
 		Name = "Mode créatif"
 		DeleteShip = "Supprimer les vaisseaux sélectionnés"
+		MoveShip = "Déplacer les navires sélectionnés vers la destination"
 		RandomizeAsteroid = "Astéroïdes aléatoires"
 		PlayAsAllPlayers = "Incarner: tous les joueurs"
 		PlayAsFmt = "Incarner: joueur {0}"
@@ -452,8 +759,10 @@ Inputs
 		Name = "Contrôle des groupes"
 		SelectShipGroupFmt = "Sélectionner le groupe de vaisseaux {0}"
 		CreateShipGroupFmt = "Créer le groupe de vaisseaux {0}"
+		RemoveFromShipGroupFmt = "Supprimer du groupe de navires {0}"
 		SelectPartGroupFmt = "Sélectionner le groupe de modules {0}"
 		CreatePartGroupFmt = "Créer le groupe de modules {0}"
+		RemoveFromPartGroupFmt = "Supprimer du groupe de pièces {0}"
 	}
 
 	MouseButtonNames
@@ -575,10 +884,21 @@ Inputs
 
 Settings
 {
-    Graphics
+ 	RestartRequired = "Un paramètre a été modifié et ne peut prendre effet qu'au redémarrage du jeu.."
+	RestartNow = "Redémarrer maintenant"
+	RestartLater = "Recommence plus tard"
+
+   Graphics
 	{
 		TabName = "Graphismes"
 		
+		DisplayLbl = "Afficher"
+		PerformanceLbl = "Performance"
+		PreferencesLbl = "Préférences"
+
+		Language = "Language"
+		LanguageTip = "La langue à utiliser pour l'interface utilisateur. Des traductions supplémentaires peuvent être trouvées à http://forum.cosmoteer.net/ \n La traduction fraçaise à été réalisée par Scribio, une équipe de traducteur, sur les relics de la traduction de The_Mule. Trouver ici notre discord : https://discord.gg/qecpGDY"
+
 	    WindowMode = "Type de fenêtre"
 	    WindowModeTip = "Le style de la fenêtre utilisée pour afficher le jeu."
 	    ExclusiveFullScreen = "Plein écran exclusif"
@@ -611,9 +931,16 @@ Settings
 	    VSyncTriBuf = "Activée (Triple-Buffered)"
 	    VSyncTriBufTip = "Cette variante de la synchronisation verticale peut améliorer votre fréquence d'affichage mais peut aussi augmenter la latence d'entrée."
 
-	    HighDpi = "Affichage haute résolution"
-	    HighDpiTip = "Si cette option est cochée, l'interface utilisateur et le jeu seront affichés au double de l'échelle normale. Cela peut être utile lorsque vous jouez sur des écrans haute résolution."
-		HighDpiDisabledTip = "La taille actuelle de la fenêtre ou la résolution de l'écran n'est pas assez grande pour supporter High D.P.I. Mode."
+		DpiScaling = "Mise à l'échelle D.P.I."
+		DpiScalingTip = "Contrôle la taille de l'interface utilisateur. Augmenter cette valeur au-dessus de 100% peut rendre le jeu plus facile à jouer à haute résolution."
+		DpiScaleDisabledTip = "La taille actuelle de la fenêtre ou la résolution de l'écran n'est pas assez grande pour prendre en charge cette échelle D.P.I."
+		Dpi100 = "100%"
+		Dpi150 = "150%"
+		Dpi200 = "200%"
+
+		LockCursor = "Piège à souris"
+		LockCursorTip = "Si cette case est cochée, le curseur de la souris ne pourra pas quitter la fenêtre de jeu pendant le jeu."\
+		                "Si vous jouez dans une fenêtre exclusive en plein écran, le curseur ne la quittera pas, que cette option soit sélectionnée ou non.."
 		
 	    LimitFps = "Limiter le taux rafraîchissement"
 	    LimitFpsTip = "Si cette option est cochée, le jeu ne fonctionnera pas plus rapidement qu'un taux de rafraîchissement particulier."
@@ -623,9 +950,13 @@ Settings
 		AnimateBackgrounds = "Arrière-plan animé"
 		AnimateBackgroundsTip = "Si activé, les arrière-plans du jeu seront animés. Désactiver cette option peut améliorer considérablement les performances."
 		
-		FancyParticles = "Particules Fantaisie"
-		FancyParticlesTip = "Si activé, des effets de particules supplémentaires seront affichés. Désactiver cette option peut améliorer les performances."
-		
+		FancyParticles = "Fancy Particles & VFX"
+		FancyParticlesTip = "Si activé, des effets de particules et visuels supplémentaires seront rendus. Désactiver cette option peut améliorer les performances."
+
+		UncompressedTextures = "Utiliser des textures non compressées"
+		UncompressedTexturesTip = "Si activé, les textures ne seront pas compressées. Activer cette option améliorera très légèrement la qualité visuelle et augmentera considérablement l'utilisation de la RAM / VRAM. "\
+		                          "Pour changer cette option, le jeu doit être redémarré."
+								  
 		ScreenShake = "Tremblement d'écran"
 		ScreenShakeTip = "Si cette case est cochée, certains événements dans le jeu tels que des explosions provoqueront un tremblement de l'écran."
 	}
