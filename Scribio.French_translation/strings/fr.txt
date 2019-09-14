@@ -959,6 +959,9 @@ Settings
 								  
 		ScreenShake = "Tremblement d'écran"
 		ScreenShakeTip = "Si cette case est cochée, certains événements dans le jeu tels que des explosions provoqueront un tremblement de l'écran."
+
+		BackgroundGrid = "Cadrillage d'arrière plan"
+		BackgroundGridTip = "Si cette option est activée, une grille pâle sera affichée en arrière-plan pour faciliter l'évaluation des distances et des vitesses."
 	}
 	
 	Audio
@@ -979,11 +982,28 @@ Settings
 	{
 		TabName = "Gameplay"
 
+		InterfaceLbl = "Interface"
+		CommandsLbl = "Commandes des vaisseaux"
+		DirectControlLbl = "Mode de contrôle direct"
+		OverlaysLbl = "Superposition d'information"
+
 	    AutoFtlJump = "Enclencher automatiquement l'hyperpropulsion"
 	    AutoFtlJumpTip = "Si cette option est cochée, l'hyperpropulsion sera enclenchée automatiquement dès que tous les vaisseaux sont prêts à sauter."
 
 		OnShipIndicators = "Afficher les indicateurs d'état du vaisseau"
 	    OnShipIndicatorsTip = "Si cette option est cochée, affiche des indicateurs lorsqu'il n'y a plus de membres d'équipage, de munitions ou d'énergie."
+
+		SelectedPartStatusBars = "Afficher les barres d'état pour les pièces sélectionnées"
+		SelectedPartStatusBarsTip = "Si coché, les barres d'intégrité et d'état seront affichées pour toutes les pièces sélectionnées."
+
+		OffScreenBlips = "Afficher des Blips pour les navires hors écran"
+		OffScreenBlipsTip = "Si cette case est cochée, la couleur \ "blips \" sera affichée pour les vzisseaux situés au-delà du bord de l'écran."
+
+		ZoomedOutBlips = "Afficher les blips lors d'un zoom arrière"
+		ZoomedOutBlipsTip = "Si coché, les "blips" colorés seront affichés pour les petits vaisseaux lors d’un zoom arrière."
+
+		PingNearbyEnemies = "Ping des ennemis proches"
+		PingNearbyEnemiesTip = "Si cette case est cochée, les navires ennemis apparaissant à portée de vue de vos propres navires mais qui ne sont pas directement visibles à l'écran seront alertés par un "ping" visuel et audio."
 
 		PartToolTips = "Afficher les bulles d'aide des modules"
 	    PartToolTipsTip = "Si cette option est cochée, les informations s'affichent après avoir laissé brièvement le curseur de la souris sur un module d'un navire."
@@ -991,25 +1011,55 @@ Settings
 		AllowShipDeselection = "Autoriser la désélection de vaisseau"
 	    AllowShipDeselectionTip = "Si cette option est cochée, un clic gauche sur un endroit vide désélectionnera tout vaisseau actuellement sélectionné."
 
+		ShowAdvancedCommands = "Afficher les commandes de vaisseau avancées"
+		ShowAdvancedCommandsTip = "Si cette case est cochée, les commandes de vaisseau avancées seront affichées dans l'interface utilisateur."\
+		                          "Même si cette case n'est pas cochée, vous pouvez toujours les utiliser en utilisant leurs touches de raccourci.."
+
 	    CtrlSelectsParts = "Forcer <btn id='Game.SelectParts' xml='false'/> pour sélectionner des modules"
 		CtrlSelectsPartsTip = "Si cette option est cochée, la touche <btn id='Game.SelectParts'/> doit être maintenue en cliquant sur des modules pour pouvoir les sélectionner."
 
 	    AlwaysShowCommandWidgets = "Toujours afficher les outils de repositionnement"
 	    AlwaysShowCommandWidgetsTip = "Si cette option est cochée, vous ne devrez pas maintenir la touche <btn id='Game.AppendSelection'/> pour afficher les outils de repositionnement."
 
-	    PreferWorldRelativeAttackAngle = "Préférer les angles d'attaque relatifs à la grille"
-	    PreferWorldRelativeAttackAngleTip = "Si cette option est cochée, cliquer droit et glisser sur un vaisseau ennemi utilisera un angle d'attaque relatif à la grille en arrière-plan plutôt qu'au vaisseau ennemi. Maintenez <btn id='Game.WorldRelativeAttackAngle'/> pour utiliser l'autre mode."
+		PreferShipRelativeAttackAngle = "Préférer les angles d'attaque relatifs au navire"
+		PreferShipRelativeAttackAngleTip = "Si cette case est cochée, cliquer avec le bouton droit de la souris et faire glisser le curseur sur un navire ennemi utilisera un angle d'attaque par rapport au navire ennemi au lieu de la grille d'arrière-plan. Maintenez <btn id = 'Game.ShipRelativeAttackAngle' /> pour utiliser l’autre mode."
 
 		PreferWorldRelativeFollowAngle = "Préférer les angles de suivi relatifs à la grille"
 		PreferWorldRelativeFollowAngleTip = "Si cette option est cochée, cliquer droit et glisser sur un vaisseau allié utilisera un angle de suivi relatid à la grille en arrière-plan plutôt qu'au vaisseau allié. Maintenez <btn id = 'Game.WorldRelativeAttackAngle' /> pour utiliser l'autre mode."
 
+		DirectControlAutoBrake = "Freiner automatiquement"
+		DirectControlAutoBrakeTip = "Si cette case est cochée, votre navire freine automatiquement jusqu'à l'arrêt lorsque vous ne tenez aucune touche en mode de contrôle direct. Maintenez <button id = 'Game.DirectControl Brake' /> pour utiliser l'autre mode."
+
+		DirectControlEnableWeapons = "Activer le contrôle des armes"
+		DirectControlEnableWeaponsTip = "Si cette case est cochée, le mode de contrôle direct vous permettra de contrôler les armes de votre navire. Sinon, les armes de votre navire seront contrôlées par l'IA."
+
+		DirectControlAimAssist = "Assistance d'objectif"
+		DirectControlAimAssistTip = "Si cette case est cochée, les armes viseront automatiquement la partie ennemie la plus proche du curseur de la souris."
+
+		DirectControlAutoFaceCursor = "Viser vers le curseur"
+		DirectControlAutoFaceCursorTip = "Lors du mode de contrôle direct, si cette case est cochée, votre navire pivotera automatiquement pour faire face au curseur de la souris. Appuyez sur <btn id = 'Game.DirectControlToggleFaceCursor' /> pour basculer en mode de contrôle direct. "
+
 		AdHocFormations = "Formations automatiques de vaisseaux"
 		AdHocFormationsTip = "Si cette option est cochée, les vaisseaux seront automatiquement regroupés dans une formation ad hoc lorsque vous donnez un ordre à plusieurs vaisseaux à la fois."
+
+		EnableCollisionAvoidance = "Activer l'évitement de collision"
+		EnableCollisionAvoidanceTip = "Si cette case est cochée, vos navires tenteront par défaut d'éviter les collisions avec d'autres navires.. "\
+		                              "Maintenir <btn id='Game.InvertCollisionAvoidance'/> pour utiliser l'autre mode."
+
+		BreakFormationToAttack = "Briser la formation pour attaquer"
+		BreakFormationToAttackTip = "Si cette case est cochée, les navires interrompent automatiquement la formation lorsqu'ils atteignent la portée de l'attaque de l'ennemi."
 	}
 	
 	Camera
 		{
 		TabName = "Caméra"
+
+		PanLbl = "Pan et Rotation"
+		ZoomLbl = "Zoom"
+		FocusLbl = "Focus : Suivre"
+		DirectControlLbl = "Mode de Control Direct"
+		MinimapLbl = "Minimap"
+		MiniviewLbl = "Picture-In-Picture"
 
 	    EdgePan = "Déplacement latéral"
 	    EdgePanTip = "Définit si la caméra peut être déplacée en positionnant le curseur de la souris sur le bord de l'écran."
@@ -1046,11 +1096,25 @@ Settings
 	    WheelZoomAtCursorTip = "Si cette option est cochée, lorsque vous effectuez un zoom à l'aide de la molette, l'écran zoomera sur le curseur. "\
 	                           "Si cette option n'est pas cochée, lorsque vous effectuez un zoom à l'aide de la molette, l'écran zoomera en son centre."
 
+		DirectControlViewFollowsCursor = "Vue 'suit le curseur de la souris'"
+		DirectControlViewFollowsCursorTip = "Si cette case est cochée, la caméra sera centrée sur un point situé entre le navire et le curseur de la souris. Si cette case n'est pas cochée, la caméra sera centrée sur le navire.."
+
+		DirectControlAutoZoom = "Le zoom suit le curseur de la souris"
+		DirectControlAutoZoomTip = "Si cette case est cochée, la caméra effectuera automatiquement un zoom avant et arrière en fonction de la distance entre le bateau et le curseur de la souris."
+
+		DirectControlAutoRotate = "Rotation des navires"
+		DirectControlAutoRotateTip = "Si cette case est cochée, la caméra pivote automatiquement pour que le navire soit toujours face en haut en mode de contrôle direct."
+
 	    StickyFocus = "Centrage permanent des vaisseaux"
 	    StickyFocusTip = "Lorsque vous mettez votre vue sur un vaisseau, la vue va se \"coller\" au vaisseau. "\
 	                     "La vue se \"décollera\" une fois que le centre de la vue aura bougé en dehors du cercle du vaisseau."
 
-		MiniviewLbl = "Incrustation d'image"
+		ShowMidpointFocusWidget = "Montrer le point médian \"Eye\" "
+		ShowMidpointFocusWidgetTip = "Si coché, alors une icône \"eye\" sera affichée entre vos vaisseaux et leurs cibles. "\
+		                             "En cliquant dessus, la caméra se centrera sur le point médian entre les deux vaisseaux."
+
+		RotateMinimap = "Rotation de la caméra"
+		RotateMinimapTip = "Si coché, alors la mini-carte tournera pour correspondre à la rotation de la vue."
 
 		MiniviewCombatModeLbl = "En Combat"
 		MiniviewCombatModeLblTip = "Choisissez si et quand l'incrustation d'image s'affiche pendant le combat."
