@@ -1105,6 +1105,9 @@ Settings
 		DirectControlAutoRotate = "Match Ship Rotation"
 		DirectControlAutoRotateTip = "If checked, then the camera will automatically rotate so that the ship is always facing up while in Direct Control Mode."
 
+		AutoTrack = "Automatically Track On-Screen Ships"
+		AutoTrackTip = "If checked, then the camera will automatically match the movement of any on-screen ships."
+
 		StickyFocus = "Sticky Ship Focus"
 		StickyFocusTip = "When focusing the view on a ship, the view will \"stick\" to the ship even after panning the view. "\
 		                 "Focus will un-stick once the center of the view is moved outside the ship's circle."
@@ -2397,7 +2400,7 @@ CrewBox
 	NothingToUndo = "Nothing to undo."
 	NothingToRedo = "Nothing to redo."
 
-	CrewTab = "CREW"
+	CrewTab = "ROSTER"
 	Crew = "CREW"
 	Beds = "BEDS"
 	NumCrewTip = "The current number of crew on the ship."
@@ -2449,9 +2452,9 @@ CrewBox
 	MirrorToggleTip = "<b>Mirror Mode</b>\n\nWhen turned on, changes to the ship's squads will be mirrored across the ship's centerline.\n\nHotkey: <btn id='Design.ToggleMirrorMode'/>"
 	ResetMirrorLines = "Reset Mirror Lines"
 	ResetMirrorLinesTip = "Resets the horizontal and vertical mirror lines back to the center of the ship."
-	ClearPriorityTargetsTip = "Removes any specific part prioritization assignments from the selected squad(s).\n\nHotkey: <btn id='Crew.ClearPriorityTargets'/>"
+	ClearPriorityTargetsTip = "Removes any specific part prioritization assignments from the selected squads and suppliers.\n\nHotkey: <btn id='Crew.ClearPriorityTargets'/>"
 
-	SquadsTab = "ROLES"
+	BehaviorTab = "BEHAVIOR"
 }
 
 RoleEditor
@@ -3042,7 +3045,8 @@ Tutorials
 	Camera1
 	{
 		Title = "Controlling the Camera"
-		EdgePan = "To <yellow>pan the camera</yellow>, move the <b>mouse cursor</b> to the edge of the screen or press the <b>arrow or WASD keys</b>."
+		EdgePan = "To <yellow>pan the camera</yellow>, press the <b>arrow keys</b> or <b>WASD keys</b>.\n\n"\
+		          "To <yellow>drag the camera</yellow>, click, hold, and then drag the <b>middle mouse button</b>."
 		Zoom = "To <yellow>zoom in and out</yellow>, use the <b>scroll wheel</b> on your mouse or press the <btn id='View.ZoomIn'/> and <btn id='View.ZoomOut'/> keys."
 		Tip = "<green><b>TIP:</b></green> Can't find your ship? Click its icon in the lower-left corner or press the <btn id='View.FocusSelected'/> (Focus) key."
 	}
@@ -3050,7 +3054,6 @@ Tutorials
 	Camera2
 	{
 		Title = "Controlling the Camera (Advanced)"
-		Drag = "To <yellow>drag the camera</yellow>, click, hold, and then drag the <b>middle mouse button</b>."
 		FocusClick = "To <yellow>focus the camera</yellow> on any ship, click the <b>middle mouse button</b> on it.\n\nYou can also <b>middle-click</b> in empty space to center the camera there."
 		AltDrag = "To <yellow>focus on multiple ships</yellow>, hold the <btn id='View.FocusCursorMode'/> key, <b>left click</b>, and drag a box around the ships."
 		Tip = "<green><b>TIP:</b></green> Press the <btn id='View.FocusSelected'/> key to focus on your ship."
@@ -3107,7 +3110,7 @@ Tutorials
 	{
 		Title = "Managing Your Crew"
 		Autonomous = "<yellow>Crew are mostly autonomous</yellow> and will operate your ship on their own, but you can still customize their behavior if you want to."
-		Button = "To <yellow>customize your crew's behavior</yellow>, click the <b>Crew</b> button."
+		Button = "To <yellow>customize your crew's behavior</yellow>, click the <b>Crew</b> button and then click the <b>BEHAVIOR</b> tab."
 		Squads = "<yellow>Crew are organized into \"Squads\".</yellow> Each squad has its own bedroom where its members will return when they have nothing to do."
 		Prioritize = "To <yellow>assign a squad</yellow> to a specific weapon or other part, <b>left-click</b> on the squad's bedroom and then <b>right-click</b> on the desired weapon or part. "\
 		             "The squad will <b><yellow>ONLY</yellow></b> do jobs for that part and will <b><yellow>NOT</yellow></b> do jobs for any other parts."

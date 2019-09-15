@@ -65,7 +65,7 @@ TitleScreen
 	Twitter = "Twitter"
 	Itch = "itch.io"
 	IndieDB = "Indie DB"
-	Feedback = "Evoyer un avis / Rapporter un bug"
+	Feedback = "Envoyer un avis / Rapporter un bug"
 	ConfirmHideAlert = "Êtes-vous sûr de vouloir masquer cette alerte?"
 	NextUpdateFmt = "Prochaine mise à jour dans environ {0} jours, {1} heures."
 }
@@ -73,7 +73,7 @@ TitleScreen
 NewGame
 {
 	StartNewGame = "Commencer une nouvelle partie"
-	Starting = "La partie va commencer..."
+	Starting = "La partie va commencer.."
 }
 
 News
@@ -94,11 +94,11 @@ LobbyScreen
 	DirectConnect = "Se connecter par I.P."
 	DirectConnectTip = "Se connecter à une partie hébergée par un autre joueur en saisissant son adresse I.P. publique."
 	DirectConnectMsg = "Entrez l'adresse I.P. publique de l'ordinateur hébergeant la partie."
-	ConnectingToServerFmt = "Connexion au serveur '{0}'..."
+	ConnectingToServerFmt = "Connexion au serveur '{0}'.."
 	ServerConnectionTimedOut = "La connexion au serveur a expiré."
 	ServerConnectionDenied = "La connexion au serveur a été refusée."
 	EnterPassword = "Cette partie nécessite un mot de passe:"
-	Joining = "Vous rejoignez la partie..."
+	Joining = "Vous rejoignez la partie.."
 	TimedOut = "La requête a expiré."
 	NoGamesFound = "Pas de partie trouvés."
 	Incompatible = "<bad>INCOMPATIBLE</bad>"
@@ -110,7 +110,7 @@ LobbyScreen
 	AddCustomServer = "Ajouter un serveur personnalisé"
 	EditCustomServer = "Editer ce serveur"
 	RemoveCustomServer = "Supprimer ce serveur"
-	ConfirmRemoveCustomServerFmt = "Êtes-vous sûr de vouloir supprimer '{0}' à partir de la liste des serveurs personnalisés PlayersFmt = "{0}/{1}"
+	ConfirmRemoveCustomServerFmt = "Êtes-vous sûr de vouloir supprimer '{0}' de la liste des serveurs personnalisés PlayersFmt = {0}/{1}"
 	PlayersFmt = "{0}/{1}"
 	Mute = "Muter"
 	MuteTip = "Si cette case est cochée, vous ne pourrez pas voir les messages envoyés par ce joueur."
@@ -161,9 +161,9 @@ LobbyScreen
 	ServerJoinDenyReason
 	{
 		ServerNotRunning = "Le serveur n'accepte pas les connexions."
-		VersionIncompatible = "Votre version de Cosmoteer n’est pas compatible avec la version du serveur.\n Vous devez exécuter une version compatible pour pouvoir vous y connecter.."
+		VersionIncompatible = "Votre version de Cosmoteer n’est pas compatible avec la version du serveur.\n Vous devez exécuter une version compatible pour pouvoir vous y connecter."
 		IncorrectPassword = "Mot de passe incorrect."
-		ServerFull = "Le serveur est actuellement plein et ne peut plus accepter de joueurs.."
+		ServerFull = "Le serveur est actuellement plein et ne peut plus accepter de joueurs."
 		Banned = "Tu as été banni de ce serveur."
 	}
 
@@ -268,7 +268,7 @@ GameLaunchFlow
 	HostInitializing = "Chargement du jeu...\n(Initializing)"
 	HostSending = "Chargement du jeu...\n(Sending data)"
 	HostWaiting = "Chargement du jeu...\n(Waiting for other players)"
-	HostStarting = "Lancement de la partie..."	
+	HostStarting = "Lancement de la partie.."	
 	ClientReceiving = "Lancement de la partie...\n(Receiving data)"
 	ClientInitializing = &HostInitializing
 	ClientWaiting = &HostWaiting
@@ -291,7 +291,7 @@ GameResyncFlow
 ChatBox
 {
 	Send = "Envoyer"
-	+	ToggleTeam = "Equipe"
+	ToggleTeam = "Equipe"
 	ToggleTeamTip = "Si coché, vos messages ne seront vus que par vos coéquipiers.\n\nTouche de raccourci: <btn id='Multiplayer.ToggleTeamChat'/>"
 	SendingTooFast = "Whoa, ralentis là-bas! Vous envoyez des messages trop vite!"
 	ChatFmt = "<good>{0}: </good>{1}"
@@ -309,11 +309,11 @@ Multiplayer
 	Waiting = "Ce joueur ralentit la partie."
 	DefaultGameName = "Partie  sans nom"
 	DefaultGameNameFmt = "Partie de {0}"
-	ShuttingDown = "Veuillez patienter..."
+	ShuttingDown = "Veuillez patienter.."
 	TieGame = "Match nul"
 	TeamFmt = "Équipe {0}"
 	PlayerLeftFmt = "{0} a quitté la partie."
-	NextGameCountdownFmt = "Retourner à avant-match en {0} seconds..."
+	NextGameCountdownFmt = "Retourner à avant-match en {0} seconds.."
 	AddressAlreadyInUseFmt = "Un autre programme utilise déjà le port UDP {0} et doit être fermé avant que vous puissiez jouer en multijoueur."
 	ErrorInitializingFmt = "Une erreur s'est produite lors de l'initialisation du mode multijoueur.: {0}"
 	LeftClickBuyShip = "Clic gauche pour acheter le vaisseau."
@@ -372,8 +372,8 @@ ArenaMode : Pvp
 	Place = "PLACE"
 	ShipPointsFmt = "{0:n0} points"
 	EnemyDefeated = "ENNEMI DÉFAIT"
-	RespawnCountdownFmt = "Réaparition dans {0}..."
-	CanRespawnCountdownFmt = "Peut réaparaître dans {0}..."
+	RespawnCountdownFmt = "Réaparition dans {0}.."
+	CanRespawnCountdownFmt = "Peut réaparaître dans {0}.."
 	Respawn = "REAPARITION"
 	ManualRespawn = "REAPARITION"
 	ManualRespawnCountdownFmt = "REAPARITION\n{0}"
@@ -386,7 +386,7 @@ ArenaMode : Pvp
 	Scoreboard : ^/0/Scoreboard
 	{
 		Points = "DEGATS\nPOINTS"
-		DégatReceived = "DEGATS\nSUBIT"
+		DamageReceived = "DEGATS\nSUBIT"
 	}
 }
 
@@ -448,10 +448,10 @@ LoadSaveGame
 	ConfirmDeleteFmt = "Êtes-vous sûr de vouloir supprimer '{0}'?Cela mettra le fichier dans la corbeille de votre ordinateur"
 	ConfirmOverwrite = "Écraser la sauvegarde existante?"
 	
-	Loading = "Jeu en cours de chargement..."
-	Saving = "Jeu de sauvegarde..."
-	AutoSaving = "Sauvegarde automatique..."
-	QuickSaving = "Sauvegarde rapide..."
+	Loading = "Jeu en cours de chargement.."
+	Saving = "Jeu de sauvegarde.."
+	AutoSaving = "Sauvegarde automatique.."
+	QuickSaving = "Sauvegarde rapide.."
 
 	Manual = "Sauvegards nommés"
 	Auto = "Sauvegardes Automatiques"
@@ -884,7 +884,7 @@ Inputs
 
 Settings
 {
- 	RestartRequired = "Un paramètre a été modifié et ne peut prendre effet qu'au redémarrage du jeu.."
+ 	RestartRequired = "Un paramètre a été modifié et ne peut prendre effet qu'au redémarrage du jeu."
 	RestartNow = "Redémarrer maintenant"
 	RestartLater = "Recommence plus tard"
 
@@ -940,7 +940,7 @@ Settings
 
 		LockCursor = "Piège à souris"
 		LockCursorTip = "Si cette case est cochée, le curseur de la souris ne pourra pas quitter la fenêtre de jeu pendant le jeu."\
-		                "Si vous jouez dans une fenêtre exclusive en plein écran, le curseur ne la quittera pas, que cette option soit sélectionnée ou non.."
+		                "Si vous jouez dans une fenêtre exclusive en plein écran, le curseur ne la quittera pas, que cette option soit sélectionnée ou non."
 		
 	    LimitFps = "Limiter le taux rafraîchissement"
 	    LimitFpsTip = "Si cette option est cochée, le jeu ne fonctionnera pas plus rapidement qu'un taux de rafraîchissement particulier."
@@ -1013,7 +1013,7 @@ Settings
 
 		ShowAdvancedCommands = "Afficher les commandes de vaisseau avancées"
 		ShowAdvancedCommandsTip = "Si cette case est cochée, les commandes de vaisseau avancées seront affichées dans l'interface utilisateur."\
-		                          "Même si cette case n'est pas cochée, vous pouvez toujours les utiliser en utilisant leurs touches de raccourci.."
+		                          "Même si cette case n'est pas cochée, vous pouvez toujours les utiliser en utilisant leurs touches de raccourci."
 
 	    CtrlSelectsParts = "Forcer <btn id='Game.SelectParts' xml='false'/> pour sélectionner des modules"
 		CtrlSelectsPartsTip = "Si cette option est cochée, la touche <btn id='Game.SelectParts'/> doit être maintenue en cliquant sur des modules pour pouvoir les sélectionner."
@@ -1025,10 +1025,10 @@ Settings
 		PreferShipRelativeAttackAngleTip = "Si cette case est cochée, cliquer avec le bouton droit de la souris et faire glisser le curseur sur un vaisseau ennemi utilisera un angle d'attaque par rapport au vaisseau ennemi au lieu de la grille d'arrière-plan. Maintenez <btn id = 'Game.ShipRelativeAttackAngle' /> pour utiliser l’autre mode."
 
 		PreferWorldRelativeFollowAngle = "Préférer les angles de suivi relatifs à la grille"
-		PreferWorldRelativeFollowAngleTip = "Si cette option est cochée, cliquer droit et glisser sur un vaisseau allié utilisera un angle de suivi relatid à la grille en arrière-plan plutôt qu'au vaisseau allié. Maintenez <btn id = 'Game.WorldRelativeAttackAngle' /> pour utiliser l'autre mode."
+		PreferWorldRelativeFollowAngleTip = "Si cette option est cochée, cliquer droit et glisser sur un vaisseau allié utilisera un angle de suivi relatid à la grille en arrière-plan plutôt qu'au vaisseau allié. Maintenez <btn id = 'Game.WorldRelativeFollowAngle' /> pour utiliser l'autre mode."
 
 		DirectControlAutoBrake = "Freiner automatiquement"
-		DirectControlAutoBrakeTip = "Si cette case est cochée, votre vaisseau freine automatiquement jusqu'à l'arrêt lorsque vous ne tenez aucune touche en mode de contrôle direct. Maintenez <button id = 'Game.DirectControl Brake' /> pour utiliser l'autre mode."
+		DirectControlAutoBrakeTip = "Si cette case est cochée, votre vaisseau freine automatiquement jusqu'à l'arrêt lorsque vous ne tenez aucune touche en mode de contrôle direct. Maintenez <btn id = 'Game.DirectControlBrake' /> pour utiliser l'autre mode."
 
 		DirectControlEnableWeapons = "Activer le contrôle des armes"
 		DirectControlEnableWeaponsTip = "Si cette case est cochée, le mode de contrôle direct vous permettra de contrôler les armes de votre vaisseau. Sinon, les armes de votre vaisseau seront contrôlées par l'IA."
@@ -1059,7 +1059,7 @@ Settings
 		FocusLbl = "Focus : Suivre"
 		DirectControlLbl = "Mode de Control Direct"
 		MinimapLbl = "Minimap"
-		MiniviewLbl = "Picture-In-Picture"
+		MiniviewLbl = "Image dans l'image"
 
 	    EdgePan = "Déplacement latéral"
 	    EdgePanTip = "Définit si la caméra peut être déplacée en positionnant le curseur de la souris sur le bord de l'écran."
@@ -1097,13 +1097,16 @@ Settings
 	                           "Si cette option n'est pas cochée, lorsque vous effectuez un zoom à l'aide de la molette, l'écran zoomera en son centre."
 
 		DirectControlViewFollowsCursor = "Vue 'suit le curseur de la souris'"
-		DirectControlViewFollowsCursorTip = "Si cette case est cochée, la caméra sera centrée sur un point situé entre le vaisseau et le curseur de la souris. Si cette case n'est pas cochée, la caméra sera centrée sur le vaisseau.."
+		DirectControlViewFollowsCursorTip = "Si cette case est cochée, la caméra sera centrée sur un point situé entre le vaisseau et le curseur de la souris. Si cette case n'est pas cochée, la caméra sera centrée sur le vaisseau."
 
 		DirectControlAutoZoom = "Le zoom suit le curseur de la souris"
 		DirectControlAutoZoomTip = "Si cette case est cochée, la caméra effectuera automatiquement un zoom avant et arrière en fonction de la distance entre le vaisseau et le curseur de la souris."
 
 		DirectControlAutoRotate = "Rotation des vaisseaux"
 		DirectControlAutoRotateTip = "Si cette case est cochée, la caméra pivote automatiquement pour que le vaisseau soit toujours face en haut en mode de contrôle direct."
+
+		AutoTrack = "Suivre automatiquement les vaisseaux à l'écran"
+		AutoTrackTip = "Si cette case est cochée, la caméra correspondra automatiquement au mouvement des vaisseaux à l'écran."
 
 	    StickyFocus = "Centrage permanent des vaisseaux"
 	    StickyFocusTip = "Lorsque vous mettez votre vue sur un vaisseau, la vue va se \"coller\" au vaisseau. "\
@@ -1146,7 +1149,7 @@ Settings
 	
 	Designer
 	{
-		TabName = "Designer de vaisseaux"
+		TabName = "Éditeur"
 
 		BuildLbl = "Constructeur"
 		PaintLbl = "Éditeur de peinture"
@@ -1224,7 +1227,7 @@ Settings
 		CrewAutoFocusTip = "Si cette case est cochée, l'ouverture du panneau de gestion de l'équipage mettra automatiquement la vue sur le vaisseau sélectionné."
 
 		CrewAutoRotate = "Rotation automatique du vaisseau"
-		CrewAutoRotateTip = "Si cette case est cochée, l'ouverture du panneau de gestion de l'équipage fera automatiquement pivoter la vue pour qu'elle corresponde au vaisseau sélectionné.."
+		CrewAutoRotateTip = "Si cette case est cochée, l'ouverture du panneau de gestion de l'équipage fera automatiquement pivoter la vue pour qu'elle corresponde au vaisseau sélectionné."
 
 	    RepairAutoFocus = "Centrer le vaisseau automatiquement"
 	    RepairAutoFocusTip = "Si cette option est cochée, l'ouverture du panneau de réparations centrera automatiquement la vue sur le vaisseau sélectionné."
@@ -1238,7 +1241,7 @@ Settings
 	
 	Saves
 	{
-		TabName = "Sauvegarde automatique"
+		TabName = "Sauvegarde Auto"
 
 		SavedGamesLbl = "Partie sauvegardés"
 		SavedShipsLbl = "Vaisseau sauvegardés"
@@ -1278,7 +1281,7 @@ Settings
 		ShipColorMode = "Couleurs du vaisseau"
 		ShipColorModeTip = "Les couleurs des vaisseaux apparaîtront comme dans les jeux multijoueurs. Ce paramètre n'affecte pas les autres joueurs de la partie multijoueur."
 		BlipColorMode = "Blip Colors"
-		BlipColorModeTip = "Les couleurs qui se répercuteront en écho sur la carte et dans le brouillard de la guerre apparaîtront comme dans les jeux multijoueurs. Ce paramètre n'affecte pas les autres joueurs de la partie multijoueur.."
+		BlipColorModeTip = "Les couleurs qui se répercuteront en écho sur la carte et dans le brouillard de la guerre apparaîtront comme dans les jeux multijoueurs. Ce paramètre n'affecte pas les autres joueurs de la partie multijoueur."
 		RandomPerPlayer = "Aléatoire par joueur"
 		RandomPerPlayerTip = "Les vaisseaux auront des couleurs aléatoires désignant le joueur qui les contrôle."
 		RandomPerTeam = "Aléatoire par équipe"
@@ -1287,12 +1290,12 @@ Settings
 		FriendAndFoeTip = "Les vaisseaux que vous contrôlez seront verts, les vaisseaux des autre joueurs de votre équipe seront jaunes, et les vaisseaux de l'équipe ennemie seront rouges."
 		Original = "Original"
 		OriginalTip = "Les vaisseaux seront colorés tels qu'ils ont été designés."
-		ShowDégatPoints = "Afficher les points de dégâts"
-		ShowDégatPointsTip = "Si cette case est cochée, les points gagnés sur les vaisseau ennemis endommagés seront affichés sur le vaisseau ennemi au fur et à mesure que les dégâts sont causés."
+		ShowDammagPoints = "Afficher les points de dégâts"
+		ShowDammagPointsTip = "Si cette case est cochée, les points gagnés sur les vaisseau ennemis endommagés seront affichés sur le vaisseau ennemi au fur et à mesure que les dégâts sont causés."
 		
 		AllowP2PConnections = "Autoriser les connexions d'égal à égal"
 		AllowP2PConnectionsTip = "Si cette case est cochée, le mode multijoueur en ligne tentera de se connecter directement aux autres joueurs du jeu, ce qui peut réduire considérablement la latence et augmenter la stabilité, mais "\
-		                         "peut potentiellement révéler votre adresse I.P. aux autres joueurs sur le serveur. Il est recommandé de laisser cette option activée, mais vous voudrez peut-être le décocher si vous craignez pour votre vie privée.."
+		                         "peut potentiellement révéler votre adresse I.P. aux autres joueurs sur le serveur. Il est recommandé de laisser cette option activée, mais vous voudrez peut-être le décocher si vous craignez pour votre vie privée."
 	}
 
 	Colors
@@ -1329,7 +1332,7 @@ Settings
 
 		CycleMenuBackground = "Arrière plan aléatoire"
 		CycleMenuBackgroundTip = "Si cette case est cochée, l'arrière-plan de l'écran titre changera à chaque démarrage de l'application.. "\
-		                         "Pour modifier manuellement l'arrière-plan, appuyez sur les touches <btn id = 'View.PanLeft' /> ou <btn id = 'View.PanRight' /> lorsque vous vous trouvez sur l'écran de titre.."
+		                         "Pour modifier manuellement l'arrière-plan, appuyez sur les touches <btn id = 'View.PanLeft' /> ou <btn id = 'View.PanRight' /> lorsque vous vous trouvez sur l'écran de titre."
 
 		VersionCheckModeLbl = "Vérifier les mises à jour"
 		VersionCheckModeLblTip = "Choisissez si vous souhaitez ou non rechercher des mises-à-jour au démarrage et de quel type de mises-à-jour vous souhaitez vérifier la disponibilité."
@@ -1389,7 +1392,7 @@ Mods
 	RestartInfo = "Vous devez redémarrer Cosmoteer pour que les changements de mods prennent effet."
 	RestartNow = "Redémarrer Maintenant"
 	RestartLater = "Redémarrer Plus Tard"
-	InstallMod = "Installer le Mod..."
+	InstallMod = "Installer le Mod.."
 	OverwriteConfirm = "Un mod portant ce nom est déja installé. Voulez-vous l'écraser ?"
 	ModInstalled = "Mod installé avec succès! Vous devez l'activer pour qu'il prenne effet."
 	ShowFolder = "Afficher le dossier"
@@ -1418,7 +1421,7 @@ LoadPaintScheme
 Feedback
 {
 	Title = "Envoyer un avis / Rapporter un bug"
-	Desc = "Veuillez décrire votre appréciation ou votre bug avec autant de détails que possible."
+	Desc = "Veuillez décrire votre appréciation ou votre bug avec autant de détails que possible. Pour un bug de traduction, rejoindre le discord suivant : https://discord.gg/qecpGDY"
 	Submit = "Soumettre votre avis/rapport"
 	Email = "Votre adresse mail (facultatif):"
 	EmailTip = "Indiquer votre adresse mail nous permettra de vous répondre afin d'obtenir plus de détails sur votre avis ou votre rapport de bug."
@@ -1432,7 +1435,7 @@ Feedback
 	AttachErrorLog = "Joindre le rapport d'erreurs";
 	AttachErrorLogTip = "Joint le rapport d'erreurs du programme. Cela nous facilitera la tâche pour résoudre les bugs."
 	Hint = "Astuce: Vous pouvez nous envoyer un rapport à tout moment en cliquant sur le bouton <btn id='General.SubmitFeedback'/>."
-	Sending = "Envoi en cours..."
+	Sending = "Envoi en cours.."
 	Error = "Une erreur s'est produite durant l'envoi du message."
 	ConfirmNoEmail = "Si vous n'entrez pas d'adresse email, nous n'aurons aucun moyen de répondre à votre message. "\
 	                 "Souhaitez-vous vraiment envoyer votre message sans entrer d'adresse e-mail? "\
@@ -1605,7 +1608,7 @@ CreativeMode
 
 	PlayAs
 	{
-		Title = "Jouer en tant que..."
+		Title = "Jouer en tant que.."
 		Tip = "Changez quel joueur vous contrôlez."
 		PlayerIndexFmt = "Joueur {0}"
 		PlayerIndexTipFmt = "Vous permet de contrôler les vaisseaux du Joueur  {0}.\n\nLes vaisseaux nouvellement placés seront donnés au joueur {0}."
@@ -1710,7 +1713,7 @@ PvpModeConfig
 	VictoryCondition = "Condition de victoire"
 	VictoryConditionTip = "Détermine à quel moment l'une des équipes est déclarée gagnante."
 	GoalPoints = "Objectif en point"
-	GoalPointsTip = "Le premier joueur à gagner autant de points remportera la partie.."
+	GoalPointsTip = "Le premier joueur à gagner autant de points remportera la partie."
 	DestructionGoalFmt = "{0}% Destruction"
 	InitToMax = "Commencez avec vos vaisseau à pleine puissance"
 	InitToMaxTip = "Si cette case est cochée, les vaisseaux commenceront avec tous les systèmes chargés, des munitions et de la puissance. Il seront prêts à se battre. Si non vérifié, les vaisseaux devront produire et charger les munitions et la puissance au début de la bataille."
@@ -1724,17 +1727,17 @@ PvpModeConfig
 	FriendlyFireTip = "Si cette case est cochée, les vaisseaux pourront s’attaquer accidentellement et délibérément et s’endommager ainsi que d’autres vaisseaux alliés."
 	FleetDistance = "Distance de départ"
 	FleetDistanceTip = "La distance entre les flotte de chaque joueur (ou équipe) au début de la partie."
-	PerimètreDistance = "Anneau de la mort"
-	PerimètreDistanceTip = "Le rayon du cercle à l'extérieur duquel les vaisseaux subiront rapidement des avaries."
-	ShrinkingPerimètre = "Anneau de la mort rétrécissant"
-	ShrinkingPerimètreTip = "Si coché, l'anneau de la mort va progressivement diminuer avec le temps."
+	PerimetreDistance = "Anneau de la mort"
+	PerimetreDistanceTip = "Le rayon du cercle à l'extérieur duquel les vaisseaux subiront rapidement des avaries."
+	ShrinkingPerimetre = "Anneau de la mort rétrécissant"
+	ShrinkingPerimetreTip = "Si coché, l'anneau de la mort va progressivement diminuer avec le temps."
 	AllowChangeShips = "Autoriser le changement de chargement de flotte"
 	AllowChangeShipsTip = "Si cette case est cochée, les joueurs pourront modifier le chargement des vaisseaux achetables pendant le combat."
 	AllowModifyShips = "Autoriser la modification des vaisseaux"
 	AllowModifyShipsTip = "Si cette case est cochée, pendant la bataille, les joueurs pourront modifier tous les vaisseaux se trouvant dans leur propre zone d'apparition."
 	AllowRepairShips = "Autoriser la réparation des vaisseaux"
 	AllowRepairShipsTip = "Si cette case est cochée, pendant la bataille, les joueurs pourront réparer tous les vaisseaux se trouvant dans leur propre zone d'apparition."
-	ForceAllowRepairShipsTip = "La réparation des vaisseaux est toujours autorisée lorsque le paramètre "Autoriser la modification des vaisseaux" est activé.."
+	ForceAllowRepairShipsTip = "La réparation des vaisseaux est toujours autorisée lorsque le paramètre "Autoriser la modification des vaisseaux" est activé."
 	ShareFunds = "Partager les crédits de l'équipe"
 	ShareFundsTip = "Si coché, les crédits de chaque joueur d'une équipe seront mis en commun."
 	LockTeams = "Seul l'hôte peut affecter des équipes"
@@ -1767,7 +1770,7 @@ PvpModeConfig
 		All = "Tout le monde"
 	}
 
-	PerimètreDistances
+	PerimetreDistances
 	{
 		VeryNearFmt = "Très proche ({0} mètres)"
 		NearFmt = "proche ({0} mètres)"
@@ -2012,7 +2015,7 @@ Hud
 	MoneyTip = "Crédits Intergalactiques "
 	FtlFuelTip = "Carburant hyperpropulsion"
 
-	FtlGuiTitle = "Activation de l'hyperpropulsion..."
+	FtlGuiTitle = "Activation de l'hyperpropulsion.."
 	FtlStatusPercentFmt = "{0:0}%"
 	FtlStatusReady = "<good>PRÊT</good>"
 	FtlStatusCanceled = "<bad><s12>RESTANT</s12></bad>"
@@ -2167,11 +2170,11 @@ BuildBox
 	ImportPngOpacity = "Utiliser l'<b>Opacité</b>"
 	ImportPngFileType = "Fichiers Image PNG(*.png)"
 	ImportPngSizeWarningFmt = "Ce fichier image est plus grand que la taille de vaisseau maximum de {0}x{1} et va être rogné."
-	GrabTip = "<b>Outil déplacement</b>\n\nLorsque sélectionné, cliquer sur un module d'un vaisseau la saisira et la gardera en main pour que vous puissiez la replacer ailleurs.\n\nRaccourci: <btn id='Design.GrabTool'/>dupliquer la pièce au lieu de la déplacer.\n\n"
-	          "<btn id='General.UIAltClick'/> pour sélectionner à la place ce type de pièce comme si vous aviez cliqué sur son bouton.\n\n"\
-	          "Raccourci: <btn id='Design.GrabTool'/>"
-	RemoveTip = "<b>Outil Suppression</b>\n\nLorsque sélectionné, cliquer sur un module d'un vaisseau supprimera ce module et vous donnera un remboursement partiel.\n\nRaccourci: <btn id='Design.EraseTool'/>\n\nMaintenez <btn id='Design.E raseCursorMode'/> pour changer temporairement pour cet outil."
-	SelectTip = "<b>Outil Sélection</b>\n\nLorsque sélectionné, tracez une zone autour de tout module que vous voulez copier, couper, coller, doubler, pivoter ou enlever.\n\nRaccourci: <btn id='Design.SelectionTool'/>\n\n"
+	GrabTip = "<b>Outil déplacement</b>\n\nLorsque sélectionné, cliquer sur un module d'un vaisseau la saisira et la gardera en main pour que vous puissiez la replacer ailleurs.\n\nRaccourci: <btn id='Design.GrabTool'/>dupliquer la pièce au lieu de la déplacer.\n\n"\
+			  "<btn id='General.UIAltClick'/> pour sélectionner à la place ce type de pièce comme si vous aviez cliqué sur son bouton.\n\n"\
+			  "Raccourci: <btn id='Design.GrabTool'/>"
+	RemoveTip = "<b>Outil Suppression</b>\n\nLorsque sélectionné, cliquer sur un module d'un vaisseau supprimera ce module et vous donnera un remboursement partiel.\n\nRaccourci: <btn id='Design.EraseTool'/>\n\nMaintenez <btn id='Design.EraseCursorMode'/> pour changer temporairement pour cet outil."
+	SelectTip = "<b>Outil Sélection</b>\n\nLorsque sélectionné, tracez une zone autour de tout module que vous voulez copier, couper, coller, doubler, pivoter ou enlever.\n\nRaccourci: <btn id='Design.SelectionTool'/>\n\n"\
 	            "Maintenir <btn id='Design.ContiguousSelectionMode'/>, \"baguette magique\", pour une séléction contigu ."
 	MirrorToggleTip = "<b>Mode Miroir</b>\n\nLorsque ce mode est activé, les changements au design du vaisseau seront projetés à l'opposé de la ligne centrale du vaisseau.\n\nRaccourci: <btn id='Design.ToggleMirrorMode'/>"
 	ResetMirrorLines = "Réinitialiser les lignes miroir"
@@ -2285,7 +2288,7 @@ PaintBox
 
 	GrabTip = "<b>Outil déplacement</b>\n\nLorsque sélectionné, cliquer sur une vignette la saisira et la gardera en main pour que vous puissiez la placer ailleurs.\n\nRaccourci: <btn id='Design.GrabTool'/>"
 	RemoveTip = "<b>Outil suppression</b>\n\nLorsque sélectionné, cliquer sur une vignette la supprimera.\n\nRaccourci: <btn id='Design.EraseTool'/>\n\nMaintenez <btn id='Design.EraseCursorMode'/> pour passer temporairement à cet outil."
-	SelectTip = "<b>Outil sélection</b>\n\nLorsque sélectionné, sélectionnez une zone autour de toutes les vignettes que vous voulez copier, couper, coller, projeter, pivoter ou supprimer.\n\nRaccourci: <btn id='Design.SelectionTool'/>\n\n"
+	SelectTip = "<b>Outil sélection</b>\n\nLorsque sélectionné, sélectionnez une zone autour de toutes les vignettes que vous voulez copier, couper, coller, projeter, pivoter ou supprimer.\n\nRaccourci: <btn id='Design.SelectionTool'/>\n\n"\
 	            "Maintenir <btn id='Design.ContiguousSelectionMode'/>, \"baguette magique\", pour une sélection contigu."
 	MirrorToggleTip = "<b>Mode Miroir</b>\n\nLorsque cette option est activée, les changements aux vignettes du vaisseau seront projetés à l'oppposé de la ligne centrale du vaisseau.\n\nRaccourci: <btn id='Design.ToggleMirrorMode'/>"
 	ResetMirrorLines = "Réinitialiser les lignes miroir"
@@ -2379,7 +2382,7 @@ RepairBox
 	                         "Cette action est irréversible et effacera également votre historique d'annulation!"
 
 	PartsDestroyedFmt = "Modules détruits: {0}"
-	PartsDégatdFmt = "Modules endommagés: {0}"
+	PartsDammagedFmt = "Modules endommagés: {0}"
 	CrewKilledFmt = "Équipage mort au combat: {0}"
 
 	RepairDebtFmt = "Réparer votre vaisseau coûterait <ins_money>{0}</ins_money> mais vous n'avez que {1}. "\
@@ -2397,7 +2400,7 @@ CrewBox
 	NothingToUndo = "Rien à annuler."
 	NothingToRedo = "Rien à refaire."
 
-	CrewTab = "CREW"
+	CrewTab = "TABLEAU DES SERVICES"
 	Crew = "ÉQUIPAGE"
 	Beds = "LITS"
 	NumCrewTip = "Nombre actuel de membres d'équipage du vaisseau."
@@ -2451,7 +2454,7 @@ CrewBox
 	ResetMirrorLinesTip = "Réinitialise les lignes de miroir horizontales et verticales au centre du vaisseau."
 	ClearPriorityTargetsTip = "Supprime toute attribution de priorité de pièce spécifique à l'équipe sélectionnée.\n\Raccourci: <btn id='Crew.ClearPriorityTargets'/>"
 
-	SquadsTab = "ROLES"
+	BehaviorTab = "COMPORTEMENT"
 }
 
 RoleEditor
@@ -2623,11 +2626,11 @@ Parts
 
 	LaserBlasterSmall = "Blaster Laser"
 	LaserBlasterSmallIcon = "Blaster"
-	LaserBlasterSmallDesc = "Arme extrêmement précise et polyvalente qui tire des éclats d'énergie uniques et inflige des dégâts modérés aux vaisseaux ennemis.."
+	LaserBlasterSmallDesc = "Arme extrêmement précise et polyvalente qui tire des éclats d'énergie uniques et inflige des dégâts modérés aux vaisseaux ennemis."
 
 	LaserBlasterLarge = "Blaster laser lourd"
 	LaserBlasterLargeIcon = "Blaster lourd"
-	LaserBlasterLargeDesc = "Associe deux grands pistolets laser sur une même tourelle, ce qui entraîne des dégâts beaucoup plus importants aux dépens d'une certaine précision et de la polyvalence.."
+	LaserBlasterLargeDesc = "Associe deux grands pistolets laser sur une même tourelle, ce qui entraîne des dégâts beaucoup plus importants aux dépens d'une certaine précision et de la polyvalence."
 
 	MissileFactoryHE = "Usine de missiles hautement explosifs"
 	MissileFactoryHEIcon = "Usine H.E."
@@ -2808,14 +2811,14 @@ Stats
 	CrewRequiredFmt = "<white>Équipage requis:</white> <good>{0}</good>"
 	RailgunBuffFmt = "<white>Railgun Buffer:</white> <good>+{0:0}%</good><gray> dmg/pen/vitesse</gray>"
 	ThrusterBuffFmt = "<white>Propulseur buffer:</white> <good>+{0:0}%</good><gray> poussée/énergie</gray>"
-	DégatFmt = "<white>Dégat:</white> <good>{0:n0}</good><gray>/tire (</gray><good>{1:n0}</good><gray>/sec)</gray>"
-	SimpleDégatFmt = "<white>Dégat:</white> <good>{0:n0}</good>"
-	DégatAreaFmt = "<white>Zone de Dégat:</white> <good>{0:0.#}</good><gray> mètre de rayon</gray>"
-	DégatContinuousFmt = "<white>Dégat:</white> <good>{0:n0}</good><gray>/sec</gray>"
-	DégatContinuousNearFmt = "<white>Dégat (Near):</white> <good>{0:n0}</good><gray>/sec</gray>"
-	DégatContinuousFarFmt = "<white>Dégat (Far):</white> <good>{0:n0}</good><gray>/sec</gray>"
-	ShieldDégatFmt = "<white>Dégat vs bouclier:</white> <good>{0:n0}</good><gray>/tire (</gray><good>{1:n0}</good><gray>/sec)</gray>"
-	ShotDégatFmt = "<white>Dégat vs tire:</white> <good>{0:n0}</good><gray>/tire (</gray><good>{1:n0}</good><gray>/sec)</gray>"
+	DammageFmt = "<white>Dégat:</white> <good>{0:n0}</good><gray>/tire (</gray><good>{1:n0}</good><gray>/sec)</gray>"
+	SimpleDammageFmt = "<white>Dégat:</white> <good>{0:n0}</good>"
+	DammageAreaFmt = "<white>Zone de Dégat:</white> <good>{0:0.#}</good><gray> mètre de rayon</gray>"
+	DammageContinuousFmt = "<white>Dégat:</white> <good>{0:n0}</good><gray>/sec</gray>"
+	DammageContinuousNearFmt = "<white>Dégat (Near):</white> <good>{0:n0}</good><gray>/sec</gray>"
+	DammageContinuousFarFmt = "<white>Dégat (Far):</white> <good>{0:n0}</good><gray>/sec</gray>"
+	ShieldDammageFmt = "<white>Dégat vs bouclier:</white> <good>{0:n0}</good><gray>/tire (</gray><good>{1:n0}</good><gray>/sec)</gray>"
+	ShotDammageFmt = "<white>Dégat vs tire:</white> <good>{0:n0}</good><gray>/tire (</gray><good>{1:n0}</good><gray>/sec)</gray>"
 	PowerDrainFmt = "<white>Drain d'énergie:</white> <good>{0:0.##}</good><gray>/tire (</gray><good>{1:0.##}</good><gray>/sec)</gray>"
 	PowerDrainAreaFmt = "<white>Zone de drainage d'énergie:</white> <good>{0:0.#}</good><gray> mètre de rayon</gray>"
 	PenetrationFmt = "<white>Pénétration:</white> <good>{0:0.##}</good> <gray>mètres</gray>"
@@ -2872,13 +2875,13 @@ Stats
 	CrewSpeedFwdFmt = "<white>Vitesse de l'équipage (Vers l'avant):</white> <good>{0:0}%</good>"
 	CrewSpeedAcrFmt = "<white>Vitesse de l'équipage (À travers):</white> <good>{0:0}%</good>"
 	CrewSpeedRevFmt = "<white>Vitesse de l'équipage (Sens inverse):</white> <good>{0:0}%</good>"
-	BeamDégatFalloffFmt = "<white>Combine Falloff:</white> <good>-{0}%</good><gray>/rayon</gray>\n"\
+	BeamDammageFalloffFmt = "<white>Combine Falloff:</white> <good>-{0}%</good><gray>/rayon</gray>\n"\
 	                       "  <white>1st rayon:</white> <good>{1:0}%</good><gray> dmg</gray>\n"\
 	                       "  <white>2nd rayon:</white> <good>{2:0}%</good><gray> dmg</gray>\n"\
 	                       "  <white>3rd rayon:</white> <good>{3:0}%</good><gray> dmg</gray>\n"\
 	                       "  <white>4th rayon:</white> <good>{4:0}%</good><gray> dmg</gray>\n"\
 	                       "  <white>5th rayon:</white> <good>{5:0}%</good><gray> dmg</gray>\n"\
-	                       "  ..."
+	                       "  .."
 
 	RailgunNotes = "<gray>NOTE: Dégat, Pénétration, Portée, Vitesse de Tir et Consommation sont augmentés avec chaque accélérateur Railgun supplémentaire.</gray>"
 	MissileLauncherNotes = "<gray>Pour les statistiques sur les munitions, se référer à l’usine correspondante pour chaque type de munition.</gray>"
@@ -2992,13 +2995,13 @@ Tutorials
 	{
 		Title = "Contrôles de vaisseau avancés"
 		Info = "Dans le coin inférieur gauche se trouvent une poignée de commandes qui vous permettent de mieux contrôler votre vaisseau.:"
-		Move = "La <yellow> Commande de déplacement </yellow> (<btn id = 'Game.Move' />) vous permet de vous déplacer vers un emplacement spécifique ou de suivre un vaisseau.."
+		Move = "La <yellow> Commande de déplacement </yellow> (<btn id = 'Game.Move' />) vous permet de vous déplacer vers un emplacement spécifique ou de suivre un vaisseau."
 		Attack = "La <yellow> commande d'attaque </yellow> (<btn id = 'Game.Attack' />) vous permet d'attaquer presque tous les vaisseaux, même les votres. "\
-		         "Vous pouvez également l'utiliser pour ajuster rapidement l'angle et la distance d'un ordre d'attaque existant.."
-		Halt = "La <yellow> Commande Halte </yellow> (<btn id = 'Game.Halt' />) annule toutes les commandes en cours.."
+		         "Vous pouvez également l'utiliser pour ajuster rapidement l'angle et la distance d'un ordre d'attaque existant."
+		Halt = "La <yellow> Commande Halte </yellow> (<btn id = 'Game.Halt' />) annule toutes les commandes en cours."
 		Rotate = "La <yellow> commande de rotation </ yellow> (<btn id = 'Game.Rotate' />) fait pivoter votre vaisseau à la place sans bouger."
 		Strafe = "La <yellow> Strafe Command </yellow> (<btn id = 'Game.Strafe' />) déplace votre vaisseau tout en conservant sa rotation actuelle."
-		DirectControl = "Si vous préférez <yellow> piloter votre vaisseau manuellement </yellow> à l'aide du clavier et de la souris, cliquez sur le bouton <b> Mode de contrôle direct </b>.."
+		DirectControl = "Si vous préférez <yellow> piloter votre vaisseau manuellement </yellow> à l'aide du clavier et de la souris, cliquez sur le bouton <b> Mode de contrôle direct </b>."
 	}
 
 	Ammo1
@@ -3042,7 +3045,8 @@ Tutorials
 	Camera1
 	{
 		Title = "Contrôler la Caméra"
-		EdgePan = "Pour <yellow>déplacer la caméra</yellow>, déplacez le <b>curseur de la souris</b> vers le bord de l'écran ou appuyez sur les <b>flèches directionnelles ou les touches WASD</b>."
+		EdgePan = "Pour <yellow> déplacer la caméra</yellow>, appuyez sur les <b>Touches directionnelles</b> ou <b>ZQSD</b>.\n\n"\
+		          "Pour <yellow>faites glisser la caméra</yellow>, cliquez, maintenez , puis faites glisser le <b>bouton gauche de la souris</b>."
 		Zoom = "Pour <yellow>zoomer en avant ou en arrière</yellow>, utilisez la <b>molette</b> de votre souris ou les touches <btn id='View.ZoomIn'/> et <btn id='View.ZoomOut'/>."
 		Tip = "<green><b>ASTUCE:</b></green> Vous ne trouvez pas votre vaisseau? Cliquez sur son icône dans le coin supérieur gauche ou appuyez sur la touche <btn id='View.FocusSelected'/> (Centrer)."
 	}
@@ -3050,7 +3054,6 @@ Tutorials
 	Camera2
 	{
 		Title = "Contrôler la Caméra (Avancé)"
-		Drag = "Pour <yellow>glisser la caméra</yellow>, cliquez, maintenez, puis glissez le <b>bouton central de la souris</b>."
 		FocusClick = "Pour <yellow>centrer la caméra</yellow> sur un vaisseau, cliquez dessus avec le <b>bouton central de la souris</b>.\n\nVous pouvez aussi utiliser le <b>bouton central de la souris</b> à un endroit vide pour centrer la caméra dessus."
 		AltDrag = "Pour <yellow>centrer sur plusieurs</yellow>, maintenez la touche <btn id='View.FocusCursorMode'/>, puis <b>avec le clic gauche</b> sélectionnez une zone autour de ces vaisseaux."
 		Tip = "<green><b>ASTUCE:</b></green> Appuyez sur la touche <btn id='View.FocusSelected'/> pour centrer la caméra sur votre vaisseau."
@@ -3100,13 +3103,13 @@ Tutorials
 		Button = "Pour faire de la place pour <yellow>plus de membres d'équipage</yellow>, cliquez de nouveau sur le bouton <b>Construire</b>."
 		Quarters = "Ajoutez des <yellow>Couchettes d'équipage</yellow> ou des <yellow>Quartiers d'équipage</yellow> pour augmenter le nombre de membres d'équipage à bord du vaisseau. Vous n'en aurez jamais trop!"
 		Door = "Ajoutez des <yellow>portes</yellow> à votre vaisseau pour que l'équipage puisse circuler entre les pièces."
-		mètre = "La <b>Jauge d'équipage</b> suggère le nombre <bad>minimum</bad> et <good>recommandé</good> de membres d'équipage pour votre vaisseau."
+		meter = "La <b>Jauge d'équipage</b> suggère le nombre <bad>minimum</bad> et <good>recommandé</good> de membres d'équipage pour votre vaisseau."
 	}
 
 	Crew3
 	{
 		Title = "Gérer votre équipage"
-		Autonomous = "<yellow>L'équipage est principalement autonome</yellow> et exploitera votre vaisseau lui-même, mais vous pouvez toujours personnaliser son comportement si vous le souhaitez.."
+		Autonomous = "<yellow>L'équipage est principalement autonome</yellow> et exploitera votre vaisseau lui-même, mais vous pouvez toujours personnaliser son comportement si vous le souhaitez puis cliquez sur l'onglet <b>COMPORTEMENT</b>."
 		Button = "Pour <yellow>personnaliser le comportement de votre équipage</yellow>, cliquez sur le boutton<b>Équipage</b>."
 		Squads = "<yellow>Les équipages sont organisés en \"Equipes\".</yellow> Chaque équipe a sa propre chambre où ses membres reviendront quand ils n’auront rien à faire."
 		Prioritize = "Pour <yellow>assigner une équipe</yellow> sur une arme ou une autre pièce spécifique, <b>cliquez sur le bouton gauche</b> dans la chambre de l'escouade, puis <b>clic-droit</b> sur l'arme ou la pièce désirée. "\
@@ -3123,7 +3126,7 @@ Tutorials
 		EditRole = "Pour <yellow>éditer le nom,couleur ou la priorités de travail</yellow>, d'un rôle, <btn id='General.UIAltClick'/> dessus et sélectionnez \"Modifier le rôle\"."
 		Priorities = "Un ou plusieurs travaux sont associés à la plupart des pièces de vaisseau, chacune avec une priorité <yellow> comprise entre 1 et 10.</yellow> qui peut être personnalisé pour chaque rôle différent."
 		Priorities2 = "Un travail avec un<yellow>haut</yellow> numéro de priorité sera toujours fait <yellow>avant</yellow> un travail avec un numéro de priorité <yellow>inférieur</yellow>. "\
-		              "Vous pouvez également désactiver complètement un travail pour empêcher les équipes ayant ce rôle de le faire.."
+		              "Vous pouvez également désactiver complètement un travail pour empêcher les équipes ayant ce rôle de le faire."
 	}
 
 	DirectControl1
@@ -3140,7 +3143,7 @@ Tutorials
 		Title = "Mode de contrôle direct (suite)"
 		Weapons = "<yellow>Tirez</yellow> en utilisant les boutons de la souris."\
 		          "\n\nLes armes seront <yellow>cibler automatiquement</yellow> tout vaisseau ennemi près du curseur de la souris. Appuyer sur <btn id='Game.DirectControlLockTarget'/> pour activer le verrouillage de la cible."
-		Tip = "<green><b>CONSEIL:</b></green> Il existe de nombreuses options pour personnaliser le vol et la caméra du mode Contrôle direct dans les paramètres du jeu.."
+		Tip = "<green><b>CONSEIL:</b></green> Il existe de nombreuses options pour personnaliser le vol et la caméra du mode Contrôle direct dans les paramètres du jeu."
 	}
 
 	Micro1
@@ -3214,7 +3217,7 @@ Tutorials
 		Title = "Vaisseaux: Énergie"
 		Reactor = "Les <yellow>Réacteurs</yellow> génèrent les batteries à plasma utilisées par vos propulseurs, vos armes énergétiques, et d'autres modules."
 		Crew = "Votre <yellow>équipage</yellow> transportera les piles à plasma depuis le <b>Réacteur</b> ou le <b>Dépôt d'énergie</b> jusqu'aux modules de votre vaisseau."
-		mètre = "La <b>Jauge d'Énergie</b> suggère les niveaux d'énergie <bad>minimum</bad> et <good>recommandés</good> pour votre vaisseau."
+		meter = "La <b>Jauge d'Énergie</b> suggère les niveaux d'énergie <bad>minimum</bad> et <good>recommandés</good> pour votre vaisseau."
 		Indicator = "Un module qui n'a pas assez d'énergie pour opérer aura un <red>icône rouge</red>."
 		Tip = "<green><b>ASTUCE:</b></green> La fréquence à laquelle une arme énergétique peut tirer dépend de la vitesse à laquelle l'équipage peut l'alimenter en énergie."
 	}
