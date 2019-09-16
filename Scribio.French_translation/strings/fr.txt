@@ -2000,7 +2000,7 @@ Hud
 	          "(Maintenir <btn id='Game.InvertCollisionAvoidance'/> pour éviter les collisions.)\n\n"\
 	          "Raccourci: <btn id='Game.Move'/>"
 	RotateTip = "<b>Tourner</b>\n\nFaire une rotation pour faire face à une cible ou à une direction générale.\n\nRaccourci: <btn id='Game.Rotate'/>"
-	StrafeTip = "<b>Tirer</b>\n\nSe déplacer sans rotation. "\
+	StrafeTip = "<b>Glisser</b>\n\nSe déplacer sans rotation. "\
 	          "(Maintenir <btn id='Game.InvertCollisionAvoidance'/> pour éviter les collisions.)\n\n"\
 	            "Raccourci: <btn id='Game.Strafe'/>"
 	AttackTip = "<b>Attaquer</b>\n\nAttaquer un autre vaisseau. Peut également être utilisé pour attaquer vos propres vaisseaux. "\
@@ -2999,7 +2999,7 @@ Tutorials
 		Attack = "La <yellow> commande d'attaque </yellow> (<btn id = 'Game.Attack' />) vous permet d'attaquer presque tous les vaisseaux, même les votres. "\
 		         "Vous pouvez également l'utiliser pour ajuster rapidement l'angle et la distance d'un ordre d'attaque existant."
 		Halt = "La <yellow> Commande Halte </yellow> (<btn id = 'Game.Halt' />) annule toutes les commandes en cours."
-		Rotate = "La <yellow> commande de rotation </ yellow> (<btn id = 'Game.Rotate' />) fait pivoter votre vaisseau à la place sans bouger."
+		Rotate = "La <yellow> commande de rotation </yellow> (<btn id = 'Game.Rotate' />) fait pivoter votre vaisseau à la place sans bouger."
 		Strafe = "La <yellow> Strafe Command </yellow> (<btn id = 'Game.Strafe' />) déplace votre vaisseau tout en conservant sa rotation actuelle."
 		DirectControl = "Si vous préférez <yellow> piloter votre vaisseau manuellement </yellow> à l'aide du clavier et de la souris, cliquez sur le bouton <b> Mode de contrôle direct </b>."
 	}
