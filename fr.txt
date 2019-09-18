@@ -3143,7 +3143,7 @@ Tutorials
 		Title = "Mode de contrôle direct (suite)"
 		Weapons = "<yellow>Tirez</yellow> en utilisant les boutons de la souris."\
 		          "\n\nLes armes seront <yellow>cibler automatiquement</yellow> tout vaisseau ennemi près du curseur de la souris. Appuyer sur <btn id='Game.DirectControlLockTarget'/> pour activer le verrouillage de la cible."
-		Tip = "<green><b>CONSEIL:</b></green> Il existe de nombreuses options pour personnaliser le vol et la caméra du mode Contrôle direct dans les paramètres du jeu."
+		Tip = "<green><b>ASTUCE:</b></green> Il existe de nombreuses options pour personnaliser le vol et la caméra du mode Contrôle direct dans les paramètres du jeu."
 	}
 
 	Micro1
@@ -3153,7 +3153,7 @@ Tutorials
 		Power = "Appuyez sur le bouton <b>Alimentation</b> pour <yellow>l'éteindre</yellow>. Tout membre d'équipage opérant ce module le quittera et ira aider ailleurs."
 		HoldFire = "Appuyez sur le bouton <b>Mode de Tir</b> pour ordonner à une arme de <yellow>ne pas tirer</yellow> tant que vous ne lui avez pas donné une cible précise."
 		Target = "Avec une arme sélectionnée, <b>faites un clic-droit</b> sur un module ennemi pour le <yellow>cibler</yellow> uniquement avec cette arme."
-		ControlGroups = "<green><b>CONSEIL:</b></green> Créer un <yellow>groupe de contrôle</yellow> en sélectionnant une ou plusieurs pièces puis en appuyant sur <b>Ctrl + 0-9</b>. Sélectionnez ce groupe en appuyant sur <b>0-9</b>."
+		ControlGroups = "<green><b>ASTUCE:</b></green> Créer un <yellow>groupe de contrôle</yellow> en sélectionnant une ou plusieurs pièces puis en appuyant sur <b>Ctrl + 0-9</b>. Sélectionnez ce groupe en appuyant sur <b>0-9</b>."
 	}
 
 	Missiles1
@@ -3161,7 +3161,7 @@ Tutorials
 		Title = "Vaisseaux: Missiles & Mines"
 		Launcher = "Le <yellow>Lanceur</yellow> est une arme polyvalente qui peut tirer des <yellow>munitions</yellow> de divers types, tels que les missiles et les mines."
 		ChangeType = "Pour <yellow>changer le type de munition</yellow>, sélectionnez le lanceur puis cliquez sur le bouton <b>type de munition</b>."
-		Tip = "<green><b>CONSEIL:</b></green> Le type de munition du lanceur peut être changé à tout moment pendant ou après la construction, même pendant la bataille!"
+		Tip = "<green><b>ASTUCE:</b></green> Le type de munition du lanceur peut être changé à tout moment pendant ou après la construction, même pendant la bataille!"
 	}
 
 	Missiles2
@@ -3169,7 +3169,7 @@ Tutorials
 		Title = "Vaisseaux: Missiles & Mines (suite)"
 		Factories = "Chaque type de munition de lanceur est construit dans une <yellow>usine spéciale</yellow> spécifique à chaque munition."
 		Crew = "Si vous avez un <yellow>type correspondant</yellow> à l'usine, votre <yellow>équipage</yellow> transportera les munitions de l'usine à votre lanceur."
-		Tip = "<green><b>CONSEIL:</b></green> La fréquence à laquelle un lanceur peut tirer dépend de la rapidité avec laquelle l’équipage peut lui livrer des munitions."
+		Tip = "<green><b>ASTUCE:</b></green> La fréquence à laquelle un lanceur peut tirer dépend de la rapidité avec laquelle l’équipage peut lui livrer des munitions."
 	}
 
 	Movement1
@@ -3192,7 +3192,7 @@ Tutorials
 		BuyShip = "Pour <yellow>agrandir votre flotte</yellow>, cliquez sur le bouton <b>Acheter un vaisseau</b> au-dessus de la mini-carte."
 		Selected = "Lorsque vous avez plus d'un vaisseau, <b>click gauche</b> sur le vaisseau que vous voulez <yellow>contrôler</yellow>.\n\n"\
 		BoxSelect = "Pour <yellow>contrôler plusieurs vaisseaux</yellow> à la fois, <b>cliquez et tracez</b> une zone autour de ces vaisseaux.\n\nOu alors, maintenez <btn id='Game.AppendSelection'/> puis <b>cliquez</b> sur chaque vaisseau."
-		ControlGroups = "<green><b>CONSEIL:</b></green> Créer un <yellow>groupe de contrôle</yellow> en sélectionnant un ou plusieurs vaisseaux puis en appuyant sur <b>Ctrl + F1-F8</b>. Sélectionnez ce groupe en appuyant sur <b>F1-F8</b>."
+		ControlGroups = "<green><b>ASTUCE:</b></green> Créer un <yellow>groupe de contrôle</yellow> en sélectionnant un ou plusieurs vaisseaux puis en appuyant sur <b>Ctrl + F1-F8</b>. Sélectionnez ce groupe en appuyant sur <b>F1-F8</b>."
 	}
 
 	Formations1
