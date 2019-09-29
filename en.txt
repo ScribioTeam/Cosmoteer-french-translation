@@ -31,6 +31,11 @@ Misc
 	ShortCostK = "{0:#,#,}K₡"
 	ShortCostM = "{0:#,#,,.0}M₡"
 	Unknown = "Unknown"
+
+	SteamWishlistMsg = "<s20><good>Thanks for playing <b>Cosmoteer</b>!</good></s20>\n\nWould you like to add Cosmoteer to your <u>Steam wishlist</u> so that you get notified when it releases?"
+	SteamWishlistYes = "Yes!\n<s12><gray>(Opens Browser)</gray></s12>"
+	SteamWishlistLater = "Remind Me\nNext Time"
+	SteamWishlistNo = "No Thanks"
 }
 
 Colorblind
@@ -561,6 +566,7 @@ Inputs
 		Halt = "Halt"
 		InvertCollisionAvoidance = "Invert Collision Avoidance"
 		DirectControlToggle = "Toggle Direct Control Mode"
+		DirectControlToggleWeapons = "Direct Control: Toggle Weapons Control"
 		DirectControlToggleFaceCursor = "Direct Control: Toggle Auto Face Cursor"
 		DirectControlForward = "Direct Control: Forward"
 		DirectControlReverse = "Direct Control: Reverse"
@@ -1850,6 +1856,8 @@ DominationModeConfig : PvpModeConfig
 	MapStyleTip = "The size of the map setup and number of teams it supports."
 	MaxFleetValue = "Max Fleet Value"
 	MaxFleetValueTip = "The maximum total value of any team's fleet at any point in time."
+	MinShipValue = "Min Ship Value"
+	MinShipValueTip = "The minimum value of any single ship that can be purchased during the battle."
 	Funds = "Starting Credits"
 	FundsTip = "The starting number of credits (₡) that each team has at the beginning of the match."
 	BasicIncome = "Basic Income"
@@ -2682,9 +2690,17 @@ Parts
 	                      "Railguns fire magnetically accelerated projectiles that can penetrate deep into enemy ships, causing great damage. "\
 	                      "Each Railgun requires both a Loader and a Launcher, plus any number of optional Accelerators."
 
-	ReactorSmall = "Reactor Core"
-	ReactorSmallIcon = "Reactor"
-	ReactorSmallDesc = "Continuously produces the plasma batteries needed to power many of the ship's systems."
+	ReactorSmall = "Small Reactor Core"
+	ReactorSmallIcon = "Small Reactor"
+	ReactorSmallDesc = "A power generator that produces the plasma batteries needed to power many of the ship's systems."
+
+	ReactorMed = "Medium Reactor Core"
+	ReactorMedIcon = "Med. Reactor"
+	ReactorMedDesc = "A power generator that produces double-capacity plasma batteries needed to power many of the ship's systems."
+
+	ReactorLarge = "Large Reactor Core"
+	ReactorLargeIcon = "Large Reactor"
+	ReactorLargeDesc = "A power generator that produces triple-capacity plasma batteries needed to power many of the ship's systems."
 
 	SensorArray = "Sensor Array"
 	SensorArrayIcon = "Sensors"
@@ -2850,6 +2866,8 @@ Stats
 	ThrusterPowerUsageFmt = "<white>Power Use:</white> <good>{0:0.##}</good><gray>/sec (100% thrust)</gray>"
 	BoostedPowerUsageContinuousFmt = "<zero>Power Use:</zero> <good>{0:0.##}</good><gray>/sec (continuous)</gray>"
 	PowerGenerationFmt = "<white>Power Generation:</white> <good>{0:0.##}</good><gray>/sec</gray>"
+	BatterySizeFmt = "<white>Battery Size:</white> <good>{0:0.0#}</good>"
+	BatteryFillTimeFmt = "<white>Battery Charge Time:</white> <good>{0:0.0#}</good> <gray>seconds</gray>"
 	PowerCapacityFmt = "<white>Power Capacity:</white> <good>{0:0.##}</good>"
 	AmmoCapacityFmt = "<white>Ammo Capacity:</white> <good>{0}</good>"
 	MissileProductionFmt = "<white>Production Rate:</white> <good>{0:0.##}</good><gray> missiles/sec</gray>"
