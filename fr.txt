@@ -31,6 +31,11 @@ Misc
 	ShortCostK = "{0:#,#,}K₡"
 	ShortCostM = "{0:#,#,,.0}M₡"
 	Unknown = "Inconnu"
+
+	SteamWishlistMsg = "<s20><good>Merci de jouer à <b>Cosmoteer</b>!</good></s20>\n\nVoulez-vous ajouter Cosmoteer à votre <u>liste de souhait</u> afin que vous soyez averti quand il sera sortie?"
+	SteamWishlistYes = "Oui!\n<s12><gray>(Ouvre le navigateur)</gray></s12>"
+	SteamWishlistLater = "Me le rappeler\nUne prochaine fois"
+	SteamWishlistNo = "Non merci"
 }
 
 Colorblind
@@ -561,6 +566,7 @@ Inputs
 		Halt = "Halt"
 		InvertCollisionAvoidance = "Inverser la prévention des collisions"
 		DirectControlToggle = "Basculer en mode de contrôle direct"
+		DirectControlToggleWeapons = "Contrôle direct: Basculer le contrôle des armes"
 		DirectControlToggleFaceCursor = "Contrôle direct: Basculer le curseur automatique"
 		DirectControlForward = "Contrôle direct: Vers l'avant"
 		DirectControlReverse = "Contrôle direct: Vers l'arrière"
@@ -1851,6 +1857,8 @@ DominationModeConfig : PvpModeConfig
 	MaxFleetValue = "Valeur maximale de la flotte"
 	MaxFleetValueTip = "La valeur totale maximale de la flotte de n'importe quelle équipe à tout moment."
 	Funds = "Crédits de départ"
+	MinShipValue = "Valeur minimale du vaisseau"
+	MinShipValueTip = "La valeur minimale de tout vaisseau pouvant être acheté pendant la bataille."
 	FundsTip = "Le nombre de crédits de départ (₡) que chaque équipe a au début du match."
 	BasicIncome = "Revenu de base"
 	BasicIncomeTip = "Le nombre de crédits (₡) que chaque équipe gagne toutes les 10 secondes (à une vitesse et demie) en plus de leurs points de contrôle."
@@ -2682,9 +2690,17 @@ Parts
 	                      "Les railgun lancent des projectiles à accélération magnétique qui peuvent pénétrer profondément dans les vaisseaux ennemis, leur causant de gros dégâts. "\
 	                      "Chaque Railgun nécessite à la fois un chargeur et un lanceur, ainsi qu'un nombre quelconque d'accélérateurs en option."
 
-	ReactorSmall = "Cœur du réacteur"
-	ReactorSmallIcon = "Réacteur"
-	ReactorSmallDesc = "Produit en permanence les batteries à plasma nécessaires pour alimenter de nombreux systèmes du vaisseau."
+	ReactorSmall = "Petit coeur de réacteur"
+	ReactorSmallIcon = "Petit réacteur"
+	ReactorSmallDesc = "Un groupe électrogène produisant les batteries au plasma nécessaires pour alimenter de nombreux systèmes du vaisseau."
+
+	ReactorMed = "Moyen coeur de réacteur"
+	ReactorMedIcon = "Moyen réacteur"
+	ReactorMedDesc = "Un groupe électrogène produisant les batteries au plasma nécessaires pour alimenter de nombreux systèmes du vaisseau."
+
+	ReactorLarge = "Grand coeur de réacteur"
+	ReactorLargeIcon = "Grand réacteur"
+	ReactorLargeDesc = "Un groupe électrogène produisant les batteries au plasma nécessaires pour alimenter de nombreux systèmes du vaisseau."
 
 	SensorArray = "Réseau de capteurs"
 	SensorArrayIcon = "Capteurs"
@@ -2850,6 +2866,8 @@ Stats
 	ThrusterPowerUsageFmt = "<white>Energie utilisé:</white> <good>{0:0.##}</good><gray>/sec (100% thrust)</gray>"
 	BoostedPowerUsageContinuousFmt = "<zero>Energie utilisé:</zero> <good>{0:0.##}</good><gray>/sec (continuous)</gray>"
 	PowerGenerationFmt = "<white>Production d'énergie:</white> <good>{0:0.##}</good><gray>/sec</gray>"
+	BatterySizeFmt = "<white>Taille de la batterie:</white> <good>{0:0.0#}</good>"
+	BatteryFillTimeFmt = "<white>Temps de charge de la batterie:</white> <good>{0:0.0#}</good> <gray>seconds</gray>"
 	PowerCapacityFmt = "<white>Capacité d'énergie:</white> <good>{0:0.##}</good>"
 	AmmoCapacityFmt = "<white>Capacité de munitions:</white> <good>{0}</good>"
 	MissileProductionFmt = "<white>Taux de production:</white> <good>{0:0.##}</good><gray> missiles/sec</gray>"
